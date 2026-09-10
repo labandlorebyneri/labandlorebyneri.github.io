@@ -217,12 +217,40 @@
       gap: 24px;
     }
 
+    .series-link {
+      display: block;
+      color: inherit;
+      text-decoration: none;
+    }
+
     .series-card {
-      min-height: 330px;
+      height: 100%;
+      min-height: 350px;
       padding: 30px;
       border: 1px solid var(--border);
       border-top: 4px solid var(--blue);
       background: var(--surface);
+      transition:
+        transform 180ms ease,
+        border-color 180ms ease,
+        box-shadow 180ms ease,
+        background 180ms ease;
+    }
+
+    .series-link:hover .series-card {
+      transform: translateY(-4px);
+      border-color: var(--blue);
+      background: #FFFFFF;
+      box-shadow: 0 12px 28px rgba(23, 63, 95, 0.08);
+    }
+
+    .series-link:focus-visible {
+      outline: 2px solid var(--maroon);
+      outline-offset: 5px;
+    }
+
+    .series-link:focus-visible .series-card {
+      border-color: var(--maroon);
     }
 
     .series-number {
@@ -256,6 +284,15 @@
       color: var(--body-text);
       font-size: 16px;
       line-height: 1.72;
+    }
+
+    .series-action {
+      display: inline-block;
+      margin-top: 26px;
+      color: var(--maroon);
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 13px;
+      font-weight: 600;
     }
 
     .posts-list {
@@ -451,6 +488,10 @@
       html {
         scroll-behavior: auto;
       }
+
+      .series-card {
+        transition: none;
+      }
     }
   </style>
 
@@ -575,74 +616,116 @@
 
         <div class="series-grid">
 
-          <article class="series-card">
+          <!-- LAB & LORE -->
 
-            <div class="series-number">
-              Series 01
-            </div>
+          <a
+            class="series-link"
+            href="/series/lab-and-lore.html"
+            aria-label="Explore the Lab and Lore series"
+          >
 
-            <h3>
-              Lab &amp; Lore
-            </h3>
+            <article class="series-card">
 
-            <div class="series-kicker">
-              Inquiry in progress.
-            </div>
+              <div class="series-number">
+                Series 01
+              </div>
 
-            <p>
-              Experiments, behavioral observations, research notes,
-              emerging questions, ideas under construction, and things
-              I am still trying to understand.
-            </p>
+              <h3>
+                Lab &amp; Lore
+              </h3>
 
-          </article>
+              <div class="series-kicker">
+                Inquiry in progress.
+              </div>
 
+              <p>
+                Experiments, behavioral observations, research notes,
+                emerging questions, ideas under construction, and things
+                I am still trying to understand.
+              </p>
 
-          <article class="series-card">
+              <span class="series-action">
+                Explore series →
+              </span>
 
-            <div class="series-number">
-              Series 02
-            </div>
+            </article>
 
-            <h3>
-              Love &amp; Lord
-            </h3>
-
-            <div class="series-kicker">
-              Questions of meaning.
-            </div>
-
-            <p>
-              Reflections on faith, love, morality, relationships,
-              suffering, values, purpose, belief, and the parts of
-              human life that are difficult to reduce to data alone.
-            </p>
-
-          </article>
+          </a>
 
 
-          <article class="series-card">
+          <!-- LOVE & LORD -->
 
-            <div class="series-number">
-              Series 03
-            </div>
+          <a
+            class="series-link"
+            href="/series/love-and-lord.html"
+            aria-label="Explore the Love and Lord series"
+          >
 
-            <h3>
-              Loud &amp; Load
-            </h3>
+            <article class="series-card">
 
-            <div class="series-kicker">
-              What we hear. What we carry.
-            </div>
+              <div class="series-number">
+                Series 02
+              </div>
 
-            <p>
-              Thoughts on work, pressure, ambition, culture,
-              organizations, hierarchy, social expectations,
-              collective noise, and the burdens people and
-              communities learn to carry.
-            </p>
+              <h3>
+                Love &amp; Lord
+              </h3>
 
-          </article>
+              <div class="series-kicker">
+                Questions of meaning.
+              </div>
+
+              <p>
+                Reflections on faith, love, morality, relationships,
+                suffering, values, purpose, belief, and the parts of
+                human life that are difficult to reduce to data alone.
+              </p>
+
+              <span class="series-action">
+                Explore series →
+              </span>
+
+            </article>
+
+          </a>
+
+
+          <!-- LOUD & LOAD -->
+
+          <a
+            class="series-link"
+            href="/series/loud-and-load.html"
+            aria-label="Explore the Loud and Load series"
+          >
+
+            <article class="series-card">
+
+              <div class="series-number">
+                Series 03
+              </div>
+
+              <h3>
+                Loud &amp; Load
+              </h3>
+
+              <div class="series-kicker">
+                What we hear. What we carry.
+              </div>
+
+              <p>
+                Thoughts on work, pressure, ambition, culture,
+                organizations, hierarchy, social expectations,
+                collective noise, and the burdens people and
+                communities learn to carry.
+              </p>
+
+              <span class="series-action">
+                Explore series →
+              </span>
+
+            </article>
+
+          </a>
 
         </div>
 
@@ -714,7 +797,7 @@
     </section>
 
 
-    <!-- HOW TO READ -->
+    <!-- READING GUIDE -->
 
     <section>
 
