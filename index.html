@@ -8,7 +8,7 @@
 
   <meta
     name="description"
-    content="Lab & Lore by Neri explores character, creativity, and community through behavioral science, technology, reflection, experimentation, and lived experience."
+    content="Lab & Lore by Neri explores Character, Creativity, and Community through behavioral science, technology, experimentation, reflection, and lived experience."
   >
 
   <meta name="theme-color" content="#173F5F">
@@ -18,13 +18,22 @@
     href="https://labandlorebyneri.github.io/"
   >
 
-  <meta property="og:title" content="Lab &amp; Lore by Neri">
+  <meta
+    property="og:title"
+    content="Lab &amp; Lore by Neri"
+  >
+
   <meta
     property="og:description"
-    content="Exploring character, creativity, and community through behavioral science, technology, reflection, and experimentation."
+    content="Neri C explores Character, Creativity, and Community through behavioral science, technology, experimentation, and reflection."
   >
+
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://labandlorebyneri.github.io/">
+
+  <meta
+    property="og:url"
+    content="https://labandlorebyneri.github.io/"
+  >
 
   <style>
     :root {
@@ -90,6 +99,7 @@
     .brand-by {
       color: var(--maroon);
       font-size: 15px;
+      font-weight: 400;
     }
 
     .nav-links {
@@ -167,13 +177,13 @@
     }
 
     .hero-positioning {
-      max-width: 780px;
+      max-width: 790px;
       margin: 34px 0 0;
       padding-left: 22px;
       border-left: 3px solid var(--maroon);
       color: var(--blue);
       font-size: 19px;
-      line-height: 1.7;
+      line-height: 1.72;
     }
 
     section {
@@ -182,7 +192,7 @@
     }
 
     .section-title {
-      margin-bottom: 36px;
+      margin-bottom: 30px;
       color: var(--maroon);
       font-family: Arial, Helvetica, sans-serif;
       font-size: 12px;
@@ -192,20 +202,20 @@
     }
 
     .section-heading {
-      max-width: 760px;
+      max-width: 780px;
       margin: 0 0 20px;
       color: var(--blue);
       font-size: clamp(30px, 4vw, 44px);
       font-weight: 400;
-      line-height: 1.15;
+      line-height: 1.16;
     }
 
     .section-intro {
-      max-width: 760px;
+      max-width: 780px;
       margin: 0 0 42px;
       color: var(--body-text);
       font-size: 18px;
-      line-height: 1.75;
+      line-height: 1.78;
     }
 
     .pillars-grid {
@@ -215,7 +225,6 @@
     }
 
     .pillar {
-      min-height: 330px;
       padding: 30px;
       border: 1px solid var(--border);
       border-top: 4px solid var(--blue);
@@ -223,7 +232,7 @@
     }
 
     .pillar-number {
-      margin-bottom: 34px;
+      margin-bottom: 30px;
       color: var(--maroon);
       font-family: Arial, Helvetica, sans-serif;
       font-size: 11px;
@@ -271,14 +280,14 @@
       margin: 0 0 22px;
       color: var(--body-text);
       font-size: 18px;
-      line-height: 1.8;
+      line-height: 1.82;
     }
 
     .manifesto-closing {
       margin-top: 34px !important;
       color: var(--maroon) !important;
       font-size: 21px !important;
-      line-height: 1.6 !important;
+      line-height: 1.65 !important;
     }
 
     .post {
@@ -316,19 +325,6 @@
       color: var(--body-text);
       font-size: 18px;
       line-height: 1.75;
-    }
-
-    .text-link {
-      color: var(--maroon);
-      font-family: Arial, Helvetica, sans-serif;
-      font-size: 14px;
-      text-decoration: underline;
-      text-underline-offset: 4px;
-    }
-
-    .text-link:hover,
-    .text-link:focus {
-      color: var(--blue);
     }
 
     .engagement-grid {
@@ -369,13 +365,13 @@
     }
 
     .about-strip {
-      max-width: 760px;
+      max-width: 780px;
     }
 
     .about-strip h2 {
       margin: 0 0 18px;
       color: var(--blue);
-      font-size: clamp(28px, 3.5vw, 36px);
+      font-size: clamp(28px, 3.5vw, 38px);
       font-weight: 400;
     }
 
@@ -383,15 +379,19 @@
       margin: 0 0 18px;
       color: var(--body-text);
       font-size: 18px;
-      line-height: 1.75;
+      line-height: 1.78;
+    }
+
+    .signature-line {
+      color: var(--maroon) !important;
+      font-size: 20px !important;
     }
 
     .closing-section {
-      text-align: left;
+      max-width: 760px;
     }
 
     .closing-section h2 {
-      max-width: 760px;
       margin: 0 0 18px;
       color: var(--blue);
       font-size: clamp(30px, 4vw, 42px);
@@ -399,11 +399,28 @@
     }
 
     .closing-section p {
-      max-width: 680px;
       margin: 0 0 20px;
       color: var(--body-text);
       font-size: 18px;
       line-height: 1.75;
+    }
+
+    .text-link {
+      color: var(--maroon);
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 14px;
+      text-decoration: underline;
+      text-underline-offset: 4px;
+    }
+
+    .text-link:hover,
+    .text-link:focus {
+      color: var(--blue);
+    }
+
+    .link-divider {
+      margin: 0 10px;
+      color: var(--border);
     }
 
     footer {
@@ -417,10 +434,6 @@
     @media (max-width: 900px) {
       .pillars-grid {
         grid-template-columns: 1fr;
-      }
-
-      .pillar {
-        min-height: 0;
       }
     }
 
@@ -490,6 +503,12 @@
       .pillar {
         padding: 24px;
       }
+
+      .link-divider {
+        display: block;
+        height: 12px;
+        font-size: 0;
+      }
     }
 
     @media (prefers-reduced-motion: reduce) {
@@ -506,11 +525,15 @@
     "name": "Lab & Lore by Neri",
     "alternateName": "Lab & Lore",
     "url": "https://labandlorebyneri.github.io/",
-    "description": "A personal exploration of character, creativity, and community through behavioral science, technology, reflection, and experimentation.",
+    "description": "A personal exploration of Character, Creativity, and Community through behavioral science, technology, reflection, and experimentation.",
     "author": {
       "@type": "Person",
-      "name": "Neri",
-      "url": "https://labandlorebyneri.github.io/about.html"
+      "name": "Neri Cristobal",
+      "alternateName": "Neri C",
+      "url": "https://labandlorebyneri.github.io/about.html",
+      "sameAs": [
+        "https://www.linkedin.com/in/jacristobal3/"
+      ]
     },
     "about": [
       {
@@ -538,6 +561,7 @@
 
   <header>
     <div class="container">
+
       <nav aria-label="Primary navigation">
 
         <a class="brand" href="/">
@@ -554,6 +578,7 @@
         </div>
 
       </nav>
+
     </div>
   </header>
 
@@ -562,6 +587,7 @@
     <!-- HERO -->
 
     <div class="container">
+
       <div class="hero">
 
         <div class="eyebrow">
@@ -596,12 +622,14 @@
         </p>
 
       </div>
+
     </div>
 
 
     <!-- THREE Cs -->
 
     <section>
+
       <div class="container">
 
         <div class="section-title">
@@ -685,12 +713,14 @@
         </div>
 
       </div>
+
     </section>
 
 
     <!-- PHILOSOPHY -->
 
     <section>
+
       <div class="container">
 
         <div class="manifesto">
@@ -708,8 +738,8 @@
           </p>
 
           <p>
-            The <strong>lab</strong> is where I observe, question, test, examine,
-            challenge, and occasionally change my mind.
+            The <strong>lab</strong> is where I observe, question, test,
+            examine, challenge, and occasionally change my mind.
           </p>
 
           <p>
@@ -725,12 +755,14 @@
         </div>
 
       </div>
+
     </section>
 
 
     <!-- WRITING -->
 
     <section>
+
       <div class="container">
 
         <div class="section-title">
@@ -752,8 +784,8 @@
           </h2>
 
           <p>
-            A note on why Lab &amp; Lore exists, and why creativity
-            and scientific thinking may have more in common than we assume.
+            A note on why Lab &amp; Lore exists, and why creativity and
+            scientific thinking may have more in common than we assume.
           </p>
 
           <a
@@ -766,12 +798,14 @@
         </article>
 
       </div>
+
     </section>
 
 
     <!-- ENGAGEMENT -->
 
     <section>
+
       <div class="container">
 
         <div class="section-title">
@@ -822,12 +856,14 @@
         </div>
 
       </div>
+
     </section>
 
 
     <!-- ABOUT -->
 
     <section>
+
       <div class="container">
 
         <div class="about-strip">
@@ -837,13 +873,17 @@
           </div>
 
           <h2>
-            The person behind Lab &amp; Lore
+            Meet Neri C.
           </h2>
 
+          <p class="signature-line">
+            Professionally curious about why people do what they do.
+          </p>
+
           <p>
-            I am Neri, a creative behavioral scientist interested in how
-            people think, decide, create, organize, communicate, and interact
-            with technology.
+            I am a creative behavioral scientist interested in how people
+            think, decide, create, organize, communicate, and interact with
+            technology, from individual behavior to collective movements.
           </p>
 
           <a class="text-link" href="/about.html">
@@ -853,12 +893,14 @@
         </div>
 
       </div>
+
     </section>
 
 
-    <!-- FINAL CTA -->
+    <!-- CTA -->
 
     <section>
+
       <div class="container">
 
         <div class="closing-section">
@@ -872,15 +914,15 @@
           </h2>
 
           <p>
-            Explore the writing, follow the experiments, or reach out
-            if an idea here gives you something worth discussing.
+            Explore the writing, follow the engagements, or reach out if
+            something here gives you an idea worth discussing.
           </p>
 
           <a class="text-link" href="/blog.html">
             Explore the blog
           </a>
 
-          &nbsp;&nbsp;
+          <span class="link-divider">|</span>
 
           <a class="text-link" href="/say-hello.html">
             Say hello
@@ -889,15 +931,18 @@
         </div>
 
       </div>
+
     </section>
 
   </main>
 
 
   <footer>
+
     <div class="container">
       © 2026 Lab &amp; Lore by Neri
     </div>
+
   </footer>
 
 </body>
