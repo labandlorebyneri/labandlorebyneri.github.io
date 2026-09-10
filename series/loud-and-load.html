@@ -135,6 +135,49 @@
       outline-offset: 4px;
     }
 
+    .series-nav-wrap {
+      border-bottom: 1px solid var(--border);
+      background: var(--surface);
+    }
+
+    .series-nav {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+      padding: 16px 0;
+      overflow-x: auto;
+    }
+
+    .series-nav-label {
+      flex: 0 0 auto;
+      color: var(--muted);
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.11em;
+      text-transform: uppercase;
+    }
+
+    .series-nav a {
+      flex: 0 0 auto;
+      color: var(--blue);
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 13px;
+      font-weight: 600;
+      text-decoration: none;
+      padding: 7px 0;
+    }
+
+    .series-nav a:hover,
+    .series-nav a:focus {
+      color: var(--maroon);
+    }
+
+    .series-nav a[aria-current="page"] {
+      color: var(--maroon);
+      border-bottom: 2px solid var(--maroon);
+    }
+
     .series-header {
       max-width: 900px;
       padding: clamp(72px, 10vw, 116px) 0 clamp(64px, 8vw, 96px);
@@ -211,7 +254,7 @@
 
     .section-intro {
       max-width: 760px;
-      margin: 0 0 42px;
+      margin: 0 0 28px;
       color: var(--body-text);
       font-size: 18px;
       line-height: 1.78;
@@ -262,11 +305,6 @@
       color: var(--blue);
     }
 
-    .link-divider {
-      margin: 0 10px;
-      color: var(--border);
-    }
-
     footer {
       padding: 38px 0;
       border-top: 1px solid var(--border);
@@ -299,6 +337,14 @@
         font-size: 13px;
       }
 
+      .series-nav {
+        gap: 20px;
+      }
+
+      .series-nav-label {
+        display: none;
+      }
+
       .series-header {
         padding: 68px 0 62px;
       }
@@ -328,12 +374,6 @@
 
       section {
         padding: 50px 0;
-      }
-
-      .link-divider {
-        display: block;
-        height: 12px;
-        font-size: 0;
       }
     }
 
@@ -388,9 +428,37 @@
   </header>
 
 
-  <main>
+  <div class="series-nav-wrap">
+    <div class="container">
 
-    <!-- SERIES INTRO -->
+      <nav class="series-nav" aria-label="Blog series navigation">
+
+        <span class="series-nav-label">
+          Series
+        </span>
+
+        <a href="/series/lab-and-lore.html">
+          Lab &amp; Lore
+        </a>
+
+        <a href="/series/love-and-lord.html">
+          Love &amp; Lord
+        </a>
+
+        <a
+          href="/series/loud-and-load.html"
+          aria-current="page"
+        >
+          Loud &amp; Load
+        </a>
+
+      </nav>
+
+    </div>
+  </div>
+
+
+  <main>
 
     <div class="container">
 
@@ -431,8 +499,6 @@
     </div>
 
 
-    <!-- WHAT BELONGS HERE -->
-
     <section>
 
       <div class="container">
@@ -463,8 +529,6 @@
     </section>
 
 
-    <!-- ARTICLES -->
-
     <section>
 
       <div class="container">
@@ -487,8 +551,6 @@
     </section>
 
 
-    <!-- OTHER SERIES -->
-
     <section>
 
       <div class="container">
@@ -496,42 +558,26 @@
         <div class="closing">
 
           <div class="section-title">
-            Other Series
+            Continue Exploring
           </div>
 
           <h2>
-            Different questions require different conversations.
+            Sometimes the loudest thing is not the heaviest thing.
           </h2>
 
           <p>
-            Explore research, experiments, and unfinished questions
-            through Lab &amp; Lore, or reflections on faith, love,
-            morality, suffering, and meaning through Love &amp; Lord.
+            Return to the full blog, explore another series,
+            or learn more about the thinking behind Lab &amp; Lore.
           </p>
 
-          <a
-            class="text-link"
-            href="/series/lab-and-lore.html"
-          >
-            Lab &amp; Lore
-          </a>
-
-          <span class="link-divider">|</span>
-
-          <a
-            class="text-link"
-            href="/series/love-and-lord.html"
-          >
-            Love &amp; Lord
-          </a>
-
-          <span class="link-divider">|</span>
-
-          <a
-            class="text-link"
-            href="/blog.html"
-          >
+          <a class="text-link" href="/blog.html">
             Back to Blog
+          </a>
+
+          &nbsp;&nbsp;
+
+          <a class="text-link" href="/about.html">
+            About Neri C
           </a>
 
         </div>
@@ -544,11 +590,9 @@
 
 
   <footer>
-
     <div class="container">
       © 2026 Lab &amp; Lore by Neri
     </div>
-
   </footer>
 
 </body>
