@@ -4,43 +4,200 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Laban Lore by Neri</title>
+  <title>Lab and Lore</title>
 
   <style>
+    * {
+      box-sizing: border-box;
+    }
+
     body {
-      max-width: 720px;
-      margin: 80px auto;
-      padding: 0 24px;
-      font-family: Georgia, serif;
-      line-height: 1.7;
-      color: #222;
-      background: #fafafa;
+      margin: 0;
+      background: #f7f6f2;
+      color: #1f1f1f;
+      font-family: Georgia, "Times New Roman", serif;
+    }
+
+    .container {
+      width: min(1100px, 90%);
+      margin: 0 auto;
+    }
+
+    header {
+      padding: 28px 0;
+      border-bottom: 1px solid #d8d5cd;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 30px;
+    }
+
+    .brand {
+      font-size: 22px;
+      font-weight: bold;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      text-decoration: none;
+      color: #1f1f1f;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 24px;
+      flex-wrap: wrap;
+    }
+
+    .nav-links a {
+      color: #444;
+      text-decoration: none;
+      font-family: Arial, sans-serif;
+      font-size: 14px;
+    }
+
+    .nav-links a:hover {
+      text-decoration: underline;
+    }
+
+    .hero {
+      padding: 110px 0 95px;
+      max-width: 850px;
+    }
+
+    .eyebrow {
+      font-family: Arial, sans-serif;
+      text-transform: uppercase;
+      letter-spacing: 0.14em;
+      font-size: 12px;
+      color: #777;
+      margin-bottom: 18px;
     }
 
     h1 {
-      font-size: 48px;
-      margin-bottom: 10px;
+      font-size: clamp(48px, 8vw, 92px);
+      line-height: 0.95;
+      margin: 0 0 28px;
+      font-weight: normal;
     }
 
-    .intro {
-      font-size: 20px;
+    .hero p {
+      max-width: 650px;
+      font-size: 22px;
+      line-height: 1.6;
+      color: #4f4f4f;
+    }
+
+    section {
+      padding: 70px 0;
+      border-top: 1px solid #d8d5cd;
+    }
+
+    .section-title {
+      font-family: Arial, sans-serif;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      font-size: 13px;
+      margin-bottom: 40px;
+      color: #666;
+    }
+
+    .post {
+      max-width: 760px;
+      margin-bottom: 42px;
+    }
+
+    .post-date {
+      font-family: Arial, sans-serif;
+      font-size: 13px;
+      color: #888;
+      margin-bottom: 8px;
+    }
+
+    .post h2 {
+      margin: 0 0 12px;
+      font-size: 34px;
+      font-weight: normal;
+    }
+
+    .post h2 a {
+      color: #1f1f1f;
+      text-decoration: none;
+    }
+
+    .post h2 a:hover {
+      text-decoration: underline;
+    }
+
+    .post p {
+      margin: 0 0 12px;
+      font-size: 18px;
+      line-height: 1.7;
       color: #555;
-      margin-bottom: 50px;
     }
 
-    article {
-      margin-top: 40px;
-    }
-
-    .date {
+    .read-link {
+      font-family: Arial, sans-serif;
       font-size: 14px;
+      color: #1f1f1f;
+      text-decoration: underline;
+    }
+
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 28px;
+    }
+
+    .project {
+      padding: 30px;
+      border: 1px solid #d8d5cd;
+      background: #fbfaf7;
+    }
+
+    .project h3 {
+      font-size: 25px;
+      margin: 0 0 12px;
+      font-weight: normal;
+    }
+
+    .project p {
+      margin: 0;
+      color: #555;
+      line-height: 1.6;
+      font-size: 16px;
+    }
+
+    footer {
+      padding: 40px 0;
+      border-top: 1px solid #d8d5cd;
+      font-family: Arial, sans-serif;
+      font-size: 13px;
       color: #777;
     }
 
-    hr {
-      border: 0;
-      border-top: 1px solid #ddd;
-      margin: 50px 0;
+    @media (max-width: 700px) {
+      nav {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+
+      .hero {
+        padding: 75px 0 65px;
+      }
+
+      .hero p {
+        font-size: 19px;
+      }
+
+      .projects-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .post h2 {
+        font-size: 28px;
+      }
     }
   </style>
 </head>
@@ -48,34 +205,95 @@
 <body>
 
   <header>
-    <h1>Laban Lore</h1>
+    <div class="container">
+      <nav>
+        <a class="brand" href="/">Lab and Lore</a>
 
-    <p class="intro">
-      Thoughts, notes, reflections, and things I am still figuring out.
-    </p>
+        <div class="nav-links">
+          <a href="/">Home</a>
+          <a href="/about.html">About</a>
+          <a href="/blog.html">Blog</a>
+          <a href="/projects.html">Projects</a>
+          <a href="/connect.html">Connect</a>
+        </div>
+      </nav>
+    </div>
   </header>
 
-  <hr>
+  <main>
 
-  <article>
-    <p class="date">September 10, 2026</p>
+    <div class="container">
+      <div class="hero">
+        <div class="eyebrow">A personal space</div>
 
-    <h2>Why I Created This Space</h2>
+        <h1>Lab and Lore</h1>
 
-    <p>
-      I wanted a place to collect thoughts that do not necessarily belong
-      anywhere else.
-    </p>
+        <p>
+          A place for experiments, ideas, projects, reflections,
+          and things I am still figuring out.
+        </p>
+      </div>
+    </div>
 
-    <p>
-      Some may be about creativity, behavior, work, ideas, or ordinary things
-      that made me stop and think.
-    </p>
+    <section>
+      <div class="container">
 
-    <p>
-      This is a place to keep them.
-    </p>
-  </article>
+        <div class="section-title">Latest Writing</div>
+
+        <article class="post">
+          <div class="post-date">September 10, 2026</div>
+
+          <h2>
+            <a href="#">
+              Why I Created This Space
+            </a>
+          </h2>
+
+          <p>
+            I wanted a place to collect thoughts that do not necessarily
+            belong anywhere else.
+          </p>
+
+          <a class="read-link" href="#">Read post</a>
+        </article>
+
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+
+        <div class="section-title">Selected Projects</div>
+
+        <div class="projects-grid">
+
+          <div class="project">
+            <h3>Project One</h3>
+            <p>
+              A short description of something I am building,
+              testing, researching, or exploring.
+            </p>
+          </div>
+
+          <div class="project">
+            <h3>Project Two</h3>
+            <p>
+              Another experiment, idea, or piece of work worth documenting.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container">
+      © 2026 Lab and Lore
+    </div>
+  </footer>
 
 </body>
 </html>
