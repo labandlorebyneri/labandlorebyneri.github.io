@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Why I Created This Space | Lab &amp; Lore by Neri</title>
+
+  <meta
+    name="description"
+    content="Neri C explains why Lab & Lore exists, why creativity and scientific thinking belong together, and how Character, Creativity, and Community shape the questions explored here."
+  >
+
+  <meta name="theme-color" content="#173F5F">
+
+  <link
+    rel="canonical"
+    href="https://labandlorebyneri.github.io/posts/why-i-created-this-space.html"
+  >
+
+  <meta
+    property="og:title"
+    content="Why I Created This Space | Lab &amp; Lore by Neri"
+  >
+
+  <meta
+    property="og:description"
+    content="Why Lab & Lore exists, why creativity belongs in science, and how Character, Creativity, and Community became the framework behind the site."
+  >
+
+  <meta property="og:type" content="article">
+
+  <meta
+    property="og:url"
+    content="https://labandlorebyneri.github.io/posts/why-i-created-this-space.html"
+  >
+
+  <style>
+    :root {
+      --blue: #173F5F;
+      --maroon: #7A2432;
+      --background: #F7F4EE;
+      --surface: #FCFAF6;
+      --text: #222222;
+      --body-text: #4D4945;
+      --muted: #6A6560;
+      --border: #DDD6CC;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      background: var(--background);
+      color: var(--text);
+      font-family: Georgia, Cambria, "Times New Roman", serif;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .container {
+      width: min(1100px, calc(100% - 48px));
+      margin: 0 auto;
+    }
+
+    header {
+      padding: 24px 0;
+      border-bottom: 1px solid var(--border);
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 32px;
+    }
+
+    .brand {
+      display: inline-flex;
+      align-items: baseline;
+      gap: 6px;
+      color: var(--blue);
+      text-decoration: none;
+      white-space: nowrap;
+    }
+
+    .brand-main {
+      font-size: 22px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .brand-by {
+      color: var(--maroon);
+      font-size: 15px;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      flex-wrap: wrap;
+    }
+
+    .nav-links a {
+      padding: 8px 0;
+      color: var(--blue);
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 14px;
+      text-decoration: none;
+    }
+
+    .nav-links a:hover,
+    .nav-links a:focus {
+      color: var(--maroon);
+      text-decoration: underline;
+      text-underline-offset: 6px;
+    }
+
+    .nav-links a[aria-current="page"] {
+      color: var(--maroon);
+      text-decoration: underline;
+      text-decoration-thickness: 2px;
+      text-underline-offset: 6px;
+    }
+
+    a:focus-visible {
+      outline: 2px solid var(--maroon);
+      outline-offset: 4px;
+    }
+
+    .article-header {
+      max-width: 900px;
+      padding: clamp(72px, 10vw, 116px) 0 60px;
+    }
+
+    .eyebrow {
+      margin-bottom: 22px;
+      color: var(--maroon);
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      max-width: 860px;
+      margin: 0 0 28px;
+      color: var(--blue);
+      font-size: clamp(42px, 7vw, 78px);
+      font-weight: 400;
+      letter-spacing: -0.025em;
+      line-height: 1.04;
+    }
+
+    .dek {
+      max-width: 780px;
+      margin: 0 0 28px;
+      color: var(--body-text);
+      font-size: clamp(19px, 2vw, 22px);
+      line-height: 1.72;
+    }
+
+    .article-meta {
+      display: flex;
+      gap: 12px 22px;
+      flex-wrap: wrap;
+      color: var(--muted);
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 13px;
+    }
+
+    .article-meta a {
+      color: var(--maroon);
+      text-decoration: none;
+    }
+
+    .article-meta a:hover {
+      text-decoration: underline;
+      text-underline-offset: 4px;
+    }
+
+    .article-body-wrap {
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .article-body {
+      max-width: 760px;
+      padding: 64px 0 72px;
+    }
+
+    .article-body p {
+      margin: 0 0 26px;
+      color: var(--body-text);
+      font-size: 19px;
+      line-height: 1.88;
+    }
+
+    .article-body h2 {
+      margin: 58px 0 22px;
+      color: var(--blue);
+      font-size: clamp(28px, 4vw, 40px);
+      font-weight: 400;
+      line-height: 1.22;
+    }
+
+    .article-body strong {
+      color: var(--blue);
+    }
+
+    .pull-quote {
+      margin: 44px 0;
+      padding-left: 24px;
+      border-left: 3px solid var(--maroon);
+      color: var(--blue);
+      font-size: 24px;
+      line-height: 1.55;
+    }
+
+    .article-footer {
+      max-width: 760px;
+      padding: 54px 0 64px;
+    }
+
+    .article-footer-label {
+      margin-bottom: 16px;
+      color: var(--maroon);
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+
+    .article-footer h2 {
+      margin: 0 0 18px;
+      color: var(--blue);
+      font-size: clamp(28px, 4vw, 38px);
+      font-weight: 400;
+    }
+
+    .article-footer p {
+      margin: 0 0 20px;
+      color: var(--body-text);
+      font-size: 17px;
+      line-height: 1.75;
+    }
+
+    .text-link {
+      color: var(--maroon);
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 14px;
+      text-decoration: underline;
+      text-underline-offset: 4px;
+    }
+
+    .text-link:hover,
+    .text-link:focus {
+      color: var(--blue);
+    }
+
+    footer {
+      padding: 38px 0;
+      border-top: 1px solid var(--border);
+      color: var(--muted);
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 13px;
+    }
+
+    @media (max-width: 700px) {
+      .container {
+        width: min(100% - 32px, 1100px);
+      }
+
+      header {
+        padding: 20px 0;
+      }
+
+      nav {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+      }
+
+      .nav-links {
+        width: 100%;
+        gap: 8px 16px;
+      }
+
+      .nav-links a {
+        font-size: 13px;
+      }
+
+      .article-header {
+        padding: 68px 0 52px;
+      }
+
+      .article-body {
+        padding: 52px 0 60px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .brand-main {
+        font-size: 19px;
+      }
+
+      .brand-by {
+        font-size: 14px;
+      }
+
+      h1 {
+        font-size: 42px;
+      }
+
+      .dek {
+        font-size: 18px;
+      }
+
+      .article-body p {
+        font-size: 18px;
+      }
+
+      .pull-quote {
+        padding-left: 18px;
+        font-size: 21px;
+      }
+    }
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "Why I Created This Space",
+    "description": "Why Lab & Lore exists, why creativity belongs in science, and how Character, Creativity, and Community became the framework behind the site.",
+    "datePublished": "2026-09-10",
+    "dateModified": "2026-09-10",
+    "mainEntityOfPage": "https://labandlorebyneri.github.io/posts/why-i-created-this-space.html",
+    "author": {
+      "@type": "Person",
+      "name": "Neri Cristobal",
+      "alternateName": "Neri C",
+      "url": "https://labandlorebyneri.github.io/about.html"
+    },
+    "publisher": {
+      "@type": "Person",
+      "name": "Neri Cristobal"
+    },
+    "articleSection": "Lab & Lore",
+    "keywords": [
+      "Creativity",
+      "Behavioral Science",
+      "Character",
+      "Community",
+      "Artificial Intelligence"
+    ]
+  }
+  </script>
+
+</head>
+
+<body>
+
+  <header>
+    <div class="container">
+
+      <nav aria-label="Primary navigation">
+
+        <a class="brand" href="/">
+          <span class="brand-main">Lab &amp; Lore</span>
+          <span class="brand-by">by Neri</span>
+        </a>
+
+        <div class="nav-links">
+          <a href="/">Home</a>
+          <a href="/about.html">About</a>
+          <a href="/blog.html" aria-current="page">Blog</a>
+          <a href="/engagement.html">Engagement</a>
+          <a href="/say-hello.html">Say Hello</a>
+        </div>
+
+      </nav>
+
+    </div>
+  </header>
+
+
+  <main>
+
+    <article>
+
+      <div class="container">
+
+        <header class="article-header">
+
+          <div class="eyebrow">
+            Lab &amp; Lore · Creativity
+          </div>
+
+          <h1>
+            Why I Created This Space
+          </h1>
+
+          <p class="dek">
+            A note on why I resist treating creativity and scientific thinking
+            as opposites, and why I wanted somewhere to examine what happens
+            when they meet.
+          </p>
+
+          <div class="article-meta">
+
+            <span>
+              By
+              <a href="/about.html">Neri C</a>
+            </span>
+
+            <time datetime="2026-09-10">
+              September 10, 2026
+            </time>
+
+            <span>
+              Series:
+              <a href="/series/lab-and-lore.html">Lab &amp; Lore</a>
+            </span>
+
+            <span>
+              Lens: Creativity
+            </span>
+
+          </div>
+
+        </header>
+
+      </div>
+
+
+      <div class="article-body-wrap">
+
+        <div class="container">
+
+          <div class="article-body">
+
+            <p>
+              It is often assumed that creativity and science live on opposite
+              ends of a spectrum. One is imagined as intuitive, expressive,
+              and unpredictable. The other is treated as logical, measured,
+              and disciplined.
+            </p>
+
+            <p>
+              I have never found that distinction particularly convincing.
+            </p>
+
+            <p>
+              Some of the most enduring creative work has depended on structure,
+              proportion, geometry, observation, technique, and measurement.
+              At the same time, good science requires more than following rules.
+              It requires someone to notice a problem, imagine an alternative
+              explanation, ask a question that has not been asked in quite the
+              same way, and design a way to investigate it.
+            </p>
+
+            <p>
+              Even artificial intelligence makes this tension interesting.
+              What can appear creative on the surface emerges from computation,
+              rules, data, probability, and engineered systems.
+            </p>
+
+            <div class="pull-quote">
+              Creativity does not have to compete with rigor.
+              It can be one of the things that makes rigor useful.
+            </div>
+
+            <h2>
+              The questions I keep returning to
+            </h2>
+
+            <p>
+              I am interested in how people think, decide, create, organize,
+              communicate, and interact with technology.
+            </p>
+
+            <p>
+              Sometimes the unit of interest is one person. Sometimes it is
+              a group, an organization, a society, or a movement.
+            </p>
+
+            <p>
+              The scale changes, but many of the questions remain connected.
+              What shapes a person's values? Why do groups normalize certain
+              behaviors? Why do organizations repeat solutions that no longer
+              work? Why do some ideas spread while others disappear? How does
+              technology change not only what people can do, but what they
+              expect from themselves and from one another?
+            </p>
+
+            <p>
+              Those questions eventually gave me three broad lenses through
+              which to organize the things I want to explore.
+            </p>
+
+            <h2>
+              Character. Creativity. Community.
+            </h2>
+
+            <p>
+              <strong>Character</strong> is the individual. It is the psyche,
+              identity, values, interests, attitudes, morality, pain,
+              suffering, decisions, and experiences that shape who a person
+              becomes.
+            </p>
+
+            <p>
+              <strong>Creativity</strong> is the response. It is how people
+              generate alternatives, solve problems, communicate, experiment,
+              adapt, market ideas, and respond when the familiar answer is
+              no longer enough.
+            </p>
+
+            <p>
+              <strong>Community</strong> is the collective. It is what happens
+              when individual behavior enters groups, organizations,
+              institutions, hierarchies, economies, societies, and movements.
+            </p>
+
+            <p>
+              I do not think these three exist independently. Character
+              influences creativity. Creativity can reshape community.
+              Community, in turn, influences the character of the people
+              who live inside it.
+            </p>
+
+            <h2>
+              Why a lab?
+            </h2>
+
+            <p>
+              A lab is not interesting because it already has the answer.
+              It is interesting because it gives questions somewhere to be
+              examined.
+            </p>
+
+            <p>
+              For me, the lab represents observation, questioning,
+              experimentation, research, comparison, revision, and the
+              willingness to discover that an assumption was wrong.
+            </p>
+
+            <p>
+              Not everything I write here will be a finished argument.
+              Some ideas will be observations. Some will be working theories.
+              Some may change after I learn more.
+            </p>
+
+            <p>
+              That is intentional.
+            </p>
+
+            <h2>
+              And why lore?
+            </h2>
+
+            <p>
+              Lore is what survives experience.
+            </p>
+
+            <p>
+              It can be knowledge, story, interpretation, warning, memory,
+              contradiction, or something a generation decides is worth
+              carrying into the next.
+            </p>
+
+            <p>
+              The problem with lore is that it can become detached from the
+              questions that produced it. We inherit conclusions without
+              always inheriting the investigation.
+            </p>
+
+            <p>
+              I want this space to preserve both.
+            </p>
+
+            <div class="pull-quote">
+              The lab investigates. The lore remembers.
+            </div>
+
+            <p>
+              Lab &amp; Lore is therefore less a collection of answers than
+              a record of inquiry.
+            </p>
+
+            <p>
+              I want to use it to test ideas, document observations, think
+              through problems, challenge my own assumptions, and preserve
+              what seems worth remembering.
+            </p>
+
+            <p>
+              What is understood in the lab becomes lore for another
+              generation to encounter, question, challenge, and build upon.
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <div class="container">
+
+        <div class="article-footer">
+
+          <div class="article-footer-label">
+            Continue Exploring
+          </div>
+
+          <h2>
+            This is only the first question.
+          </h2>
+
+          <p>
+            Explore more writing in the Lab &amp; Lore series or return to
+            the full collection of essays across Character, Creativity,
+            and Community.
+          </p>
+
+          <a
+            class="text-link"
+            href="/series/lab-and-lore.html"
+          >
+            Explore Lab &amp; Lore
+          </a>
+
+          &nbsp;&nbsp;
+
+          <a
+            class="text-link"
+            href="/blog.html"
+          >
+            Back to Blog
+          </a>
+
+        </div>
+
+      </div>
+
+    </article>
+
+  </main>
+
+
+  <footer>
+
+    <div class="container">
+      © 2026 Lab &amp; Lore by Neri
+    </div>
+
+  </footer>
+
+</body>
+</html>
