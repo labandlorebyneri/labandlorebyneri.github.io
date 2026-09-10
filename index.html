@@ -4,11 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Lab &amp; Lore | Creativity, Behavioral Science &amp; AI</title>
+  <title>Lab &amp; Lore by Neri | Creativity, Behavioral Science &amp; AI</title>
 
   <meta
     name="description"
-    content="Lab & Lore is Neri's personal space for exploring creativity, behavioral science, artificial intelligence, experiments, reflections, and ideas."
+    content="Lab & Lore by Neri is a personal space for exploring creativity, behavioral science, artificial intelligence, experiments, reflections, and ideas."
   >
 
   <link
@@ -16,7 +16,7 @@
     href="https://labandlorebyneri.github.io/"
   >
 
-  <meta property="og:title" content="Lab &amp; Lore">
+  <meta property="og:title" content="Lab &amp; Lore by Neri">
   <meta
     property="og:description"
     content="A personal exploration of creativity, behavioral science, artificial intelligence, experiments, and ideas."
@@ -58,12 +58,23 @@
     }
 
     .brand {
+      display: inline-flex;
+      align-items: baseline;
+      gap: 6px;
       font-size: 22px;
       font-weight: bold;
       letter-spacing: 0.08em;
       text-transform: uppercase;
       text-decoration: none;
       color: #1f1f1f;
+    }
+
+    .brand-by {
+      font-size: 15px;
+      font-weight: normal;
+      letter-spacing: 0;
+      text-transform: none;
+      color: #666;
     }
 
     .nav-links {
@@ -261,6 +272,10 @@
         gap: 16px;
       }
 
+      .brand {
+        flex-wrap: wrap;
+      }
+
       .hero {
         padding: 75px 0 70px;
       }
@@ -288,7 +303,8 @@
   {
     "@context": "https://schema.org",
     "@type": "WebSite",
-    "name": "Lab & Lore",
+    "name": "Lab & Lore by Neri",
+    "alternateName": "Lab & Lore",
     "url": "https://labandlorebyneri.github.io/",
     "description": "A personal space exploring creativity, behavioral science, artificial intelligence, experiments, reflections, and ideas.",
     "author": {
@@ -307,7 +323,10 @@
     <div class="container">
       <nav>
 
-        <a class="brand" href="/">Lab &amp; Lore</a>
+        <a class="brand" href="/">
+          Lab &amp; Lore
+          <span class="brand-by">by Neri</span>
+        </a>
 
         <div class="nav-links">
           <a href="/">Home</a>
@@ -348,7 +367,7 @@
         </p>
 
         <p class="hero-closing">
-          Lab &amp; Lore is my personal space for exploring that intersection.
+          Lab &amp; Lore by Neri is my personal space for exploring that intersection.
           Here, I test ideas, examine behavior, document experiments, and reflect on
           what happens when creativity and scientific thinking work together.
         </p>
@@ -468,7 +487,7 @@
 
   <footer>
     <div class="container">
-      © 2026 Lab &amp; Lore
+      © 2026 Lab &amp; Lore by Neri
     </div>
   </footer>
 
