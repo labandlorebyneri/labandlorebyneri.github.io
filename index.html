@@ -4,11 +4,33 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Lab &amp; Lore</title>
+  <title>Lab &amp; Lore | Creativity, Behavioral Science &amp; AI</title>
+
+  <meta
+    name="description"
+    content="Lab & Lore is Neri's personal space for exploring creativity, behavioral science, artificial intelligence, experiments, reflections, and ideas."
+  >
+
+  <link
+    rel="canonical"
+    href="https://labandlorebyneri.github.io/"
+  >
+
+  <meta property="og:title" content="Lab &amp; Lore">
+  <meta
+    property="og:description"
+    content="A personal exploration of creativity, behavioral science, artificial intelligence, experiments, and ideas."
+  >
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://labandlorebyneri.github.io/">
 
   <style>
     * {
       box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
     }
 
     body {
@@ -57,36 +79,54 @@
       font-size: 14px;
     }
 
-    .nav-links a:hover {
+    .nav-links a:hover,
+    .nav-links a:focus {
       text-decoration: underline;
     }
 
     .hero {
-      padding: 110px 0 95px;
-      max-width: 850px;
+      padding: 115px 0 105px;
+      max-width: 940px;
     }
 
     .eyebrow {
       font-family: Arial, sans-serif;
       text-transform: uppercase;
-      letter-spacing: 0.14em;
+      letter-spacing: 0.15em;
       font-size: 12px;
-      color: #777;
-      margin-bottom: 18px;
+      color: #666;
+      margin-bottom: 24px;
     }
 
     h1 {
-      font-size: clamp(48px, 8vw, 92px);
-      line-height: 0.95;
-      margin: 0 0 28px;
+      max-width: 900px;
+      font-size: clamp(50px, 7vw, 88px);
+      line-height: 1;
+      margin: 0 0 38px;
       font-weight: normal;
+      letter-spacing: -0.025em;
     }
 
-    .hero p {
-      max-width: 650px;
+    .hero-intro {
+      max-width: 790px;
       font-size: 22px;
-      line-height: 1.6;
-      color: #4f4f4f;
+      line-height: 1.7;
+      color: #474747;
+      margin: 0 0 24px;
+    }
+
+    .hero-intro strong {
+      color: #1f1f1f;
+      font-weight: normal;
+      font-style: italic;
+    }
+
+    .hero-closing {
+      max-width: 700px;
+      font-size: 18px;
+      line-height: 1.75;
+      color: #666;
+      margin: 0;
     }
 
     section {
@@ -126,12 +166,13 @@
       text-decoration: none;
     }
 
-    .post h2 a:hover {
+    .post h2 a:hover,
+    .post h2 a:focus {
       text-decoration: underline;
     }
 
     .post p {
-      margin: 0 0 12px;
+      margin: 0 0 14px;
       font-size: 18px;
       line-height: 1.7;
       color: #555;
@@ -151,9 +192,18 @@
     }
 
     .engagement-card {
-      padding: 30px;
+      padding: 32px;
       border: 1px solid #d8d5cd;
       background: #fbfaf7;
+    }
+
+    .engagement-type {
+      font-family: Arial, sans-serif;
+      text-transform: uppercase;
+      letter-spacing: 0.11em;
+      font-size: 11px;
+      color: #888;
+      margin-bottom: 15px;
     }
 
     .engagement-card h3 {
@@ -165,8 +215,32 @@
     .engagement-card p {
       margin: 0;
       color: #555;
-      line-height: 1.6;
+      line-height: 1.7;
       font-size: 16px;
+    }
+
+    .about-strip {
+      max-width: 760px;
+    }
+
+    .about-strip h2 {
+      font-size: 34px;
+      font-weight: normal;
+      margin: 0 0 18px;
+    }
+
+    .about-strip p {
+      font-size: 18px;
+      line-height: 1.75;
+      color: #555;
+      margin: 0 0 18px;
+    }
+
+    .about-link {
+      font-family: Arial, sans-serif;
+      color: #1f1f1f;
+      font-size: 14px;
+      text-decoration: underline;
     }
 
     footer {
@@ -183,23 +257,48 @@
         flex-direction: column;
       }
 
-      .hero {
-        padding: 75px 0 65px;
+      .nav-links {
+        gap: 16px;
       }
 
-      .hero p {
+      .hero {
+        padding: 75px 0 70px;
+      }
+
+      .hero-intro {
         font-size: 19px;
+      }
+
+      .hero-closing {
+        font-size: 17px;
       }
 
       .engagement-grid {
         grid-template-columns: 1fr;
       }
 
-      .post h2 {
+      .post h2,
+      .about-strip h2 {
         font-size: 28px;
       }
     }
   </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Lab & Lore",
+    "url": "https://labandlorebyneri.github.io/",
+    "description": "A personal space exploring creativity, behavioral science, artificial intelligence, experiments, reflections, and ideas.",
+    "author": {
+      "@type": "Person",
+      "name": "Neri",
+      "url": "https://labandlorebyneri.github.io/about.html"
+    }
+  }
+  </script>
+
 </head>
 
 <body>
@@ -207,6 +306,7 @@
   <header>
     <div class="container">
       <nav>
+
         <a class="brand" href="/">Lab &amp; Lore</a>
 
         <div class="nav-links">
@@ -216,6 +316,7 @@
           <a href="/engagement.html">Engagement</a>
           <a href="/say-hello.html">Say Hello</a>
         </div>
+
       </nav>
     </div>
   </header>
@@ -224,24 +325,49 @@
 
     <div class="container">
       <div class="hero">
-        <div class="eyebrow">A personal space</div>
 
-        <h1>Lab &amp; Lore</h1>
+        <div class="eyebrow">
+          Creativity × Behavioral Science
+        </div>
 
-        <p>
-          A place for experiments, ideas, reflections,
-          engagements, and things I am still figuring out.
+        <h1>
+          Creativity belongs in science.
+        </h1>
+
+        <p class="hero-intro">
+          It is often assumed that creativity and science sit at opposite poles.
+          As a <strong>creative behavioral scientist</strong>, I reject that distinction.
+          I see creativity as an input to breakthrough science.
         </p>
+
+        <p class="hero-intro">
+          Great painters relied on geometry, proportion, perspective, and measurement
+          to create enduring masterpieces. At the same time, artificial intelligence,
+          one of today's most consequential creative technologies, emerges from rules,
+          logic, data, and computation.
+        </p>
+
+        <p class="hero-closing">
+          Lab &amp; Lore is my personal space for exploring that intersection.
+          Here, I test ideas, examine behavior, document experiments, and reflect on
+          what happens when creativity and scientific thinking work together.
+        </p>
+
       </div>
     </div>
 
     <section>
       <div class="container">
 
-        <div class="section-title">Latest Writing</div>
+        <div class="section-title">
+          Latest Writing
+        </div>
 
         <article class="post">
-          <div class="post-date">September 10, 2026</div>
+
+          <div class="post-date">
+            September 10, 2026
+          </div>
 
           <h2>
             <a href="/posts/why-i-created-this-space.html">
@@ -250,13 +376,17 @@
           </h2>
 
           <p>
-            I wanted a place to collect thoughts that do not necessarily
-            belong anywhere else.
+            A note on why Lab &amp; Lore exists, and why I believe creativity
+            and scientific thinking have more in common than we often assume.
           </p>
 
-          <a class="read-link" href="/posts/why-i-created-this-space.html">
+          <a
+            class="read-link"
+            href="/posts/why-i-created-this-space.html"
+          >
             Read post
           </a>
+
         </article>
 
       </div>
@@ -265,25 +395,69 @@
     <section>
       <div class="container">
 
-        <div class="section-title">Selected Engagements</div>
+        <div class="section-title">
+          Selected Engagements
+        </div>
 
         <div class="engagement-grid">
 
-          <div class="engagement-card">
+          <article class="engagement-card">
+
+            <div class="engagement-type">
+              Collaboration
+            </div>
+
             <h3>Engagement One</h3>
+
             <p>
               A collaboration, initiative, community, or body of work
               I have contributed to.
             </p>
-          </div>
 
-          <div class="engagement-card">
+          </article>
+
+          <article class="engagement-card">
+
+            <div class="engagement-type">
+              Community
+            </div>
+
             <h3>Engagement Two</h3>
+
             <p>
               Another initiative, collaboration, or professional involvement
               worth documenting.
             </p>
+
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+
+        <div class="about-strip">
+
+          <div class="section-title">
+            About
           </div>
+
+          <h2>
+            The person behind Lab &amp; Lore
+          </h2>
+
+          <p>
+            I am Neri, a creative behavioral scientist interested in people,
+            decision-making, creativity, technology, communication, and the
+            systems that shape how we think and behave.
+          </p>
+
+          <a class="about-link" href="/about.html">
+            More about me
+          </a>
 
         </div>
 
