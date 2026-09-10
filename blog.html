@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Blog | Lab &amp; Lore</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: #f7f6f2;
+      color: #1f1f1f;
+      font-family: Georgia, "Times New Roman", serif;
+    }
+
+    .container {
+      width: min(1100px, 90%);
+      margin: 0 auto;
+    }
+
+    header {
+      padding: 28px 0;
+      border-bottom: 1px solid #d8d5cd;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 30px;
+    }
+
+    .brand {
+      font-size: 22px;
+      font-weight: bold;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      text-decoration: none;
+      color: #1f1f1f;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 24px;
+      flex-wrap: wrap;
+    }
+
+    .nav-links a {
+      color: #444;
+      text-decoration: none;
+      font-family: Arial, sans-serif;
+      font-size: 14px;
+    }
+
+    .nav-links a:hover {
+      text-decoration: underline;
+    }
+
+    .page-header {
+      padding: 100px 0 70px;
+      max-width: 800px;
+    }
+
+    .eyebrow {
+      font-family: Arial, sans-serif;
+      text-transform: uppercase;
+      letter-spacing: 0.14em;
+      font-size: 12px;
+      color: #777;
+      margin-bottom: 18px;
+    }
+
+    h1 {
+      font-size: clamp(48px, 8vw, 86px);
+      line-height: 1;
+      margin: 0 0 28px;
+      font-weight: normal;
+    }
+
+    .intro {
+      max-width: 680px;
+      font-size: 22px;
+      line-height: 1.65;
+      color: #4f4f4f;
+    }
+
+    .posts-section {
+      padding: 60px 0;
+      border-top: 1px solid #d8d5cd;
+    }
+
+    .post {
+      display: grid;
+      grid-template-columns: 150px 1fr;
+      gap: 40px;
+      padding: 42px 0;
+      border-bottom: 1px solid #d8d5cd;
+      max-width: 900px;
+    }
+
+    .post:first-child {
+      padding-top: 0;
+    }
+
+    .post-date {
+      font-family: Arial, sans-serif;
+      font-size: 13px;
+      color: #888;
+      padding-top: 8px;
+    }
+
+    .post-content h2 {
+      margin: 0 0 14px;
+      font-size: 34px;
+      font-weight: normal;
+      line-height: 1.2;
+    }
+
+    .post-content h2 a {
+      color: #1f1f1f;
+      text-decoration: none;
+    }
+
+    .post-content h2 a:hover {
+      text-decoration: underline;
+    }
+
+    .post-content p {
+      margin: 0 0 16px;
+      max-width: 650px;
+      font-size: 17px;
+      line-height: 1.75;
+      color: #555;
+    }
+
+    .read-link {
+      font-family: Arial, sans-serif;
+      font-size: 14px;
+      color: #1f1f1f;
+      text-decoration: underline;
+    }
+
+    footer {
+      padding: 40px 0;
+      border-top: 1px solid #d8d5cd;
+      font-family: Arial, sans-serif;
+      font-size: 13px;
+      color: #777;
+    }
+
+    @media (max-width: 700px) {
+      nav {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+
+      .page-header {
+        padding: 75px 0 50px;
+      }
+
+      .intro {
+        font-size: 19px;
+      }
+
+      .post {
+        grid-template-columns: 1fr;
+        gap: 12px;
+      }
+
+      .post-content h2 {
+        font-size: 28px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="container">
+      <nav>
+
+        <a class="brand" href="/">Lab &amp; Lore</a>
+
+        <div class="nav-links">
+          <a href="/">Home</a>
+          <a href="/about.html">About</a>
+          <a href="/blog.html">Blog</a>
+          <a href="/projects.html">Projects</a>
+          <a href="/connect.html">Connect</a>
+        </div>
+
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <div class="container">
+      <div class="page-header">
+
+        <div class="eyebrow">Writing</div>
+
+        <h1>Blog</h1>
+
+        <p class="intro">
+          Thoughts, observations, questions, and ideas worth writing down.
+        </p>
+
+      </div>
+    </div>
+
+    <section class="posts-section">
+      <div class="container">
+
+        <article class="post">
+
+          <div class="post-date">
+            September 10, 2026
+          </div>
+
+          <div class="post-content">
+
+            <h2>
+              <a href="/posts/why-i-created-this-space.html">
+                Why I Created This Space
+              </a>
+            </h2>
+
+            <p>
+              I wanted a place to collect thoughts that do not necessarily
+              belong anywhere else. Some become experiments. Others simply
+              need somewhere to live.
+            </p>
+
+            <a class="read-link" href="/posts/why-i-created-this-space.html">
+              Read post
+            </a>
+
+          </div>
+
+        </article>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container">
+      © 2026 Lab &amp; Lore
+    </div>
+  </footer>
+
+</body>
+</html>
