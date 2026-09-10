@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Love &amp; Lord Series | Lab &amp; Lore by Neri</title>
+
+  <meta
+    name="description"
+    content="Love & Lord is Neri C's series for reflections on faith, love, morality, relationships, suffering, values, purpose, belief, and meaning."
+  >
+
+  <meta name="theme-color" content="#173F5F">
+
+  <link
+    rel="canonical"
+    href="https://labandlorebyneri.github.io/series/love-and-lord.html"
+  >
+
+  <meta
+    property="og:title"
+    content="Love &amp; Lord Series | Lab &amp; Lore by Neri"
+  >
+
+  <meta
+    property="og:description"
+    content="Reflections on faith, love, morality, relationships, suffering, values, purpose, belief, and questions of meaning."
+  >
+
+  <meta property="og:type" content="website">
+
+  <meta
+    property="og:url"
+    content="https://labandlorebyneri.github.io/series/love-and-lord.html"
+  >
+
+  <style>
+    :root {
+      --blue: #173F5F;
+      --maroon: #7A2432;
+      --background: #F7F4EE;
+      --surface: #FCFAF6;
+      --text: #222222;
+      --body-text: #4D4945;
+      --muted: #6A6560;
+      --border: #DDD6CC;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      background: var(--background);
+      color: var(--text);
+      font-family: Georgia, Cambria, "Times New Roman", serif;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .container {
+      width: min(1100px, calc(100% - 48px));
+      margin: 0 auto;
+    }
+
+    header {
+      padding: 24px 0;
+      border-bottom: 1px solid var(--border);
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 32px;
+    }
+
+    .brand {
+      display: inline-flex;
+      align-items: baseline;
+      gap: 6px;
+      color: var(--blue);
+      text-decoration: none;
+      white-space: nowrap;
+    }
+
+    .brand-main {
+      font-size: 22px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .brand-by {
+      color: var(--maroon);
+      font-size: 15px;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      flex-wrap: wrap;
+    }
+
+    .nav-links a {
+      padding: 8px 0;
+      color: var(--blue);
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 14px;
+      text-decoration: none;
+    }
+
+    .nav-links a:hover,
+    .nav-links a:focus {
+      color: var(--maroon);
+      text-decoration: underline;
+      text-underline-offset: 6px;
+    }
+
+    .nav-links a[aria-current="page"] {
+      color: var(--maroon);
+      text-decoration: underline;
+      text-decoration-thickness: 2px;
+      text-underline-offset: 6px;
+    }
+
+    a:focus-visible {
+      outline: 2px solid var(--maroon);
+      outline-offset: 4px;
+    }
+
+    .series-header {
+      max-width: 900px;
+      padding: clamp(72px, 10vw, 116px) 0 clamp(64px, 8vw, 96px);
+    }
+
+    .eyebrow {
+      margin-bottom: 24px;
+      color: var(--maroon);
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      margin: 0 0 18px;
+      color: var(--blue);
+      font-size: clamp(46px, 8vw, 88px);
+      font-weight: 400;
+      letter-spacing: -0.025em;
+      line-height: 1.02;
+    }
+
+    .series-kicker {
+      margin: 0 0 30px;
+      color: var(--maroon);
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 15px;
+      font-weight: 600;
+    }
+
+    .intro {
+      max-width: 790px;
+      margin: 0 0 22px;
+      color: var(--body-text);
+      font-size: clamp(19px, 2vw, 22px);
+      line-height: 1.75;
+    }
+
+    .framework-line {
+      max-width: 790px;
+      margin-top: 34px;
+      padding-left: 22px;
+      border-left: 3px solid var(--maroon);
+      color: var(--blue);
+      font-size: 19px;
+      line-height: 1.72;
+    }
+
+    section {
+      padding: clamp(56px, 7vw, 76px) 0;
+      border-top: 1px solid var(--border);
+    }
+
+    .section-title {
+      margin-bottom: 30px;
+      color: var(--maroon);
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 0.13em;
+      text-transform: uppercase;
+    }
+
+    .section-heading {
+      max-width: 800px;
+      margin: 0 0 20px;
+      color: var(--blue);
+      font-size: clamp(30px, 4vw, 44px);
+      font-weight: 400;
+      line-height: 1.18;
+    }
+
+    .section-intro {
+      max-width: 760px;
+      margin: 0 0 42px;
+      color: var(--body-text);
+      font-size: 18px;
+      line-height: 1.78;
+    }
+
+    .empty-note {
+      max-width: 760px;
+      padding: 28px;
+      border: 1px solid var(--border);
+      background: var(--surface);
+    }
+
+    .empty-note p {
+      margin: 0;
+      color: var(--body-text);
+      font-size: 17px;
+      line-height: 1.75;
+    }
+
+    .closing {
+      max-width: 760px;
+    }
+
+    .closing h2 {
+      margin: 0 0 18px;
+      color: var(--blue);
+      font-size: clamp(29px, 4vw, 40px);
+      font-weight: 400;
+    }
+
+    .closing p {
+      margin: 0 0 22px;
+      color: var(--body-text);
+      font-size: 18px;
+      line-height: 1.78;
+    }
+
+    .text-link {
+      color: var(--maroon);
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 14px;
+      text-decoration: underline;
+      text-underline-offset: 4px;
+    }
+
+    .text-link:hover,
+    .text-link:focus {
+      color: var(--blue);
+    }
+
+    footer {
+      padding: 38px 0;
+      border-top: 1px solid var(--border);
+      color: var(--muted);
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 13px;
+    }
+
+    @media (max-width: 700px) {
+      .container {
+        width: min(100% - 32px, 1100px);
+      }
+
+      header {
+        padding: 20px 0;
+      }
+
+      nav {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+      }
+
+      .nav-links {
+        width: 100%;
+        gap: 8px 16px;
+      }
+
+      .nav-links a {
+        font-size: 13px;
+      }
+
+      .series-header {
+        padding: 68px 0 62px;
+      }
+
+      .framework-line {
+        padding-left: 16px;
+        font-size: 17px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .brand-main {
+        font-size: 19px;
+      }
+
+      .brand-by {
+        font-size: 14px;
+      }
+
+      h1 {
+        font-size: 44px;
+      }
+
+      .intro {
+        font-size: 18px;
+      }
+
+      section {
+        padding: 50px 0;
+      }
+    }
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "name": "Love & Lord Series",
+    "url": "https://labandlorebyneri.github.io/series/love-and-lord.html",
+    "description": "Reflections on faith, love, morality, relationships, suffering, values, purpose, belief, and meaning by Neri C.",
+    "author": {
+      "@type": "Person",
+      "name": "Neri Cristobal",
+      "alternateName": "Neri C",
+      "url": "https://labandlorebyneri.github.io/about.html"
+    }
+  }
+  </script>
+
+</head>
+
+<body>
+
+  <header>
+    <div class="container">
+
+      <nav aria-label="Primary navigation">
+
+        <a class="brand" href="/">
+          <span class="brand-main">Lab &amp; Lore</span>
+          <span class="brand-by">by Neri</span>
+        </a>
+
+        <div class="nav-links">
+          <a href="/">Home</a>
+          <a href="/about.html">About</a>
+          <a href="/blog.html" aria-current="page">Blog</a>
+          <a href="/engagement.html">Engagement</a>
+          <a href="/say-hello.html">Say Hello</a>
+        </div>
+
+      </nav>
+
+    </div>
+  </header>
+
+
+  <main>
+
+    <div class="container">
+
+      <div class="series-header">
+
+        <div class="eyebrow">
+          Series 02
+        </div>
+
+        <h1>
+          Love &amp; Lord
+        </h1>
+
+        <div class="series-kicker">
+          Questions of meaning.
+        </div>
+
+        <p class="intro">
+          Some of the most important questions in human behavior cannot
+          be understood through behavior alone.
+        </p>
+
+        <p class="intro">
+          Love &amp; Lord is where I reflect on faith, love, relationships,
+          morality, values, suffering, purpose, belief, and the search
+          for meaning.
+        </p>
+
+        <p class="framework-line">
+          These are questions that invite evidence and reflection,
+          but also humility about what evidence alone can explain.
+        </p>
+
+      </div>
+
+    </div>
+
+
+    <section>
+
+      <div class="container">
+
+        <div class="section-title">
+          What Belongs Here
+        </div>
+
+        <h2 class="section-heading">
+          The questions that reach beyond measurement.
+        </h2>
+
+        <p class="section-intro">
+          This series explores the relationship between human behavior
+          and the beliefs, values, relationships, experiences, and
+          convictions through which people make sense of their lives.
+        </p>
+
+      </div>
+
+    </section>
+
+
+    <section>
+
+      <div class="container">
+
+        <div class="section-title">
+          Writing in This Series
+        </div>
+
+        <div class="empty-note">
+
+          <p>
+            No essays have been published in Love &amp; Lord yet.
+            The questions are already accumulating.
+          </p>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <section>
+
+      <div class="container">
+
+        <div class="closing">
+
+          <div class="section-title">
+            Other Series
+          </div>
+
+          <h2>
+            Different questions require different conversations.
+          </h2>
+
+          <p>
+            Return to experiments and questions in progress through
+            Lab &amp; Lore, or explore work, pressure, culture, hierarchy,
+            and collective life through Loud &amp; Load.
+          </p>
+
+          <a
+            class="text-link"
+            href="/series/lab-and-lore.html"
+          >
+            Lab &amp; Lore
+          </a>
+
+          &nbsp;&nbsp;
+
+          <a
+            class="text-link"
+            href="/series/loud-and-load.html"
+          >
+            Loud &amp; Load
+          </a>
+
+          &nbsp;&nbsp;
+
+          <a
+            class="text-link"
+            href="/blog.html"
+          >
+            Back to Blog
+          </a>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <footer>
+
+    <div class="container">
+      © 2026 Lab &amp; Lore by Neri
+    </div>
+
+  </footer>
+
+</body>
+</html>
