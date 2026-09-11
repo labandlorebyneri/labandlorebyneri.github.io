@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
   <url>
@@ -22,6 +21,9 @@
     <loc>https://labandlorebyneri.github.io/say-hello.html</loc>
   </url>
 
+
+  <!-- BLOG SERIES -->
+
   <url>
     <loc>https://labandlorebyneri.github.io/series/lab-and-lore.html</loc>
   </url>
@@ -34,8 +36,61 @@
     <loc>https://labandlorebyneri.github.io/series/loud-and-load.html</loc>
   </url>
 
+
+  <!-- BLOG POSTS -->
+
   <url>
     <loc>https://labandlorebyneri.github.io/posts/why-i-created-this-space.html</loc>
+  </url>
+
+
+  <!-- ENGAGEMENT THEMES -->
+
+  <url>
+    <loc>https://labandlorebyneri.github.io/engagement/research-public-conversation.html</loc>
+  </url>
+
+  <url>
+    <loc>https://labandlorebyneri.github.io/engagement/community-service.html</loc>
+  </url>
+
+  <url>
+    <loc>https://labandlorebyneri.github.io/engagement/education-development.html</loc>
+  </url>
+
+  <url>
+    <loc>https://labandlorebyneri.github.io/engagement/recognition-through-service.html</loc>
+  </url>
+
+
+  <!-- INDIVIDUAL ENGAGEMENTS -->
+
+  <url>
+    <loc>https://labandlorebyneri.github.io/engagement/legal-medical-mission-2022.html</loc>
+  </url>
+
+  <url>
+    <loc>https://labandlorebyneri.github.io/engagement/pasko-outreach-2022.html</loc>
+  </url>
+
+  <url>
+    <loc>https://labandlorebyneri.github.io/engagement/community-pantry-filipino-psychology-2021.html</loc>
+  </url>
+
+  <url>
+    <loc>https://labandlorebyneri.github.io/engagement/san-na-si-sp-2021.html</loc>
+  </url>
+
+  <url>
+    <loc>https://labandlorebyneri.github.io/engagement/bangon-cagayan-2020.html</loc>
+  </url>
+
+  <url>
+    <loc>https://labandlorebyneri.github.io/engagement/college-entrance-test-review-2019.html</loc>
+  </url>
+
+  <url>
+    <loc>https://labandlorebyneri.github.io/engagement/leadership-character-recognition-2018.html</loc>
   </url>
 
 </urlset>
