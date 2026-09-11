@@ -10,7 +10,7 @@
 
   <meta
     name="description"
-    content="Three senior high school recognitions viewed in the context of service, responsibility, leadership, and the communities that helped shape them."
+    content="Recognition across secondary education viewed through service, responsibility, family, community, and the experiences that made those recognitions possible."
   >
 
   <meta name="theme-color" content="#173F5F">
@@ -27,7 +27,7 @@
 
   <meta
     property="og:description"
-    content="Recognition can look individual on paper. The experiences, relationships, responsibilities, and communities behind it rarely are."
+    content="The certificate carries one name. The experiences, relationships, responsibilities, and communities behind it do not."
   >
 
   <meta property="og:type" content="article">
@@ -39,25 +39,16 @@
 
   <meta
     property="og:image"
-    content="https://labandlorebyneri.github.io/social-card.png"
+    content="https://labandlorebyneri.github.io/images/engagement/recognition-ceremony-2018.jpg"
   >
 
-  <meta property="og:image:type" content="image/png">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
-  <meta property="og:image:alt" content="Lab &amp; Lore by Neri">
   <meta property="og:site_name" content="Lab &amp; Lore by Neri">
 
   <meta name="twitter:card" content="summary_large_image">
 
   <meta
     name="twitter:image"
-    content="https://labandlorebyneri.github.io/social-card.png"
-  >
-
-  <meta
-    name="twitter:image:alt"
-    content="Lab &amp; Lore by Neri"
+    content="https://labandlorebyneri.github.io/images/engagement/recognition-ceremony-2018.jpg"
   >
 
   <style>
@@ -76,12 +67,21 @@
       box-sizing: border-box;
     }
 
+    html {
+      scroll-behavior: smooth;
+    }
+
     body {
       margin: 0;
       background: var(--background);
       color: var(--text);
       font-family: Georgia, Cambria, "Times New Roman", serif;
       -webkit-font-smoothing: antialiased;
+    }
+
+    img {
+      display: block;
+      max-width: 100%;
     }
 
     .container {
@@ -189,8 +189,8 @@
     }
 
     .hero {
-      max-width: 920px;
-      padding: clamp(70px, 10vw, 112px) 0 clamp(58px, 8vw, 88px);
+      max-width: 940px;
+      padding: clamp(70px, 10vw, 112px) 0 clamp(50px, 7vw, 76px);
     }
 
     .eyebrow,
@@ -210,7 +210,7 @@
     }
 
     h1 {
-      max-width: 900px;
+      max-width: 920px;
       margin: 0 0 26px;
       color: var(--blue);
       font-size: clamp(45px, 7vw, 78px);
@@ -245,8 +245,31 @@
       line-height: 1.7;
     }
 
+    .hero-image {
+      margin-bottom: clamp(58px, 8vw, 88px);
+    }
+
+    .hero-image img {
+      width: 100%;
+      max-height: 720px;
+      object-fit: cover;
+      border: 1px solid var(--border);
+    }
+
+    figure {
+      margin: 0;
+    }
+
+    figcaption {
+      margin-top: 12px;
+      color: var(--muted);
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 12px;
+      line-height: 1.65;
+    }
+
     section {
-      padding: clamp(56px, 7vw, 80px) 0;
+      padding: clamp(56px, 7vw, 82px) 0;
       border-top: 1px solid var(--border);
     }
 
@@ -255,7 +278,7 @@
     }
 
     .section-heading {
-      max-width: 760px;
+      max-width: 780px;
       margin: 0 0 24px;
       color: var(--blue);
       font-size: clamp(31px, 4vw, 46px);
@@ -274,39 +297,66 @@
       margin-bottom: 0;
     }
 
-    .award-grid {
+    .photo-grid {
       display: grid;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 24px;
+      margin-top: 42px;
+    }
+
+    .photo-card {
+      margin: 0;
+    }
+
+    .photo-card img {
+      width: 100%;
+      aspect-ratio: 4 / 3;
+      object-fit: cover;
+      border: 1px solid var(--border);
+      background: var(--surface);
+    }
+
+    .photo-card.wide {
+      grid-column: 1 / -1;
+    }
+
+    .photo-card.wide img {
+      aspect-ratio: 16 / 9;
+    }
+
+    .recognition-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
       gap: 22px;
       margin-top: 40px;
     }
 
-    .award-card {
+    .recognition-card {
       padding: 28px;
       border: 1px solid var(--border);
       border-top: 4px solid var(--blue);
       background: var(--surface);
     }
 
-    .award-number {
-      margin-bottom: 24px;
+    .recognition-type {
+      margin-bottom: 20px;
       color: var(--maroon);
       font-family: Arial, Helvetica, sans-serif;
       font-size: 10px;
       font-weight: 600;
-      letter-spacing: 0.12em;
+      letter-spacing: 0.11em;
       text-transform: uppercase;
     }
 
-    .award-card h3 {
-      margin: 0 0 14px;
+    .recognition-card h3 {
+      margin: 0 0 12px;
       color: var(--blue);
-      font-size: 24px;
+      font-size: 25px;
       font-weight: 400;
       line-height: 1.3;
     }
 
-    .award-card p {
+    .recognition-card p {
       margin: 0;
       color: var(--muted);
       font-family: Arial, Helvetica, sans-serif;
@@ -314,8 +364,54 @@
       line-height: 1.7;
     }
 
+    .document-layout {
+      display: grid;
+      grid-template-columns: minmax(0, 1.25fr) minmax(280px, 0.75fr);
+      gap: 42px;
+      align-items: start;
+      margin-top: 42px;
+    }
+
+    .document-image {
+      padding: 16px;
+      border: 1px solid var(--border);
+      background: var(--surface);
+    }
+
+    .document-image img {
+      width: 100%;
+      height: auto;
+    }
+
+    .document-copy h3 {
+      margin: 0 0 16px;
+      color: var(--blue);
+      font-size: 30px;
+      font-weight: 400;
+      line-height: 1.25;
+    }
+
+    .document-copy p {
+      margin: 0 0 20px;
+      color: var(--body-text);
+      font-size: 17px;
+      line-height: 1.8;
+    }
+
+    .document-copy p:last-child {
+      margin-bottom: 0;
+    }
+
+    .privacy-note {
+      margin-top: 18px;
+      color: var(--muted) !important;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 12px !important;
+      line-height: 1.6 !important;
+    }
+
     .reflection {
-      max-width: 810px;
+      max-width: 820px;
       padding-left: 24px;
       border-left: 3px solid var(--maroon);
     }
@@ -372,8 +468,13 @@
     }
 
     @media (max-width: 850px) {
-      .award-grid {
+      .recognition-grid,
+      .document-layout {
         grid-template-columns: 1fr;
+      }
+
+      .document-image {
+        max-width: 650px;
       }
     }
 
@@ -398,7 +499,19 @@
       }
 
       .hero {
-        padding: 66px 0 58px;
+        padding: 66px 0 52px;
+      }
+
+      .photo-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .photo-card.wide {
+        grid-column: auto;
+      }
+
+      .photo-card.wide img {
+        aspect-ratio: 4 / 3;
       }
     }
 
@@ -424,7 +537,7 @@
         padding: 48px 0;
       }
 
-      .award-card {
+      .recognition-card {
         padding: 24px;
       }
     }
@@ -436,8 +549,7 @@
     "@type": "WebPage",
     "name": "Recognition Through Service",
     "url": "https://labandlorebyneri.github.io/engagement/leadership-character-recognition-2018.html",
-    "description": "Three senior high school recognitions viewed in the context of service, responsibility, leadership, and the communities that helped shape them.",
-    "datePublished": "2018-04",
+    "description": "Recognition across secondary education viewed through service, responsibility, family, community, and the experiences that made those recognitions possible.",
     "author": {
       "@type": "Person",
       "name": "Neri Cristobal",
@@ -528,20 +640,20 @@
         </h1>
 
         <div class="hero-meta">
-          April 2018 · Senior High School
+          Secondary Education · Recognition Record
         </div>
 
         <p class="hero-intro">
-          At the end of senior high school, I received three recognitions
-          connected to discipline, leadership, character, responsibility,
-          and student achievement.
+          Across junior and senior high school, I received recognitions
+          connected to leadership, discipline, character, academic
+          achievement, and responsibility.
         </p>
 
         <p class="hero-intro">
-          I do not see those awards as achievements that appeared in
-          isolation. Whatever they recognized had already been shaped
-          through participation, responsibility, relationships, and
-          involvement in the communities around me.
+          I do not see those recognitions as achievements that appeared
+          in isolation. Whatever they recognized had already been shaped
+          through participation, responsibility, relationships, family,
+          school, and involvement in the communities around me.
         </p>
 
         <div class="hero-note">
@@ -550,6 +662,20 @@
         </div>
 
       </div>
+
+
+      <figure class="hero-image">
+
+        <img
+          src="/images/engagement/recognition-ceremony-2018.jpg"
+          alt="Recognition ceremony during Neri's secondary education"
+        >
+
+        <figcaption>
+          Recognition ceremony during the final year of senior high school.
+        </figcaption>
+
+      </figure>
 
     </div>
 
@@ -579,19 +705,53 @@
             </p>
 
             <p>
-              Those experiences mattered because character and leadership
-              are difficult to develop in isolation. They are tested through
-              relationships, decisions, accountability, and the way a person
-              responds when something is asked of them.
+              Character and leadership are difficult to develop in isolation.
+              They are tested through relationships, decisions,
+              accountability, and the way a person responds when something
+              is asked of them.
             </p>
 
             <p>
-              That is the context in which I understand these awards today.
-              They recognized an individual, but the qualities associated
-              with them were shaped through interaction with other people.
+              That is the context in which I understand these recognitions
+              today. They may identify an individual recipient, but the
+              qualities associated with them were formed through interaction
+              with many other people.
             </p>
 
           </div>
+
+        </div>
+
+
+        <div class="photo-grid">
+
+          <figure class="photo-card">
+
+            <img
+              src="/images/engagement/recognition-ceremony-2018-mama.jpg"
+              alt="Family photograph from a 2018 recognition ceremony"
+            >
+
+            <figcaption>
+              A family moment during the 2018 recognition period.
+            </figcaption>
+
+          </figure>
+
+
+          <figure class="photo-card">
+
+            <img
+              src="/images/engagement/recognition-ceremony-2018-tatay.jpg"
+              alt="Family photograph from a 2018 recognition ceremony"
+            >
+
+            <figcaption>
+              Recognition was also a shared moment with the people who
+              supported the years that came before it.
+            </figcaption>
+
+          </figure>
 
         </div>
 
@@ -600,44 +760,43 @@
     </section>
 
 
-    <!-- RECOGNITIONS -->
+    <!-- RECORD OF RECOGNITION -->
 
     <section>
 
       <div class="container">
 
         <div class="section-label">
-          The Recognitions
+          A Record of Recognition
         </div>
 
         <h2 class="section-heading">
-          Three recognitions at the close of senior high school.
+          Recognition across junior and senior high school.
         </h2>
 
+        <div class="recognition-grid">
 
-        <div class="award-grid">
+          <div class="recognition-card">
 
-          <div class="award-card">
-
-            <div class="award-number">
-              Recognition 01
+            <div class="recognition-type">
+              Junior High School
             </div>
 
             <h3>
-              AY Foundation National Discipline Award
+              Student Leadership Award
             </h3>
 
             <p>
-              Received in April 2018.
+              School Year 2015–2016
             </p>
 
           </div>
 
 
-          <div class="award-card">
+          <div class="recognition-card">
 
-            <div class="award-number">
-              Recognition 02
+            <div class="recognition-type">
+              Senior High School
             </div>
 
             <h3>
@@ -645,16 +804,34 @@
             </h3>
 
             <p>
-              Received in April 2018.
+              School Year 2017–2018. Recorded by St. John’s Academy
+              as the Bishop’s Award.
             </p>
 
           </div>
 
 
-          <div class="award-card">
+          <div class="recognition-card">
 
-            <div class="award-number">
-              Recognition 03
+            <div class="recognition-type">
+              Senior High School
+            </div>
+
+            <h3>
+              AY Foundation National Discipline Award
+            </h3>
+
+            <p>
+              School Year 2017–2018
+            </p>
+
+          </div>
+
+
+          <div class="recognition-card">
+
+            <div class="recognition-type">
+              Provincial Recognition
             </div>
 
             <h3>
@@ -662,7 +839,7 @@
             </h3>
 
             <p>
-              Received in April 2018.
+              Recognition from the Provincial Government of Bataan.
             </p>
 
           </div>
@@ -674,7 +851,138 @@
     </section>
 
 
-    <!-- WHAT THE AWARDS REPRESENTED -->
+    <!-- GAWAD GOBERNADOR -->
+
+    <section>
+
+      <div class="container">
+
+        <div class="section-label">
+          Provincial Recognition
+        </div>
+
+        <h2 class="section-heading">
+          Gawad Gobernador
+        </h2>
+
+
+        <div class="document-layout">
+
+          <figure class="document-image">
+
+            <img
+              src="/images/engagement/recognition-gawad-gobernador-2018.png"
+              alt="Gawad Gobernador certificate from the Province of Bataan"
+            >
+
+            <figcaption>
+              Gawad Gobernador certificate from the Provincial Government
+              of Bataan.
+            </figcaption>
+
+          </figure>
+
+
+          <div class="document-copy">
+
+            <h3>
+              Recognition beyond the school community.
+            </h3>
+
+            <p>
+              The Gawad Gobernador added a provincial recognition to the
+              record of my final year of senior high school.
+            </p>
+
+            <p>
+              I include it here not as a separate story from everything
+              around it, but as another outcome connected to the same period
+              of learning, responsibility, participation, and formation.
+            </p>
+
+            <p class="privacy-note">
+              Signature details in the displayed document have been obscured
+              for privacy.
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- SUPPORTING RECORD -->
+
+    <section>
+
+      <div class="container">
+
+        <div class="section-label">
+          Supporting Record
+        </div>
+
+        <h2 class="section-heading">
+          A later certification documenting the record.
+        </h2>
+
+
+        <div class="document-layout">
+
+          <figure class="document-image">
+
+            <img
+              src="/images/engagement/st-johns-awards-certification-2023.png"
+              alt="St. John's Academy certification documenting Neri's academic standing and awards"
+            >
+
+            <figcaption>
+              St. John’s Academy certification issued February 15, 2023.
+            </figcaption>
+
+          </figure>
+
+
+          <div class="document-copy">
+
+            <h3>
+              What the school record confirms.
+            </h3>
+
+            <p>
+              The certification records my graduation from the Grade 12
+              ABM strand, School Year 2017–2018, with High Honors.
+            </p>
+
+            <p>
+              It also documents the Student Leadership Award from School
+              Year 2015–2016, the Bishop’s Award from School Year 2017–2018,
+              and the AY Foundation National Discipline Award from School
+              Year 2017–2018.
+            </p>
+
+            <p>
+              The document was issued in 2023. The recognitions it records
+              belong to the earlier school years identified in the certification.
+            </p>
+
+            <p class="privacy-note">
+              The principal’s signature has been obscured in the displayed
+              copy for privacy.
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- WHAT THEY REPRESENTED -->
 
     <section>
 
@@ -687,29 +995,29 @@
           </div>
 
           <h2 class="section-heading">
-            The awards were an outcome, not the starting point.
+            The awards were outcomes, not the starting point.
           </h2>
 
           <div class="prose">
 
             <p>
-              Receiving these recognitions would not have meant much to me
+              Receiving these recognitions would not have been possible
               without the communities that gave me opportunities to
               participate, contribute, learn, and take responsibility.
             </p>
 
             <p>
-              The certificates may have recorded my name, but the experiences
-              behind them involved teachers, peers, mentors, organizations,
-              families, and communities whose expectations and trust helped
+              The certificates recorded my name, but the experiences behind
+              them involved family, teachers, peers, mentors, organizations,
+              and communities whose trust, expectations, and support helped
               shape the person being recognized.
             </p>
 
             <p>
-              Seen this way, recognition is less a statement of individual
-              accomplishment and more a record of what can emerge from the
-              relationship between a person and the communities they are
-              responsible to.
+              Seen this way, recognition is not only a statement of
+              individual achievement. It can also be a record of what emerges
+              from the relationship between a person and the communities
+              that help form them.
             </p>
 
           </div>
@@ -740,9 +1048,9 @@
           </p>
 
           <p>
-            Whatever these awards reflected was shaped through being part
-            of communities that allowed me to contribute, expected something
-            from me, and made me accountable to people beyond myself.
+            Whatever these recognitions reflected was shaped through being
+            part of communities that allowed me to contribute, expected
+            something from me, and made me accountable to people beyond myself.
           </p>
 
           <p>
