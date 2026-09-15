@@ -325,6 +325,28 @@ a:hover .arrow { transform: translateX(3px); }
   .section { padding:4.2rem 0; }
   .section-head { align-items:start; flex-direction:column; }
   .work-grid, .series-grid, .values-grid, .contact-grid, .group-cards { grid-template-columns:1fr; }
+  /* Contact cards become compact horizontal rectangles on phones. */
+  .contact-grid { gap:.8rem; }
+  .contact-card {
+    min-height:0;
+    padding:1.2rem 1.15rem;
+    border-radius:16px;
+    gap:.8rem;
+  }
+  .contact-card h3 {
+    font-size:clamp(1.2rem,5.8vw,1.55rem);
+    line-height:1.08;
+    overflow-wrap:anywhere;
+  }
+  .contact-card p {
+    font-size:.9rem;
+    line-height:1.45;
+    max-width:34ch;
+  }
+  .contact-label { font-size:.66rem; }
+  .page-orbit { height:190px; }
+  .page-orbit::before { width:150px; height:150px; right:24px; top:20px; }
+  .page-orbit::after { width:120px; height:120px; left:22px; bottom:-38px; }
   .work-card:last-child, .series-card:last-child { grid-column:auto; }
   .insight-feature { gap:3rem; }
   .insight-list { border-left:0; padding-left:0; }
