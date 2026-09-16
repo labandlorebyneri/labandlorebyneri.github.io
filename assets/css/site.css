@@ -1291,3 +1291,56 @@ img, video, iframe { max-width: 100%; height: auto; }
 @media (max-width: 760px) {
   body.nav-open { overflow: hidden; }
 }
+
+/* =========================================================
+   Heading wrapping correction
+   Large editorial headings must never split inside words.
+   ========================================================= */
+h1,
+h2,
+h3,
+.display,
+.page-hero h1,
+.article-hero h1,
+.group-head h2,
+.series-card h2 {
+  overflow-wrap: normal;
+  word-break: normal;
+  hyphens: none;
+}
+
+/* Give engagement/theme hero titles enough measure for long words. */
+.page-hero h1 {
+  max-width: 15ch;
+}
+
+@media (max-width: 980px) {
+  .page-hero h1,
+  .article-hero h1 {
+    max-width: 16ch;
+  }
+}
+
+@media (max-width: 760px) {
+  .page-hero h1,
+  .article-hero h1,
+  .hero-copy h1 {
+    max-width: 100%;
+    overflow-wrap: normal;
+    word-break: normal;
+    hyphens: none;
+  }
+
+  /* Slightly more conservative scaling for long theme titles. */
+  .page-hero h1 {
+    font-size: clamp(2.45rem, 11.2vw, 3.65rem);
+    line-height: 1;
+    letter-spacing: -.038em;
+  }
+}
+
+@media (max-width: 380px) {
+  .page-hero h1 {
+    font-size: clamp(2.2rem, 10.6vw, 3rem);
+  }
+}
