@@ -298,6 +298,20 @@ a:hover .arrow { transform: translateX(3px); }
 [data-reveal] { opacity:0; transform:translateY(18px); transition:opacity .65s ease, transform .65s ease; }
 [data-reveal].is-visible { opacity:1; transform:none; }
 
+
+/* Selected engagement archive cards */
+.selected-engagements { margin-top:1.8rem; padding-top:1.6rem; border-top:1px solid var(--rule); }
+.selected-engagements-head { display:flex; align-items:flex-start; justify-content:space-between; gap:1.5rem; }
+.selected-engagements-head p { margin:0; max-width:58ch; color:#526078; font-size:.96rem; }
+.selected-engagement-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:1rem; margin-top:1rem; }
+.selected-engagement-grid.single { grid-template-columns:minmax(0,1fr); max-width:760px; }
+.engagement-link-card { display:block; border:1px solid var(--rule); border-radius:var(--radius-sm); padding:1.45rem; background:rgba(255,255,255,.62); color:var(--ink); text-decoration:none; transition:transform .2s ease, border-color .2s ease, background .2s ease; }
+.engagement-link-card:hover { transform:translateY(-3px); border-color:#b9c6d6; background:var(--paper); }
+.engagement-link-kicker { display:block; margin-bottom:.7rem; font:700 .7rem/1.2 var(--font-sans); letter-spacing:.12em; text-transform:uppercase; color:var(--mid); }
+.engagement-link-card h3 { margin:0 0 .65rem; font-size:1.45rem; }
+.engagement-link-card p { margin:0 0 1rem; color:#4f5e75; }
+.engagement-link-card .text-link { font-size:.86rem; }
+
 @media (prefers-reduced-motion: reduce) {
   *,*::before,*::after { scroll-behavior:auto !important; transition:none !important; animation:none !important; }
   [data-reveal] { opacity:1; transform:none; }
@@ -418,3 +432,10 @@ a:hover .arrow { transform: translateX(3px); }
 /* Engagement group header alignment after disclosure conversion */
 .engagement-group .group-head { display:flex; align-items:flex-end; justify-content:space-between; gap:2rem; margin-bottom:1.5rem; }
 .engagement-group .group-content > .lede { max-width:72ch; margin:0 0 2rem; }
+
+@media (max-width: 720px) {
+  .selected-engagements-head { display:block; }
+  .selected-engagements-head p { margin-top:.55rem; }
+  .selected-engagement-grid, .selected-engagement-grid.single { grid-template-columns:1fr; max-width:none; }
+  .engagement-link-card { padding:1.2rem; }
+}
