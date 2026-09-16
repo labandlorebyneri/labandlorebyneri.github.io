@@ -569,3 +569,725 @@ a:hover .arrow { transform: translateX(3px); }
   .record-card { grid-template-columns:96px minmax(0,1fr); }
   .record-card img { height:88px; }
 }
+
+/* Single documentary record layout */
+.record-grid-single {
+  grid-template-columns: minmax(0, 760px);
+  justify-content: start;
+}
+.record-grid-single .record-card img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  background: #fff;
+}
+
+/* Visual selected-case cards */
+.engagement-link-card--visual {
+  display:grid;
+  grid-template-columns:minmax(220px, .72fr) minmax(0, 1.28fr);
+  gap:0;
+  padding:0;
+  overflow:hidden;
+}
+.engagement-link-image {
+  width:100%;
+  height:100%;
+  min-height:280px;
+  object-fit:cover;
+  display:block;
+}
+.engagement-link-body {
+  display:flex;
+  flex-direction:column;
+  padding:1.8rem 1.9rem;
+}
+.engagement-link-body .text-link { margin-top:auto; }
+@media (max-width: 720px) {
+  .engagement-link-card--visual { grid-template-columns:1fr; }
+  .engagement-link-image { height:220px; min-height:0; }
+  .engagement-link-body { padding:1.35rem; }
+}
+
+
+/* Selected case spacing refinement */
+.selected-engagement-grid.single {
+  max-width: none;
+  width: 100%;
+}
+.selected-case-section {
+  padding-bottom: clamp(2.5rem, 4vw, 3.75rem);
+}
+.selected-case-section .section-head {
+  margin-bottom: clamp(1.5rem, 2.5vw, 2rem);
+}
+.case-followup-section {
+  padding-top: clamp(2.5rem, 4vw, 3.75rem);
+}
+@media (max-width: 720px) {
+  .selected-case-section { padding-bottom: 2rem; }
+  .case-followup-section { padding-top: 2rem; }
+}
+
+/* =========================================================
+   Responsive system v2
+   Mobile-first refinements for Lab & Lore
+   ========================================================= */
+
+:root {
+  --font-sans: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --font-heading: "DM Sans", "Inter", system-ui, sans-serif;
+  --font-display: "Noto Serif Display", Georgia, serif;
+}
+
+html, body { max-width: 100%; overflow-x: clip; }
+body { overflow-wrap: break-word; }
+
+/* Keep media predictable at every width. */
+img, video, iframe { max-width: 100%; height: auto; }
+
+/* Tablet refinement */
+@media (max-width: 980px) {
+  .container, .narrow {
+    width: min(calc(100% - 36px), var(--max));
+  }
+
+  .page-hero {
+    padding: 3.75rem 0 3rem;
+  }
+
+  .page-hero-grid,
+  .split,
+  .insight-feature,
+  .article-layout {
+    gap: 2.5rem;
+  }
+
+  .page-hero h1,
+  .article-hero h1 {
+    max-width: 14ch;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1.2fr .8fr;
+  }
+
+  .footer-social {
+    grid-column: 1 / -1;
+    grid-template-columns: repeat(4, max-content);
+    gap: .6rem 1.25rem;
+  }
+
+  .selected-engagement-grid.single {
+    max-width: none;
+  }
+}
+
+/* Primary phone breakpoint */
+@media (max-width: 760px) {
+  :root {
+    --radius: 18px;
+    --radius-sm: 12px;
+  }
+
+  .container,
+  .narrow {
+    width: min(calc(100% - 32px), var(--max));
+  }
+
+  body {
+    font-size: 16px;
+    line-height: 1.65;
+  }
+
+  h1 {
+    font-size: clamp(2.65rem, 12.2vw, 4rem);
+    line-height: .99;
+    letter-spacing: -.04em;
+  }
+
+  h2 {
+    font-size: clamp(1.85rem, 8.5vw, 2.7rem);
+    line-height: 1.06;
+  }
+
+  h3 {
+    font-size: clamp(1.28rem, 6.3vw, 1.7rem);
+    line-height: 1.12;
+  }
+
+  .lede {
+    font-size: 1.04rem;
+    line-height: 1.6;
+  }
+
+  .eyebrow {
+    margin-bottom: .75rem;
+    font-size: .68rem;
+    letter-spacing: .15em;
+  }
+
+  /* Header and mobile menu */
+  .site-header {
+    backdrop-filter: blur(12px);
+  }
+
+  .nav-wrap {
+    height: 68px;
+    gap: 1rem;
+  }
+
+  .brand {
+    gap: .4rem;
+    min-width: 0;
+  }
+
+  .brand-main {
+    font-size: 1.42rem;
+  }
+
+  .brand-by {
+    font-size: .78rem;
+  }
+
+  .menu-toggle {
+    width: 44px;
+    height: 44px;
+    display: grid;
+    place-content: center;
+    flex: 0 0 auto;
+  }
+
+  .menu-toggle span {
+    width: 22px;
+  }
+
+  .site-nav {
+    position: fixed;
+    left: 16px;
+    right: 16px;
+    top: 76px;
+    max-height: calc(100dvh - 92px);
+    overflow-y: auto;
+    gap: 0;
+    padding: .6rem;
+    border-radius: 18px;
+    background: rgba(253,252,247,.98);
+    box-shadow: 0 20px 55px rgba(15,40,72,.16);
+  }
+
+  .site-nav a {
+    min-height: 46px;
+    display: flex;
+    align-items: center;
+    padding: .8rem .9rem;
+    font-size: .95rem;
+  }
+
+  .site-nav a::after { display: none; }
+
+  .nav-loom {
+    margin-top: .3rem;
+    padding: .95rem .9rem .8rem !important;
+  }
+
+  /* Global section rhythm */
+  .hero,
+  .page-hero,
+  .article-hero {
+    padding-top: 2.8rem;
+  }
+
+  .hero {
+    padding-bottom: 3.25rem;
+  }
+
+  .page-hero {
+    padding-bottom: 2.5rem;
+  }
+
+  .section {
+    padding: 3.5rem 0;
+  }
+
+  .section-tight {
+    padding: 2.25rem 0;
+  }
+
+  .section-head {
+    gap: .8rem;
+    margin-bottom: 1.75rem;
+  }
+
+  .section-index::after {
+    width: 32px;
+  }
+
+  /* Hero */
+  .hero-grid,
+  .page-hero-grid,
+  .split,
+  .insight-feature,
+  .article-layout {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .hero-copy h1,
+  .page-hero h1,
+  .article-hero h1 {
+    max-width: none;
+  }
+
+  .hero-copy .lede,
+  .page-hero .lede {
+    margin-top: 1.1rem;
+  }
+
+  .hero-actions {
+    gap: .7rem;
+    margin-top: 1.5rem;
+  }
+
+  .hero-actions .button {
+    flex: 1 1 100%;
+  }
+
+  .hero-art {
+    min-height: 285px;
+    margin-top: .5rem;
+  }
+
+  .page-orbit {
+    height: 180px;
+    margin-top: -.25rem;
+  }
+
+  /* Three Cs */
+  .three-cs {
+    overflow: hidden;
+  }
+
+  .cs-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .cs-intro {
+    padding: 2rem 0 1.5rem;
+  }
+
+  .c-card {
+    padding: 1.6rem 0;
+  }
+
+  .c-card h3 {
+    margin-bottom: .45rem;
+  }
+
+  /* General cards */
+  .work-grid,
+  .series-grid,
+  .values-grid,
+  .contact-grid,
+  .group-cards,
+  .method-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .work-card,
+  .series-card,
+  .value-card,
+  .group-card,
+  .contact-card {
+    border-radius: 18px;
+  }
+
+  .work-art {
+    height: auto;
+    aspect-ratio: 16 / 9;
+  }
+
+  .work-body {
+    padding: 1.3rem;
+  }
+
+  .work-card h3 {
+    font-size: 1.55rem;
+  }
+
+  /* Engagement 3R groups */
+  .engagement-groups {
+    gap: .9rem;
+  }
+
+  .engagement-group {
+    padding: 1.35rem;
+    border-radius: 18px;
+  }
+
+  .engagement-group .group-head {
+    align-items: flex-end;
+    gap: .75rem;
+    margin-bottom: 0;
+  }
+
+  .engagement-group .group-head h2 {
+    font-size: clamp(2.35rem, 12vw, 3.55rem);
+    line-height: .98;
+  }
+
+  .group-toggle {
+    padding: .25rem 0 .1rem;
+    font-size: .68rem;
+    letter-spacing: .06em;
+  }
+
+  .group-toggle-icon {
+    width: 1.9rem;
+    height: 1.9rem;
+  }
+
+  .group-content {
+    padding-top: 1.15rem;
+  }
+
+  .engagement-group .group-content > .lede {
+    margin-bottom: 1.25rem;
+  }
+
+  .group-card {
+    padding: 1.25rem;
+  }
+
+  /* Selected case / deeper engagement cards */
+  .selected-engagements {
+    margin-top: 1.8rem;
+    padding-top: 1.35rem;
+  }
+
+  .selected-engagements-head {
+    margin-bottom: 1.15rem;
+  }
+
+  .selected-engagements-head p {
+    margin-top: .55rem;
+    font-size: .94rem;
+    line-height: 1.55;
+  }
+
+  .selected-engagement-grid,
+  .selected-engagement-grid.single {
+    margin-top: 1.1rem;
+    gap: 1rem;
+  }
+
+  .engagement-link-card--visual {
+    grid-template-columns: 1fr;
+    border-radius: 18px;
+  }
+
+  .engagement-link-image {
+    width: 100%;
+    height: auto;
+    min-height: 0;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  /* Documents should read as thumbnails on theme pages, not full viewers. */
+  .engagement-link-card--visual img[src*="authorization-letter"],
+  .engagement-link-card--visual img[src*="certification"],
+  .engagement-link-card--visual img[src*="letter"] {
+    object-fit: cover;
+    object-position: center 25%;
+  }
+
+  .engagement-link-body {
+    padding: 1.25rem 1.2rem 1.3rem;
+  }
+
+  .engagement-link-body h3 {
+    margin-bottom: .65rem;
+  }
+
+  .engagement-link-body p {
+    margin-bottom: 1rem;
+  }
+
+  .selected-case-section {
+    padding-bottom: 2.25rem;
+  }
+
+  .case-followup-section {
+    padding-top: 2.25rem;
+  }
+
+  /* Articles and case pages */
+  .article-hero h1 {
+    font-size: clamp(2.55rem, 12vw, 3.8rem);
+  }
+
+  .article-deck {
+    font-size: 1.08rem;
+    line-height: 1.55;
+  }
+
+  .article-meta {
+    gap: .45rem .9rem;
+    font-size: .78rem;
+  }
+
+  .article-aside {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: .7rem 1rem;
+    padding: 1rem 0;
+  }
+
+  .article-body {
+    font-size: 1.02rem;
+    line-height: 1.78;
+  }
+
+  .article-body p {
+    margin-bottom: 1.35rem;
+    max-width: none;
+  }
+
+  .article-body h2 {
+    margin: 2.4rem 0 .9rem;
+    font-size: clamp(1.75rem, 8vw, 2.15rem);
+    line-height: 1.1;
+  }
+
+  .article-body .pull {
+    margin: 2rem 0;
+    padding: 1.3rem;
+    font-size: 1.2rem;
+  }
+
+  /* Documentary gallery */
+  .case-gallery {
+    grid-template-columns: 1fr;
+    gap: 1.15rem;
+    margin-top: 1.4rem;
+  }
+
+  .case-gallery-main {
+    grid-column: auto;
+  }
+
+  .case-gallery img,
+  .case-gallery figure:not(.case-gallery-main) img,
+  .case-gallery-main img {
+    width: 100%;
+    min-height: 0;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+  }
+
+  .case-gallery figcaption,
+  .record-card figcaption {
+    font-size: .76rem;
+  }
+
+  .record-grid,
+  .record-grid-single {
+    grid-template-columns: 1fr;
+  }
+
+  .record-card {
+    grid-template-columns: 92px minmax(0,1fr);
+    gap: .85rem;
+    padding: .85rem;
+    border-radius: 14px;
+  }
+
+  .record-card img {
+    width: 92px;
+    height: 92px;
+    object-fit: cover;
+  }
+
+  .record-grid-single .record-card {
+    grid-template-columns: 1fr;
+  }
+
+  .record-grid-single .record-card img {
+    width: 100%;
+    max-height: 420px;
+    object-fit: contain;
+  }
+
+  /* CTAs */
+  .cta-panel {
+    padding: 1.6rem;
+    gap: 1.25rem;
+    border-radius: 18px;
+  }
+
+  .cta-panel h2 {
+    max-width: none;
+    font-size: clamp(1.8rem, 8.5vw, 2.5rem);
+  }
+
+  .cta-panel p {
+    max-width: none;
+  }
+
+  .cta-panel .button {
+    width: 100%;
+  }
+
+  /* Contact */
+  .contact-card {
+    min-height: 0;
+    padding: 1.2rem;
+  }
+
+  .contact-card h3 {
+    font-size: clamp(1.2rem, 6vw, 1.5rem);
+    overflow-wrap: anywhere;
+  }
+
+  /* Footer */
+  .site-footer {
+    padding-top: 3rem;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .footer-nav,
+  .footer-social {
+    grid-template-columns: repeat(2, minmax(0,1fr));
+    gap: .7rem 1rem;
+  }
+
+  .footer-nav a,
+  .footer-social a {
+    min-height: 40px;
+    display: flex;
+    align-items: center;
+  }
+
+  .footer-bottom {
+    margin-top: 2rem;
+    padding-top: 1.2rem;
+    display: grid;
+    gap: .45rem;
+    font-size: .74rem;
+  }
+}
+
+/* Small phones */
+@media (max-width: 480px) {
+  .container,
+  .narrow {
+    width: min(calc(100% - 24px), var(--max));
+  }
+
+  .brand-main {
+    font-size: 1.32rem;
+  }
+
+  .brand-by {
+    font-size: .72rem;
+  }
+
+  h1 {
+    font-size: clamp(2.35rem, 12.5vw, 3.25rem);
+  }
+
+  h2 {
+    font-size: clamp(1.7rem, 8.7vw, 2.25rem);
+  }
+
+  .section {
+    padding: 3rem 0;
+  }
+
+  .page-hero,
+  .article-hero {
+    padding-top: 2.35rem;
+  }
+
+  .hero-art {
+    min-height: 245px;
+  }
+
+  .page-orbit {
+    height: 150px;
+  }
+
+  .engagement-group {
+    padding: 1.15rem;
+  }
+
+  .engagement-group .group-head h2 {
+    font-size: clamp(2.1rem, 11.5vw, 3rem);
+  }
+
+  .engagement-link-image {
+    aspect-ratio: 3 / 2;
+  }
+
+  .article-aside {
+    grid-template-columns: 1fr;
+  }
+
+  .record-card {
+    grid-template-columns: 74px minmax(0,1fr);
+  }
+
+  .record-card img {
+    width: 74px;
+    height: 74px;
+  }
+
+  .footer-nav,
+  .footer-social {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Very narrow devices */
+@media (max-width: 360px) {
+  .container,
+  .narrow {
+    width: min(calc(100% - 20px), var(--max));
+  }
+
+  .brand-by {
+    display: none;
+  }
+
+  .site-nav {
+    left: 10px;
+    right: 10px;
+  }
+
+  .engagement-group .group-head {
+    align-items: flex-start;
+  }
+
+  .group-toggle {
+    margin-top: .1rem;
+  }
+
+  .cta-panel,
+  .contact-card,
+  .engagement-link-body,
+  .group-card {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+@media (max-width: 760px) {
+  body.nav-open { overflow: hidden; }
+}
