@@ -504,3 +504,68 @@ a:hover .arrow { transform: translateX(3px); }
   .engagement-link-card { padding:1.45rem 1.35rem; }
   .engagement-link-card { padding:1.2rem; }
 }
+
+/* Engagement case documentary galleries */
+.case-gallery {
+  display:grid;
+  grid-template-columns:1.4fr .8fr .8fr;
+  gap:1rem;
+  align-items:stretch;
+  margin-top:2rem;
+}
+.case-gallery figure,
+.record-card { margin:0; }
+.case-gallery img,
+.record-card img {
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  display:block;
+  border-radius:18px;
+  border:1px solid var(--rule);
+  background:var(--wash);
+}
+.case-gallery-main { grid-row:span 1; }
+.case-gallery figure { display:flex; flex-direction:column; gap:.65rem; }
+.case-gallery figure:not(.case-gallery-main) img { min-height:260px; }
+.case-gallery-main img { min-height:360px; }
+.case-gallery figcaption,
+.record-card figcaption {
+  font:500 .78rem/1.45 "Inter", system-ui, sans-serif;
+  color:var(--mid);
+}
+.record-grid {
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:1rem;
+}
+.record-card {
+  display:grid;
+  grid-template-columns:140px minmax(0,1fr);
+  gap:1rem;
+  align-items:center;
+  padding:1rem;
+  border:1px solid var(--rule);
+  border-radius:18px;
+  background:rgba(255,255,255,.68);
+}
+.record-card img { height:120px; }
+.record-card figcaption { display:grid; gap:.2rem; }
+.record-card strong { color:var(--ink); font-size:.72rem; letter-spacing:.08em; text-transform:uppercase; }
+
+@media (max-width: 860px) {
+  .case-gallery { grid-template-columns:1fr 1fr; }
+  .case-gallery-main { grid-column:1 / -1; }
+  .case-gallery-main img { min-height:300px; }
+  .record-grid { grid-template-columns:1fr; }
+}
+
+@media (max-width: 560px) {
+  .case-gallery { grid-template-columns:1fr; }
+  .case-gallery-main { grid-column:auto; }
+  .case-gallery img,
+  .case-gallery figure:not(.case-gallery-main) img,
+  .case-gallery-main img { min-height:0; aspect-ratio:4/3; }
+  .record-card { grid-template-columns:96px minmax(0,1fr); }
+  .record-card img { height:88px; }
+}
