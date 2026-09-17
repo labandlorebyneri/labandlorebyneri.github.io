@@ -1,57 +1,75 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='utf-8'?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://labandlorebyneri.github.io/</loc>
-    <lastmod>2026-09-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>1.0</priority>
   </url>
   <url>
     <loc>https://labandlorebyneri.github.io/about.html</loc>
-    <lastmod>2026-09-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://labandlorebyneri.github.io/blog.html</loc>
-    <lastmod>2026-09-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://labandlorebyneri.github.io/engagement.html</loc>
-    <lastmod>2026-09-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://labandlorebyneri.github.io/say-hello.html</loc>
-    <lastmod>2026-09-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://labandlorebyneri.github.io/series/lab-and-lore.html</loc>
-    <lastmod>2026-09-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://labandlorebyneri.github.io/series/love-and-lord.html</loc>
-    <lastmod>2026-09-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://labandlorebyneri.github.io/series/loud-and-load.html</loc>
-    <lastmod>2026-09-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://labandlorebyneri.github.io/posts/why-i-created-this-space.html</loc>
-    <lastmod>2026-09-10</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://labandlorebyneri.github.io/engagement/education-development.html</loc>
+  </url>
+  <url>
+    <loc>https://labandlorebyneri.github.io/engagement/research-public-conversation.html</loc>
+  </url>
+  <url>
+    <loc>https://labandlorebyneri.github.io/engagement/community-service.html</loc>
+  </url>
+  <url>
+    <loc>https://labandlorebyneri.github.io/engagement/recognition-through-service.html</loc>
+  </url>
+  <url>
+    <loc>https://labandlorebyneri.github.io/engagement/case/college-readiness-new-normal.html</loc>
+  </url>
+  <url>
+    <loc>https://labandlorebyneri.github.io/engagement/case/college-entrance-test-review.html</loc>
+  </url>
+  <url>
+    <loc>https://labandlorebyneri.github.io/engagement/case/digital-transformation-archipelago.html</loc>
+  </url>
+  <url>
+    <loc>https://labandlorebyneri.github.io/engagement/case/youth-voice-local-development.html</loc>
+  </url>
+  <url>
+    <loc>https://labandlorebyneri.github.io/engagement/case/legislation-evidence-local-memory.html</loc>
+  </url>
+  <url>
+    <loc>https://labandlorebyneri.github.io/engagement/case/san-na-si-sp.html</loc>
+  </url>
+  <url>
+    <loc>https://labandlorebyneri.github.io/engagement/case/community-pantries-filipino-psychology.html</loc>
+  </url>
+  <url>
+    <loc>https://labandlorebyneri.github.io/engagement/case/paskong-katutubo.html</loc>
+  </url>
+  <url>
+    <loc>https://labandlorebyneri.github.io/engagement/case/legal-medical-mission.html</loc>
+  </url>
+  <url>
+    <loc>https://labandlorebyneri.github.io/engagement/case/bangon-cagayan.html</loc>
+  </url>
+  <url>
+    <loc>https://labandlorebyneri.github.io/engagement/case/leadership-character-recognition.html</loc>
   </url>
 </urlset>
