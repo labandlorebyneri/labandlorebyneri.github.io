@@ -56,6 +56,74 @@
 
   <link rel="stylesheet" href="../../assets/css/site.css">
   <script defer src="../../assets/js/site.js"></script>
+
+  <style>
+    .engagement-record-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1.15fr) minmax(320px, 0.85fr);
+      gap: clamp(3rem, 8vw, 8rem);
+      align-items: start;
+    }
+
+    .engagement-record-intro h2 {
+      max-width: 12ch;
+    }
+
+    .engagement-record-list {
+      margin: 0;
+    }
+
+    .engagement-record-row {
+      display: grid;
+      grid-template-columns: 9rem minmax(0, 1fr);
+      gap: 1.25rem;
+      align-items: start;
+      margin: 0;
+      padding: 1rem 0 1.05rem;
+      border-top: 1px solid rgba(12, 39, 64, 0.14);
+    }
+
+    .engagement-record-row:last-child {
+      border-bottom: 1px solid rgba(12, 39, 64, 0.14);
+    }
+
+    .engagement-record-row dt {
+      margin: 0;
+      padding-top: 0.08rem;
+      font-family: "DM Sans", sans-serif;
+      font-size: 0.72rem;
+      font-weight: 700;
+      line-height: 1.2;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: #68717c;
+    }
+
+    .engagement-record-row dd {
+      margin: 0;
+      font-family: "Inter", sans-serif;
+      font-size: clamp(1rem, 2vw, 1.08rem);
+      font-weight: 600;
+      line-height: 1.45;
+      color: #0c2740;
+    }
+
+    @media (max-width: 800px) {
+      .engagement-record-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+      }
+
+      .engagement-record-intro h2 {
+        max-width: none;
+      }
+
+      .engagement-record-row {
+        grid-template-columns: 1fr;
+        gap: 0.35rem;
+      }
+    }
+  </style>
 </head>
 
 <body>
@@ -108,10 +176,6 @@
           place like UP could also be meant for someone from a small farming town.
         </p>
 
-        <p class="muted" style="margin-top:1.25rem">
-          <strong>Year:</strong> 2019
-        </p>
-
         <p style="margin-top:1.5rem">
           <a class="text-link" href="../education-development.html">
             ← Back to Education &amp; Development
@@ -124,6 +188,57 @@
     </div>
   </section>
 
+
+  <section class="section section-rule">
+    <div class="container engagement-record-grid">
+      <div class="engagement-record-intro" data-reveal>
+        <p class="eyebrow">Engagement record</p>
+        <h2>The experience at a glance.</h2>
+      </div>
+
+      <dl class="engagement-record-list" data-reveal>
+        <div class="engagement-record-row">
+          <dt>Institution</dt>
+          <dd>St. John&apos;s Academy</dd>
+        </div>
+
+        <div class="engagement-record-row">
+          <dt>Engagement</dt>
+          <dd>College Entrance Test Review</dd>
+        </div>
+
+        <div class="engagement-record-row">
+          <dt>Year</dt>
+          <dd>2019</dd>
+        </div>
+
+        <div class="engagement-record-row">
+          <dt>Partner office</dt>
+          <dd>Office of Guidance and Counselling</dd>
+        </div>
+
+        <div class="engagement-record-row">
+          <dt>Role</dt>
+          <dd>Organizer and Test-Taking Strategies facilitator</dd>
+        </div>
+
+        <div class="engagement-record-row">
+          <dt>Sessions</dt>
+          <dd>Four Saturdays</dd>
+        </div>
+
+        <div class="engagement-record-row">
+          <dt>Coverage</dt>
+          <dd>Mathematics Proficiency, Science Proficiency, Reading Comprehension, Language Ability, and Test-Taking Strategies</dd>
+        </div>
+
+        <div class="engagement-record-row">
+          <dt>Additional support</dt>
+          <dd>Materials preparation, admission application processing, and document submission assistance</dd>
+        </div>
+      </dl>
+    </div>
+  </section>
 
   <section class="section section-rule">
     <div class="container split">
