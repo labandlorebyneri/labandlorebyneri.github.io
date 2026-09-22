@@ -30,6 +30,74 @@
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500;600;700&amp;family=Inter:wght@400;500;600;700;800&amp;family=Noto+Serif+Display:ital,wght@0,500;0,600;1,500&amp;display=swap" rel="stylesheet"/>
 <link href="../../assets/css/site.css" rel="stylesheet"/>
 <script defer="" src="../../assets/js/site.js"></script>
+
+<style>
+  .engagement-record-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1.15fr) minmax(320px, 0.85fr);
+    gap: clamp(3rem, 8vw, 8rem);
+    align-items: start;
+  }
+
+  .engagement-record-intro h2 {
+    max-width: 12ch;
+  }
+
+  .engagement-record-list {
+    margin: 0;
+  }
+
+  .engagement-record-row {
+    display: grid;
+    grid-template-columns: 9rem minmax(0, 1fr);
+    gap: 1.25rem;
+    align-items: start;
+    margin: 0;
+    padding: 1rem 0 1.05rem;
+    border-top: 1px solid rgba(12, 39, 64, 0.14);
+  }
+
+  .engagement-record-row:last-child {
+    border-bottom: 1px solid rgba(12, 39, 64, 0.14);
+  }
+
+  .engagement-record-row dt {
+    margin: 0;
+    padding-top: 0.08rem;
+    font-family: "DM Sans", sans-serif;
+    font-size: 0.72rem;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #68717c;
+  }
+
+  .engagement-record-row dd {
+    margin: 0;
+    font-family: "Inter", sans-serif;
+    font-size: clamp(1rem, 2vw, 1.08rem);
+    font-weight: 600;
+    line-height: 1.45;
+    color: #0c2740;
+  }
+
+  @media (max-width: 800px) {
+    .engagement-record-grid {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
+
+    .engagement-record-intro h2 {
+      max-width: none;
+    }
+
+    .engagement-record-row {
+      grid-template-columns: 1fr;
+      gap: 0.35rem;
+    }
+  }
+</style>
 </head>
 <body>
 <a class="skip-link" href="#main">Skip to content</a>
@@ -55,7 +123,7 @@
 <section class="page-hero">
 <div class="container page-hero-grid">
 <div data-reveal="">
-<p class="eyebrow">Research Manuscript · Qualitative Research · January 2022</p>
+<p class="eyebrow">Research Manuscript · Qualitative Research</p>
 <h1>Suportahan Taka: Understanding The Motivations, Experiences, And The Role Of Filipino Values In The Participation Of Filipino Presidential Candidate Group Volunteers For The Upcoming 2022 Philippine Presidential Elections</h1>
 <p class="lede">
 A qualitative study examining the motivations, experiences, and Filipino values associated with participation in presidential-candidate volunteer groups during the period leading to the 2022 Philippine presidential election.
@@ -70,47 +138,55 @@ A qualitative study examining the motivations, experiences, and Filipino values 
 <div aria-hidden="true" class="page-orbit" data-reveal=""></div>
 </div>
 </section>
-<section class="section section-rule research-record-section">
-<div class="container research-record-grid">
-<div class="research-record-intro" data-reveal="">
+<section class="section section-rule">
+<div class="container engagement-record-grid">
+<div class="engagement-record-intro" data-reveal="">
 <p class="eyebrow">Research record</p>
 <h2>The study at a glance.</h2>
-<p>Learn about the study's context, design, sample, methods, and authorship.</p>
 </div>
-<dl class="research-record-list" data-reveal="">
-<div class="research-record-item">
+
+<dl class="engagement-record-list" data-reveal="">
+<div class="engagement-record-row">
 <dt>Academic context</dt>
 <dd>Anthro 141 · University of the Philippines</dd>
 </div>
-<div class="research-record-item">
+
+<div class="engagement-record-row">
 <dt>Manuscript date</dt>
 <dd>January 21, 2022</dd>
 </div>
-<div class="research-record-item">
+
+<div class="engagement-record-row">
 <dt>Authors</dt>
 <dd>Joshua Neri A. Cristobal, Krislyn Hanna M. Barcelona, Hadassah Leigh R. Medalla, Edward Allen B. Angeles, Jose Jesu T. Kapunan, and Jasmine V. Amburgo</dd>
 </div>
-<div class="research-record-item">
+
+<div class="engagement-record-row">
 <dt>My role</dt>
 <dd>Lead author</dd>
 </div>
-<div class="research-record-item">
+
+<div class="engagement-record-row">
 <dt>Research design</dt>
 <dd>Qualitative research · social constructionist perspective</dd>
 </div>
-<div class="research-record-item">
+
+<div class="engagement-record-row">
 <dt>Participants</dt>
 <dd>10 presidential-campaign volunteers, ages 19–48</dd>
 </div>
-<div class="research-record-item">
+
+<div class="engagement-record-row">
 <dt>Sampling</dt>
 <dd>Purposive and snowball sampling</dd>
 </div>
-<div class="research-record-item">
+
+<div class="engagement-record-row">
 <dt>Data collection</dt>
 <dd>Qualitative survey through Google Forms · January 4–10, 2022</dd>
 </div>
-<div class="research-record-item">
+
+<div class="engagement-record-row">
 <dt>Analysis</dt>
 <dd>Inductive general thematic analysis following Braun and Clarke's six-step approach</dd>
 </div>
