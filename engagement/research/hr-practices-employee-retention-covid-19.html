@@ -33,6 +33,74 @@
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500;600;700&amp;family=Inter:wght@400;500;600;700;800&amp;family=Noto+Serif+Display:ital,wght@0,500;0,600;1,500&amp;display=swap" rel="stylesheet"/>
 <link href="../../assets/css/site.css" rel="stylesheet"/>
 <script defer="" src="../../assets/js/site.js"></script>
+
+<style>
+  .engagement-record-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1.15fr) minmax(320px, 0.85fr);
+    gap: clamp(3rem, 8vw, 8rem);
+    align-items: start;
+  }
+
+  .engagement-record-intro h2 {
+    max-width: 12ch;
+  }
+
+  .engagement-record-list {
+    margin: 0;
+  }
+
+  .engagement-record-row {
+    display: grid;
+    grid-template-columns: 9rem minmax(0, 1fr);
+    gap: 1.25rem;
+    align-items: start;
+    margin: 0;
+    padding: 1rem 0 1.05rem;
+    border-top: 1px solid rgba(12, 39, 64, 0.14);
+  }
+
+  .engagement-record-row:last-child {
+    border-bottom: 1px solid rgba(12, 39, 64, 0.14);
+  }
+
+  .engagement-record-row dt {
+    margin: 0;
+    padding-top: 0.08rem;
+    font-family: "DM Sans", sans-serif;
+    font-size: 0.72rem;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #68717c;
+  }
+
+  .engagement-record-row dd {
+    margin: 0;
+    font-family: "Inter", sans-serif;
+    font-size: clamp(1rem, 2vw, 1.08rem);
+    font-weight: 600;
+    line-height: 1.45;
+    color: #0c2740;
+  }
+
+  @media (max-width: 800px) {
+    .engagement-record-grid {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
+
+    .engagement-record-intro h2 {
+      max-width: none;
+    }
+
+    .engagement-record-row {
+      grid-template-columns: 1fr;
+      gap: 0.35rem;
+    }
+  }
+</style>
 </head>
 
 <body>
@@ -62,7 +130,7 @@
 <section class="page-hero">
 <div class="container page-hero-grid">
 <div data-reveal="">
-<p class="eyebrow">Research Manuscript · BA 152 · January 2022</p>
+<p class="eyebrow">Research Manuscript · BA 152</p>
 <h1>Human Resource Practices and Employee Retention during the COVID-19 Pandemic: A Correlation Study</h1>
 <p class="lede">
 A descriptive quantitative study examining how recruitment, training and development, performance appraisal, and compensation and benefits were associated with employee retention during the COVID-19 pandemic, with the analysis focused on manufacturing and retail organizations.
@@ -75,62 +143,58 @@ A descriptive quantitative study examining how recruitment, training and develop
 </div>
 </section>
 
-<section class="section section-rule research-record-section">
-<div class="container research-record-grid">
-
-<div class="research-record-intro" data-reveal="">
+<section class="section section-rule">
+<div class="container engagement-record-grid">
+<div class="engagement-record-intro" data-reveal="">
 <p class="eyebrow">Research record</p>
 <h2>The study at a glance.</h2>
-<p>Learn about the study's context, design, sample, methods, and authorship.</p>
 </div>
 
-<dl class="research-record-list" data-reveal="">
-
-<div class="research-record-item">
+<dl class="engagement-record-list" data-reveal="">
+<div class="engagement-record-row">
 <dt>Academic context</dt>
 <dd>BA 152 · Introduction to Human Resource Management · University of the Philippines</dd>
 </div>
 
-<div class="research-record-item">
+<div class="engagement-record-row">
 <dt>Manuscript date</dt>
 <dd>January 10, 2022</dd>
 </div>
 
-<div class="research-record-item">
+<div class="engagement-record-row">
 <dt>Authors</dt>
 <dd>Monique Joy M. Cabral, Joshua Neri A. Cristobal, Kiezzer Gayle G. de Castro, Roland Ezekiel M. Devesa, and Alexandra Julia A. Javier</dd>
 </div>
 
-<div class="research-record-item">
+<div class="engagement-record-row">
 <dt>My role</dt>
 <dd>Co-author · contributed the abstract, introduction and review of related literature, research questions, and training discussion</dd>
 </div>
 
-<div class="research-record-item">
+<div class="engagement-record-row">
 <dt>Research design</dt>
 <dd>Descriptive quantitative correlation study using a structured survey</dd>
 </div>
 
-<div class="research-record-item">
+<div class="engagement-record-row">
 <dt>Analytic sample</dt>
 <dd>18 organizational respondents: 8 manufacturing and 10 retail</dd>
 </div>
 
-<div class="research-record-item">
+<div class="engagement-record-row">
 <dt>Sampling</dt>
 <dd>Purposive and convenience sampling of human resource managers and other organizational representatives</dd>
 </div>
 
-<div class="research-record-item">
+<div class="engagement-record-row">
 <dt>Data collection</dt>
 <dd>Structured questionnaire administered from November to December 2021</dd>
 </div>
 
-<div class="research-record-item">
+<div class="engagement-record-row">
 <dt>Analysis</dt>
 <dd>Chi-square tests, Cramer's V, point-biserial correlations, multiple regression, and linear regression</dd>
 </div>
-
 </dl>
 </div>
 </section>
