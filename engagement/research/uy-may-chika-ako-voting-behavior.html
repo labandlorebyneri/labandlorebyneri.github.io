@@ -33,6 +33,74 @@
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500;600;700&amp;family=Inter:wght@400;500;600;700;800&amp;family=Noto+Serif+Display:ital,wght@0,500;0,600;1,500&amp;display=swap" rel="stylesheet"/>
 <link href="../../assets/css/site.css" rel="stylesheet"/>
 <script defer="" src="../../assets/js/site.js"></script>
+
+<style>
+  .engagement-record-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1.15fr) minmax(320px, 0.85fr);
+    gap: clamp(3rem, 8vw, 8rem);
+    align-items: start;
+  }
+
+  .engagement-record-intro h2 {
+    max-width: 12ch;
+  }
+
+  .engagement-record-list {
+    margin: 0;
+  }
+
+  .engagement-record-row {
+    display: grid;
+    grid-template-columns: 9rem minmax(0, 1fr);
+    gap: 1.25rem;
+    align-items: start;
+    margin: 0;
+    padding: 1rem 0 1.05rem;
+    border-top: 1px solid rgba(12, 39, 64, 0.14);
+  }
+
+  .engagement-record-row:last-child {
+    border-bottom: 1px solid rgba(12, 39, 64, 0.14);
+  }
+
+  .engagement-record-row dt {
+    margin: 0;
+    padding-top: 0.08rem;
+    font-family: "DM Sans", sans-serif;
+    font-size: 0.72rem;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #68717c;
+  }
+
+  .engagement-record-row dd {
+    margin: 0;
+    font-family: "Inter", sans-serif;
+    font-size: clamp(1rem, 2vw, 1.08rem);
+    font-weight: 600;
+    line-height: 1.45;
+    color: #0c2740;
+  }
+
+  @media (max-width: 800px) {
+    .engagement-record-grid {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
+
+    .engagement-record-intro h2 {
+      max-width: none;
+    }
+
+    .engagement-record-row {
+      grid-template-columns: 1fr;
+      gap: 0.35rem;
+    }
+  }
+</style>
 </head>
 
 <body>
@@ -62,7 +130,7 @@
 <section class="page-hero">
 <div class="container page-hero-grid">
 <div data-reveal="">
-<p class="eyebrow">Research Manuscript · Psych 115 · 2020</p>
+<p class="eyebrow">Research Manuscript · Psych 115</p>
 <h1>Uy May Chika Ako!: Likelihood of Voting as Influenced by the Electoral Candidate's Background and the Type of Relationship with the Communication Source</h1>
 <p class="lede">
 A Psych 115 experimental study examining whether the type of controversy attached to a hypothetical electoral candidate and the participant's relationship with a communication source influenced university students' reported likelihood of voting.
@@ -75,55 +143,55 @@ A Psych 115 experimental study examining whether the type of controversy attache
 </div>
 </section>
 
-<section class="section section-rule research-record-section">
-<div class="container research-record-grid">
-<div class="research-record-intro" data-reveal="">
+<section class="section section-rule">
+<div class="container engagement-record-grid">
+<div class="engagement-record-intro" data-reveal="">
 <p class="eyebrow">Research record</p>
 <h2>The study at a glance.</h2>
-<p>Learn about the study's context, design, sample, methods, and authorship.</p>
 </div>
-<dl class="research-record-list" data-reveal="">
-<div class="research-record-item">
+
+<dl class="engagement-record-list" data-reveal="">
+<div class="engagement-record-row">
 <dt>Academic context</dt>
 <dd>Psych 115 · Experimental Research in Psychology · University of the Philippines</dd>
 </div>
 
-<div class="research-record-item">
+<div class="engagement-record-row">
 <dt>Manuscript date</dt>
 <dd>22 December 2020</dd>
 </div>
 
-<div class="research-record-item">
+<div class="engagement-record-row">
 <dt>Authors</dt>
 <dd>Faith Ayuyao, Kobe Bagaipo, Joshua Neri Cristobal, and Jacqueline Marie Dimalanta</dd>
 </div>
 
-<div class="research-record-item">
+<div class="engagement-record-row">
 <dt>My role</dt>
 <dd>Co-author</dd>
 </div>
 
-<div class="research-record-item">
+<div class="engagement-record-row">
 <dt>Research design</dt>
 <dd>3 × 2 between-subjects factorial experiment</dd>
 </div>
 
-<div class="research-record-item">
+<div class="engagement-record-row">
 <dt>Participants</dt>
-<dd>150 university students, ages 18-22, from UP Diliman and other higher education institutions in the Philippines</dd>
+<dd>150 university students, ages 18–22, from UP Diliman and other higher education institutions in the Philippines</dd>
 </div>
 
-<div class="research-record-item">
+<div class="engagement-record-row">
 <dt>Independent variables</dt>
 <dd>Relationship with communication source: stranger, close friend, or professor; candidate controversy: corruption or infidelity</dd>
 </div>
 
-<div class="research-record-item">
+<div class="engagement-record-row">
 <dt>Outcome measure</dt>
 <dd>Self-reported likelihood of voting using a 5-point Likert scale</dd>
 </div>
 
-<div class="research-record-item">
+<div class="engagement-record-row">
 <dt>Analysis</dt>
 <dd>Two-way independent-measures ANOVA, with bootstrapping used after normality and homogeneity assumptions were violated</dd>
 </div>
