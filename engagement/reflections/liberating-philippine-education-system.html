@@ -30,6 +30,74 @@
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500;600;700&amp;family=Inter:wght@400;500;600;700;800&amp;family=Noto+Serif+Display:ital,wght@0,500;0,600;1,500&amp;display=swap" rel="stylesheet"/>
 <link href="../../assets/css/site.css" rel="stylesheet"/>
 <script defer="" src="../../assets/js/site.js"></script>
+
+<style>
+  .engagement-record-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1.15fr) minmax(320px, 0.85fr);
+    gap: clamp(3rem, 8vw, 8rem);
+    align-items: start;
+  }
+
+  .engagement-record-intro h2 {
+    max-width: 12ch;
+  }
+
+  .engagement-record-list {
+    margin: 0;
+  }
+
+  .engagement-record-row {
+    display: grid;
+    grid-template-columns: 9rem minmax(0, 1fr);
+    gap: 1.25rem;
+    align-items: start;
+    margin: 0;
+    padding: 1rem 0 1.05rem;
+    border-top: 1px solid rgba(12, 39, 64, 0.14);
+  }
+
+  .engagement-record-row:last-child {
+    border-bottom: 1px solid rgba(12, 39, 64, 0.14);
+  }
+
+  .engagement-record-row dt {
+    margin: 0;
+    padding-top: 0.08rem;
+    font-family: "DM Sans", sans-serif;
+    font-size: 0.72rem;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #68717c;
+  }
+
+  .engagement-record-row dd {
+    margin: 0;
+    font-family: "Inter", sans-serif;
+    font-size: clamp(1rem, 2vw, 1.08rem);
+    font-weight: 600;
+    line-height: 1.45;
+    color: #0c2740;
+  }
+
+  @media (max-width: 800px) {
+    .engagement-record-grid {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
+
+    .engagement-record-intro h2 {
+      max-width: none;
+    }
+
+    .engagement-record-row {
+      grid-template-columns: 1fr;
+      gap: 0.35rem;
+    }
+  }
+</style>
 </head>
 <body>
 <a class="skip-link" href="#main">Skip to content</a>
@@ -71,31 +139,35 @@
 <div aria-hidden="true" class="page-orbit" data-reveal=""></div>
 </div>
 </section>
-<section class="section research-record-section section-rule">
-<div class="container research-record-grid">
-<div class="research-record-intro" data-reveal="">
+<section class="section section-rule">
+<div class="container engagement-record-grid">
+<div class="engagement-record-intro" data-reveal="">
 <p class="eyebrow">Essay record</p>
 <h2>The essay at a glance.</h2>
-<p>Learn about the essay's context, structure, and central ideas.</p>
 </div>
-<dl class="research-record-list" data-reveal="">
-<div class="research-record-item">
+
+<dl class="engagement-record-list" data-reveal="">
+<div class="engagement-record-row">
 <dt>Academic context</dt>
 <dd>PI 100 · The Life and Works of Jose Rizal · University of the Philippines</dd>
 </div>
-<div class="research-record-item">
+
+<div class="engagement-record-row">
 <dt>Essay type</dt>
 <dd>Midterm examination essay</dd>
 </div>
-<div class="research-record-item">
+
+<div class="engagement-record-row">
 <dt>Theme</dt>
 <dd>Philippine education, language, inequality, and social reform</dd>
 </div>
-<div class="research-record-item">
+
+<div class="engagement-record-row">
 <dt>Central argument</dt>
 <dd>A liberating education system requires social reform beyond the classroom.</dd>
 </div>
-<div class="research-record-item">
+
+<div class="engagement-record-row">
 <dt>Structure</dt>
 <dd>Educational assessments → language → socioeconomic conditions → facilities and curriculum → proposed reforms</dd>
 </div>
