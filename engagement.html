@@ -29,6 +29,40 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Serif+Display:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/site.css">
+  <style>
+    /* Engagement groups: keep the CTA inside the card on narrow screens. */
+    @media (max-width: 720px) {
+      .engagement-group .group-head {
+        display: block;
+      }
+
+      .engagement-group .group-head > div {
+        min-width: 0;
+      }
+
+      .engagement-group .group-toggle {
+        display: inline-flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: .65rem;
+        width: auto;
+        max-width: 100%;
+        margin-top: 1.15rem;
+        margin-left: 0;
+        white-space: normal;
+        text-align: left;
+      }
+
+      .engagement-group .group-toggle span:first-child {
+        min-width: 0;
+        overflow-wrap: anywhere;
+      }
+
+      .engagement-group .group-toggle-icon {
+        flex: 0 0 auto;
+      }
+    }
+  </style>
   <script defer src="assets/js/site.js"></script>
   <script type="application/ld+json">
   {
