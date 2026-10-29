@@ -6,6 +6,7 @@
   --ink-2: #17365f;
   --blue: #0455DF;
   --coral: #FD7D62;
+  --coral-text: #B4412F;
   --sun: #F6BA32;
   --mint: #A6D4C0;
   --mint-deep: #5f9f87;
@@ -53,7 +54,7 @@ button { font: inherit; }
 .narrow { width: min(calc(100% - 40px), 820px); margin-inline: auto; }
 .eyebrow {
   margin: 0 0 1rem;
-  color: var(--coral);
+  color: var(--coral-text);
   font-size: .75rem;
   font-weight: 700;
   letter-spacing: .18em;
@@ -213,7 +214,7 @@ a:hover .arrow { transform: translateX(3px); }
 
 .values-grid { display:grid; grid-template-columns:repeat(2,1fr); gap:1rem; }
 .value-card { border:1px solid var(--rule); border-radius:var(--radius-sm); padding:1.6rem; background:var(--paper); }
-.value-card .number { color:var(--coral); font-size:.72rem; font-weight:800; letter-spacing:.15em; }
+.value-card .number { color:var(--coral-text); font-size:.72rem; font-weight:800; letter-spacing:.15em; }
 .value-card h3 { font-size:1.55rem; margin:.75rem 0; }
 .value-card p { margin:0; color:#4c5b70; }
 
