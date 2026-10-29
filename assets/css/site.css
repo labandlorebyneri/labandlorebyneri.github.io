@@ -1457,4 +1457,34 @@ h3,
   .case-record-item dd {
     font-size: 1rem;
   }
+
+/* Mobile navigation fallback without JavaScript */
+@media (max-width: 760px) {
+  html:not(.nav-js) .site-header {
+    position: static;
+  }
+
+  html:not(.nav-js) .nav-wrap {
+    height: auto;
+    min-height: 68px;
+    flex-wrap: wrap;
+    padding-block: .5rem;
+  }
+
+  html:not(.nav-js) .menu-toggle {
+    display: none;
+  }
+
+  html:not(.nav-js) .site-nav {
+    position: static;
+    display: flex;
+    flex: 1 1 100%;
+    width: 100%;
+    max-height: none;
+    overflow: visible;
+    padding: .5rem 0;
+    border: 0;
+    box-shadow: none;
+    background: transparent;
+  }
 }
