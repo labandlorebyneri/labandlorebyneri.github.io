@@ -1457,6 +1457,7 @@ h3,
   .case-record-item dd {
     font-size: 1rem;
   }
+}
 
 /* Mobile navigation fallback without JavaScript */
 @media (max-width: 760px) {
