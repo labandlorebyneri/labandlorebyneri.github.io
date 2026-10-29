@@ -74,12 +74,16 @@
     } else if (mobileNavQuery.addListener) {
       mobileNavQuery.addListener(syncMenu);
     }
+
+    // Activate collapsible mobile navigation only after handlers are ready.
+    // Without JavaScript, the CSS fallback leaves navigation links visible.
+    document.documentElement.classList.add('nav-js');
   }
 
   const engagementGroups =
     document.querySelectorAll('.engagement-group');
 
-  // Only hide mobile disclosure content if every group has a working control.
+  // Only enhance disclosures if every group has a control.
   const canEnhanceEngagement =
     engagementGroups.length > 0 &&
     Array.from(engagementGroups).every((group) =>
@@ -157,8 +161,7 @@
       observer.observe(item);
     });
 
-    // Enable hiding/animation only after the observer is ready.
-    // Without JavaScript, all content remains visible through CSS.
+    // Hide and animate reveal items only when the observer is ready.
     document.documentElement.classList.add('reveal-enabled');
   }
 })();
