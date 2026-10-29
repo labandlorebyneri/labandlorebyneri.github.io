@@ -1,4 +1,4 @@
-(() => {
+() => {
   const header = document.querySelector('.site-header');
   const menuButton = document.querySelector('.menu-toggle');
   const nav = document.querySelector('.site-nav');
@@ -78,64 +78,50 @@
   const engagementGroups =
     document.querySelectorAll('.engagement-group');
 
-  if (engagementGroups.length) {
+  // Only hide mobile disclosure content if every group has a working control.
+  const canEnhanceEngagement =
+    engagementGroups.length > 0 &&
+    Array.from(engagementGroups).every((group) =>
+      group.querySelector('.group-toggle')
+    );
+
+  if (canEnhanceEngagement) {
     const mobileQuery =
       window.matchMedia('(max-width: 720px)');
 
     const syncEngagementGroups = () => {
       engagementGroups.forEach((group) => {
-        const button =
-          group.querySelector('.group-toggle');
-
-        if (!button) return;
+        const button = group.querySelector('.group-toggle');
 
         if (mobileQuery.matches) {
           group.classList.remove('is-open');
-          button.setAttribute(
-            'aria-expanded',
-            'false'
-          );
+          button.setAttribute('aria-expanded', 'false');
         } else {
           group.classList.add('is-open');
-          button.setAttribute(
-            'aria-expanded',
-            'true'
-          );
+          button.setAttribute('aria-expanded', 'true');
         }
       });
     };
 
     engagementGroups.forEach((group) => {
-      const button =
-        group.querySelector('.group-toggle');
-
-      if (!button) return;
+      const button = group.querySelector('.group-toggle');
 
       button.addEventListener('click', () => {
         if (!mobileQuery.matches) return;
 
-        const open =
-          group.classList.toggle('is-open');
-
-        button.setAttribute(
-          'aria-expanded',
-          String(open)
-        );
+        const open = group.classList.toggle('is-open');
+        button.setAttribute('aria-expanded', String(open));
       });
     });
 
     if (mobileQuery.addEventListener) {
-      mobileQuery.addEventListener(
-        'change',
-        syncEngagementGroups
-      );
+      mobileQuery.addEventListener('change', syncEngagementGroups);
     } else if (mobileQuery.addListener) {
-      mobileQuery.addListener(
-        syncEngagementGroups
-      );
+      mobileQuery.addListener(syncEngagementGroups);
     }
 
     syncEngagementGroups();
+    document.documentElement.classList.add('engagement-js');
   }
 
   const reduceMotion =
@@ -147,6 +133,7 @@
     document.querySelectorAll('[data-reveal]');
 
   if (
+    revealItems.length > 0 &&
     !reduceMotion &&
     'IntersectionObserver' in window
   ) {
@@ -155,27 +142,22 @@
         (entries) => {
           entries.forEach((entry) => {
             if (entry.isIntersecting) {
-              entry.target.classList.add(
-                'is-visible'
-              );
-
-              observer.unobserve(
-                entry.target
-              );
+              entry.target.classList.add('is-visible');
+              observer.unobserve(entry.target);
             }
           });
         },
         {
-          threshold: 0.12
+          threshold: 0.01
         }
       );
 
     revealItems.forEach((item) => {
       observer.observe(item);
     });
-  } else {
-    revealItems.forEach((item) => {
-      item.classList.add('is-visible');
-    });
+
+    // Enable hiding/animation only after the observer is ready.
+    // Without JavaScript, all content remains visible through CSS.
+    document.documentElement.classList.add('reveal-enabled');
   }
 })();
