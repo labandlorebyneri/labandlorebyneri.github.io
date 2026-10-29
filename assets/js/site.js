@@ -1,4 +1,5 @@
-() => {
+
+(() => {
   const header = document.querySelector('.site-header');
   const menuButton = document.querySelector('.menu-toggle');
   const nav = document.querySelector('.site-nav');
