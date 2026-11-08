@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -30,7 +31,7 @@
 
   <meta
     property="og:title"
-    content="When Ego Takes the Wheel | Loud &amp; Load | Lab &amp; Lore by Neri"
+    content="When Ego Takes the Wheel | Loud & Load | Lab & Lore by Neri"
   >
 
   <meta
@@ -62,7 +63,7 @@
     rel="stylesheet"
   >
 
-  <link rel="stylesheet" href="../assets/css/site.css">
+  <link rel="stylesheet" href="../assets/css/site.css?v=20261109">
   <script defer src="../assets/js/site.js"></script>
 
   <script type="application/ld+json">
@@ -124,6 +125,7 @@
       class="menu-toggle"
       type="button"
       aria-label="Toggle navigation"
+      aria-controls="primary-navigation"
       aria-expanded="false"
     >
       <span></span>
@@ -131,7 +133,7 @@
       <span></span>
     </button>
 
-    <nav class="site-nav" aria-label="Primary navigation">
+    <nav id="primary-navigation" class="site-nav" aria-label="Primary navigation">
       <a href="../about.html">About</a>
       <a href="../blog.html" aria-current="page">Insights</a>
       <a href="../engagement.html">Work</a>
@@ -688,6 +690,90 @@
     </section>
 
 
+    <!-- Related reading and engagement -->
+    <section
+      class="section section-rule"
+      aria-labelledby="related-reading-heading"
+    >
+      <div class="container">
+
+        <div class="section-head">
+
+          <div>
+            <div class="section-index">
+              Related reading
+            </div>
+
+            <h2
+              id="related-reading-heading"
+              style="margin-top:1rem"
+            >
+              Accountability does not end with authority.
+            </h2>
+          </div>
+
+          <p class="muted">
+            An essay on examining our judgments and an engagement case
+            on responsibility and service beyond recognition.
+          </p>
+
+        </div>
+
+        <div class="selected-engagement-grid">
+
+          <a
+            class="engagement-link-card"
+            href="../posts/the-inconvenience-of-thinking-twice.html"
+          >
+            <span class="engagement-link-kicker">
+              Lab &amp; Lore · Related essay
+            </span>
+
+            <h3>
+              The Inconvenience of Thinking Twice
+            </h3>
+
+            <p>
+              On slowing down, examining evidence, and reconsidering
+              a judgment before certainty takes hold.
+            </p>
+
+            <span class="text-link">
+              Read the essay
+              <span class="arrow" aria-hidden="true">→</span>
+            </span>
+          </a>
+
+
+          <a
+            class="engagement-link-card"
+            href="../engagement/recognition-through-service.html"
+          >
+            <span class="engagement-link-kicker">
+              Resistance · Engagement case
+            </span>
+
+            <h3>
+              Recognition Through Service
+            </h3>
+
+            <p>
+              On sustained contribution, responsibility, and participation
+              within a community, beyond titles or individual recognition.
+            </p>
+
+            <span class="text-link">
+              Explore the engagement
+              <span class="arrow" aria-hidden="true">→</span>
+            </span>
+          </a>
+
+        </div>
+
+      </div>
+    </section>
+
+
     <section class="section-tight">
       <div class="container cta-panel">
 
@@ -718,7 +804,7 @@
             href="../series/loud-and-load.html"
           >
             Explore Loud &amp; Load
-            <span class="arrow">→</span>
+            <span class="arrow" aria-hidden="true">→</span>
           </a>
 
         </div>
