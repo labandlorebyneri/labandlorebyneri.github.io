@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -30,7 +31,7 @@
   <link href="https://fonts.googleapis.com" rel="preconnect"/>
   <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500;600;700&amp;family=Inter:wght@400;500;600;700;800&amp;family=Noto+Serif+Display:ital,wght@0,500;0,600;1,500&amp;display=swap" rel="stylesheet"/>
-  <link href="../../assets/css/site.css" rel="stylesheet"/>
+  <link href="../../assets/css/site.css?v=20261109" rel="stylesheet"/>
   <script defer="" src="../../assets/js/site.js"></script>
 
   <style>
@@ -72,7 +73,7 @@
       line-height: 1.2;
       letter-spacing: 0.1em;
       text-transform: uppercase;
-      color: #68717c;
+      color: var(--mid, #536579);
     }
 
     .engagement-record-row dd {
@@ -81,7 +82,7 @@
       font-size: clamp(1rem, 2vw, 1.08rem);
       font-weight: 600;
       line-height: 1.45;
-      color: #0c2740;
+      color: var(--ink, #0F2848);
     }
 
     @media (max-width: 800px) {
@@ -111,10 +112,10 @@
 <span class="brand-main">Lab &amp; Lore</span>
 <span class="brand-by">by Neri</span>
 </a>
-<button aria-expanded="false" aria-label="Toggle navigation" class="menu-toggle" type="button">
+<button aria-expanded="false" aria-controls="primary-navigation" aria-label="Toggle navigation" class="menu-toggle" type="button">
 <span></span><span></span><span></span>
 </button>
-<nav aria-label="Primary navigation" class="site-nav">
+<nav id="primary-navigation" aria-label="Primary navigation" class="site-nav">
 <a href="../../about.html">About</a>
 <a href="../../blog.html">Insights</a>
 <a aria-current="page" href="../../engagement.html">Work</a>
@@ -135,7 +136,7 @@
 Returning to St. John Academy as Chairperson of the Board of Research Panelists became a different kind of educational experience: listening to student researchers, asking questions that could sharpen their thinking, and helping recognize strong work across STEM, ABM, and HUMSS.
 </p>
 <p style="margin-top:1.5rem">
-<a class="text-link" href="../education-development.html">← Back to Education &amp; Development</a>
+<a class="text-link" href="../education-development.html"><span aria-hidden="true">←</span> Back to Education &amp; Development</a>
 </p>
 </div>
 <div aria-hidden="true" class="page-orbit" data-reveal=""></div>
@@ -382,6 +383,39 @@ For me, returning to St. John Academy in this role also made the arc of learning
 </div>
 </section>
 
+<!-- Related works are separate from the 2024-2025 St. John Academy research panel. -->
+<section class="section section-rule" aria-labelledby="related-reading-heading">
+<div class="container">
+<div class="section-head" data-reveal="">
+<div>
+<p class="eyebrow">Related education and research</p>
+<h2 id="related-reading-heading">Helping learners question, prepare, and think with evidence.</h2>
+</div>
+<p class="muted">
+These separate works explore the research approaches and educational transitions
+that inform learning. Neither formed part of the 2024-2025 research panel or
+provides evidence for its evaluations or student outcomes.
+</p>
+</div>
+
+<div class="selected-engagement-grid">
+<a class="engagement-link-card" data-reveal="" href="../reflections/theoretical-methodological-traditions-social-sciences.html">
+<span class="engagement-link-kicker">Research &amp; Public Conversation · Related reflection</span>
+<h3>Theoretical and Methodological Traditions in the Social Sciences</h3>
+<p>A separate academic reflection on the diversity of social-science paradigms, methods, and ways of producing knowledge, extending questions about research rigor and interpretation.</p>
+<span class="text-link">Read the reflection <span class="arrow" aria-hidden="true">→</span></span>
+</a>
+
+<a class="engagement-link-card" data-reveal="" href="college-readiness-new-normal.html">
+<span class="engagement-link-kicker">Education &amp; Development · Related case</span>
+<h3>College Readiness in the New Normal</h3>
+<p>A separate invited speaking engagement on preparing students for college during the pandemic, connecting academic development with students' next stage of learning.</p>
+<span class="text-link">Explore the case <span class="arrow" aria-hidden="true">→</span></span>
+</a>
+</div>
+</div>
+</section>
+
 <section class="section">
 <div class="container">
 <div class="cta-panel" data-reveal="">
@@ -393,7 +427,7 @@ For me, returning to St. John Academy in this role also made the arc of learning
 <p>
 Explore other experiences and academic pieces concerned with learning, development, communication, identity, and growth.
 </p>
-<a class="button button-light" href="../education-development.html">Education &amp; Development →</a>
+<a class="button button-light" href="../education-development.html">Education &amp; Development <span aria-hidden="true">→</span></a>
 </div>
 </div>
 </div>
