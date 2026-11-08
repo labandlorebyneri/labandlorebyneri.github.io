@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -58,7 +59,7 @@
     rel="stylesheet"
   >
 
-  <link rel="stylesheet" href="../../assets/css/site.css">
+  <link rel="stylesheet" href="../../assets/css/site.css?v=20261109">
   <script defer src="../../assets/js/site.js"></script>
 
   <style>
@@ -100,7 +101,7 @@
       line-height: 1.2;
       letter-spacing: 0.1em;
       text-transform: uppercase;
-      color: #68717c;
+      color: var(--mid, #536579);
     }
 
     .engagement-record-row dd {
@@ -109,7 +110,7 @@
       font-size: clamp(1rem, 2vw, 1.08rem);
       font-weight: 600;
       line-height: 1.45;
-      color: #0c2740;
+      color: var(--ink, #0F2848);
     }
 
     @media (max-width: 800px) {
@@ -151,13 +152,14 @@
       type="button"
       aria-label="Toggle navigation"
       aria-expanded="false"
+      aria-controls="primary-navigation"
     >
       <span></span>
       <span></span>
       <span></span>
     </button>
 
-    <nav class="site-nav" aria-label="Primary navigation">
+    <nav id="primary-navigation" class="site-nav" aria-label="Primary navigation">
       <a href="../../about.html">About</a>
       <a href="../../blog.html">Insights</a>
       <a href="../../engagement.html" aria-current="page">Work</a>
@@ -195,7 +197,7 @@
             class="text-link"
             href="../community-service.html"
           >
-            ← Back to Community &amp; Service
+            <span aria-hidden="true">←</span> Back to Community &amp; Service
           </a>
         </p>
 
@@ -626,6 +628,39 @@
   </section>
 
 
+  <!-- Related reading is separate from the original December 2022 outreach activity. -->
+  <section class="section section-rule" aria-labelledby="related-reading-heading">
+    <div class="container">
+      <div class="section-head" data-reveal>
+        <div>
+          <p class="eyebrow">Related research and service</p>
+          <h2 id="related-reading-heading">Rights, dignity, and the relationships behind service.</h2>
+        </div>
+        <p class="muted">
+          These separate works consider Indigenous rights and the relational meaning of
+          volunteering. Neither formed part of Paskong Katutubo in December 2022 or
+          independently documents the outreach's reported reach or outcomes.
+        </p>
+      </div>
+
+      <div class="selected-engagement-grid">
+        <a class="engagement-link-card" data-reveal href="../research/aeta-rights-awareness.html">
+          <span class="engagement-link-kicker">Research &amp; Public Conversation · Related research</span>
+          <h3>Aeta Rights Awareness</h3>
+          <p>A separate research work examining awareness of Indigenous rights, complementing questions about access, recognition, and the structural conditions shaping service.</p>
+          <span class="text-link">Explore the research <span class="arrow" aria-hidden="true">→</span></span>
+        </a>
+
+        <a class="engagement-link-card" data-reveal href="../reflections/he-cares-service-learning.html">
+          <span class="engagement-link-kicker">Community &amp; Service · Related reflection</span>
+          <h3>Ang Maglingkod at Hindi ang Paglingkuran</h3>
+          <p>A separate service-learning reflection connecting volunteer teaching with Filipino Psychology, kapwa, pakikiramdam, and the responsibilities of serving others.</p>
+          <span class="text-link">Read the reflection <span class="arrow" aria-hidden="true">→</span></span>
+        </a>
+      </div>
+    </div>
+  </section>
+
   <section class="section">
     <div class="container">
 
@@ -659,7 +694,7 @@
             class="button button-light"
             href="../community-service.html"
           >
-            Community &amp; Service →
+            Community &amp; Service <span aria-hidden="true">→</span>
           </a>
 
         </div>
@@ -717,24 +752,27 @@
           href="https://www.linkedin.com/in/jacristobal3/"
           rel="me noopener"
           target="_blank"
+          aria-label="LinkedIn profile (opens in a new tab)"
         >
-          LinkedIn ↗
+          LinkedIn <span aria-hidden="true">↗</span>
         </a>
 
         <a
           href="https://www.instagram.com/joshuaislore/"
           rel="me noopener"
           target="_blank"
+          aria-label="Instagram profile (opens in a new tab)"
         >
-          Instagram ↗
+          Instagram <span aria-hidden="true">↗</span>
         </a>
 
         <a
           href="https://github.com/labandlorebyneri"
           rel="me noopener"
           target="_blank"
+          aria-label="GitHub profile (opens in a new tab)"
         >
-          GitHub ↗
+          GitHub <span aria-hidden="true">↗</span>
         </a>
 
         <a href="mailto:notesforthelab@gmail.com">
