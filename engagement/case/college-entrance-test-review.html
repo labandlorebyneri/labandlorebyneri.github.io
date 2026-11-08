@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -54,7 +55,7 @@
     rel="stylesheet"
   >
 
-  <link rel="stylesheet" href="../../assets/css/site.css">
+  <link rel="stylesheet" href="../../assets/css/site.css?v=20261109">
   <script defer src="../../assets/js/site.js"></script>
 
   <style>
@@ -96,7 +97,7 @@
       line-height: 1.2;
       letter-spacing: 0.1em;
       text-transform: uppercase;
-      color: #68717c;
+      color: var(--mid, #536579);
     }
 
     .engagement-record-row dd {
@@ -105,7 +106,7 @@
       font-size: clamp(1rem, 2vw, 1.08rem);
       font-weight: 600;
       line-height: 1.45;
-      color: #0c2740;
+      color: var(--ink, #0F2848);
     }
 
     @media (max-width: 800px) {
@@ -143,13 +144,14 @@
       type="button"
       aria-label="Toggle navigation"
       aria-expanded="false"
+      aria-controls="primary-navigation"
     >
       <span></span>
       <span></span>
       <span></span>
     </button>
 
-    <nav class="site-nav" aria-label="Primary navigation">
+    <nav id="primary-navigation" class="site-nav" aria-label="Primary navigation">
       <a href="../../about.html">About</a>
       <a href="../../blog.html">Insights</a>
       <a href="../../engagement.html" aria-current="page">Work</a>
@@ -178,7 +180,7 @@
 
         <p style="margin-top:1.5rem">
           <a class="text-link" href="../education-development.html">
-            ← Back to Education &amp; Development
+            <span aria-hidden="true">←</span> Back to Education &amp; Development
           </a>
         </p>
       </div>
@@ -435,6 +437,37 @@
   </section>
 
 
+  <!-- Related reading is separate from the 2019 review program and its documented activities. -->
+  <section class="section section-rule" aria-labelledby="related-reading-heading">
+    <div class="container">
+      <div class="section-head" data-reveal>
+        <div>
+          <p class="eyebrow">Related reading</p>
+          <h2 id="related-reading-heading">Educational opportunity, access, and responsibility.</h2>
+        </div>
+        <p class="muted">
+          These separate academic and student-leadership works consider the conditions that
+          shape educational opportunity. Neither is part of the 2019 College Entrance
+          Test Review or evidence of outcomes from its participants.
+        </p>
+      </div>
+      <div class="selected-engagement-grid">
+        <a class="engagement-link-card" data-reveal href="../reflections/liberating-philippine-education-system.html">
+          <span class="engagement-link-kicker">PI 100 · Related academic essay</span>
+          <h3>An Essay on a Liberating Philippine Education System</h3>
+          <p>An examination of how language, inequality, facilities, curriculum, and social conditions shape educational access and meaningful reform.</p>
+          <span class="text-link">Read the essay <span class="arrow" aria-hidden="true">→</span></span>
+        </a>
+        <a class="engagement-link-card" data-reveal href="../reflections/message-of-expectations-st-john-academy.html">
+          <span class="engagement-link-kicker">Leadership &amp; Development · Related speech</span>
+          <h3>Message of Expectations during the Inauguration of the SHS Annex Building</h3>
+          <p>A separate 2016 student speech on the promises of senior high school, differentiated learning, teaching quality, and the responsibilities of education.</p>
+          <span class="text-link">Read the speech record <span class="arrow" aria-hidden="true">→</span></span>
+        </a>
+      </div>
+    </div>
+  </section>
+
   <section class="section">
     <div class="container">
 
@@ -452,7 +485,7 @@
           </p>
 
           <a class="button button-light" href="../education-development.html">
-            Education &amp; Development →
+            Education &amp; Development <span aria-hidden="true">→</span>
           </a>
         </div>
 
