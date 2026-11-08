@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -58,7 +59,7 @@
     rel="stylesheet"
   >
 
-  <link rel="stylesheet" href="../../assets/css/site.css">
+  <link rel="stylesheet" href="../../assets/css/site.css?v=20261109">
   <script defer src="../../assets/js/site.js"></script>
 
   <style>
@@ -100,7 +101,7 @@
       line-height: 1.2;
       letter-spacing: 0.1em;
       text-transform: uppercase;
-      color: #68717c;
+      color: var(--mid, #536579);
     }
 
     .engagement-record-row dd {
@@ -109,7 +110,7 @@
       font-size: clamp(1rem, 2vw, 1.08rem);
       font-weight: 600;
       line-height: 1.45;
-      color: #0c2740;
+      color: var(--ink, #0F2848);
     }
 
     @media (max-width: 800px) {
@@ -151,13 +152,14 @@
       type="button"
       aria-label="Toggle navigation"
       aria-expanded="false"
+      aria-controls="primary-navigation"
     >
       <span></span>
       <span></span>
       <span></span>
     </button>
 
-    <nav class="site-nav" aria-label="Primary navigation">
+    <nav id="primary-navigation" class="site-nav" aria-label="Primary navigation">
       <a href="../../about.html">About</a>
       <a href="../../blog.html">Insights</a>
       <a href="../../engagement.html" aria-current="page">Work</a>
@@ -195,7 +197,7 @@
             class="text-link"
             href="../research-public-conversation.html"
           >
-            ← Back to Research &amp; Public Conversation
+            <span aria-hidden="true">←</span> Back to Research &amp; Public Conversation
           </a>
         </p>
 
@@ -601,6 +603,37 @@
   </section>
 
 
+  <!-- Related research is separate from the November 2021 Sa'n na si SP? roundtable. -->
+  <section class="section section-rule" aria-labelledby="related-reading-heading">
+    <div class="container">
+      <div class="section-head" data-reveal>
+        <div>
+          <p class="eyebrow">Related research</p>
+          <h2 id="related-reading-heading">Questions about voting, participation, and civic judgment.</h2>
+        </div>
+        <p class="muted">
+          These separate research works explore political participation from different
+          perspectives. Neither was part of the November 2021 roundtable or constitutes
+          evidence of its effects on the students who attended.
+        </p>
+      </div>
+      <div class="selected-engagement-grid">
+        <a class="engagement-link-card" data-reveal href="../research/uy-may-chika-ako-voting-behavior.html">
+          <span class="engagement-link-kicker">Research &amp; Public Conversation · Related research</span>
+          <h3>Uy, May Chika Ako? Voting Behavior</h3>
+          <p>A separate academic research work about elections and voting behavior, extending the question of how people form political judgments.</p>
+          <span class="text-link">Explore the research <span class="arrow" aria-hidden="true">→</span></span>
+        </a>
+        <a class="engagement-link-card" data-reveal href="../research/suportahan-taka.html">
+          <span class="engagement-link-kicker">Research &amp; Public Conversation · Related research</span>
+          <h3>Suportahan Taka</h3>
+          <p>A separate study of motivations for volunteering in the 2022 electoral context, connecting participation with the reasons people choose to take part.</p>
+          <span class="text-link">Explore the research <span class="arrow" aria-hidden="true">→</span></span>
+        </a>
+      </div>
+    </div>
+  </section>
+
   <section class="section">
     <div class="container">
 
@@ -634,7 +667,7 @@
             class="button button-light"
             href="../research-public-conversation.html"
           >
-            Research &amp; Public Conversation →
+            Research &amp; Public Conversation <span aria-hidden="true">→</span>
           </a>
 
         </div>
