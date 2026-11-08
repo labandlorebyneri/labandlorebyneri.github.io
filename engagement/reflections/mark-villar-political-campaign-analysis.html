@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -30,7 +31,7 @@
 <link href="https://fonts.googleapis.com" rel="preconnect"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500;600;700&amp;family=Inter:wght@400;500;600;700;800&amp;family=Noto+Serif+Display:ital,wght@0,500;0,600;1,500&amp;display=swap" rel="stylesheet"/>
-<link href="../../assets/css/site.css" rel="stylesheet"/>
+<link href="../../assets/css/site.css?v=20261109" rel="stylesheet"/>
 <script defer="" src="../../assets/js/site.js"></script>
 
 <style>
@@ -72,7 +73,7 @@
     line-height: 1.2;
     letter-spacing: 0.1em;
     text-transform: uppercase;
-    color: #68717c;
+    color: var(--mid, #536579);
   }
 
   .engagement-record-row dd {
@@ -81,7 +82,7 @@
     font-size: clamp(1rem, 2vw, 1.08rem);
     font-weight: 600;
     line-height: 1.45;
-    color: #0c2740;
+    color: var(--ink, #0F2848);
   }
 
   @media (max-width: 800px) {
@@ -111,10 +112,10 @@
 <span class="brand-main">Lab &amp; Lore</span>
 <span class="brand-by">by Neri</span>
 </a>
-<button aria-expanded="false" aria-label="Toggle navigation" class="menu-toggle" type="button">
+<button aria-expanded="false" aria-controls="primary-navigation" aria-label="Toggle navigation" class="menu-toggle" type="button">
 <span></span><span></span><span></span>
 </button>
-<nav aria-label="Primary navigation" class="site-nav">
+<nav id="primary-navigation" aria-label="Primary navigation" class="site-nav">
 <a href="../../about.html">About</a>
 <a href="../../blog.html">Insights</a>
 <a aria-current="page" href="../../engagement.html">Work</a>
@@ -134,7 +135,7 @@
 A BMAS 100 essay written during the 2022 Philippine election campaign, examining how a senatorial campaign used persuasion, credibility, endorsements, audience targeting, political advertising, and infrastructure-centered branding.
 </p>
 <p style="margin-top:1.5rem">
-<a class="text-link" href="../education-development.html#essays">← Back to Essays</a>
+<a class="text-link" href="../education-development.html#essays"><span aria-hidden="true">←</span> Back to Essays</a>
 </p>
 </div>
 <div aria-hidden="true" class="page-orbit" data-reveal=""></div>
@@ -341,10 +342,37 @@ Its final interpretation is that the campaign's political identity was built aro
 <p>
 This web version summarizes the paper's campaign-period analysis and preserves its original academic framing. The submitted essay is kept separately as part of the record.
 </p>
-<a class="button button-light" href="../../assets/docs/engagement/reflections/mark-villar-political-campaign-analysis.pdf" rel="noopener" target="_blank">
-View original essay PDF ↗
+<a class="button button-light" href="../../assets/docs/engagement/reflections/mark-villar-political-campaign-analysis.pdf" rel="noopener" target="_blank" aria-label="View original essay PDF (opens in a new tab)">
+View original essay PDF <span aria-hidden="true">↗</span>
 </a>
 </div>
+</div>
+</div>
+</section>
+
+<!-- Related academic reading: separate research works, not evidence from the original campaign essay. -->
+<section class="section section-rule" aria-labelledby="related-reading-heading">
+<div class="container">
+<div class="section-head" data-reveal="">
+<div>
+<p class="eyebrow">Related academic reading</p>
+<h2 id="related-reading-heading">Candidate perceptions, political communication, and volunteer participation.</h2>
+</div>
+<p class="muted">These separate research manuscripts examine voting judgments and campaign volunteerism. They were not part of this BMAS 100 essay and do not independently verify its claims about campaign effectiveness.</p>
+</div>
+<div class="selected-engagement-grid">
+<a class="engagement-link-card" data-reveal="" href="../research/uy-may-chika-ako-voting-behavior.html">
+<span class="engagement-link-kicker">Psych 115 · Related experimental study</span>
+<h3>Uy May Chika Ako!</h3>
+<p>A separate 2020 experiment on hypothetical candidate controversies, relationships with communication sources, and reported likelihood of voting among university students.</p>
+<span class="text-link">Explore the study <span class="arrow" aria-hidden="true">→</span></span>
+</a>
+<a class="engagement-link-card" data-reveal="" href="../research/suportahan-taka.html">
+<span class="engagement-link-kicker">Anthro 141 · Related qualitative study</span>
+<h3>Suportahan Taka</h3>
+<p>A separate 2022 qualitative study of campaign volunteers' motivations, experiences, and Filipino values in the period leading to the presidential election.</p>
+<span class="text-link">Explore the study <span class="arrow" aria-hidden="true">→</span></span>
+</a>
 </div>
 </div>
 </section>
@@ -361,7 +389,7 @@ View original essay PDF ↗
 Explore the essays that preserve the questions, arguments, and analytical frameworks developed across academic work.
 </p>
 <a class="button button-light" href="../education-development.html#essays">
-Explore Essays →
+Explore Essays <span class="arrow" aria-hidden="true">→</span>
 </a>
 </div>
 </div>
