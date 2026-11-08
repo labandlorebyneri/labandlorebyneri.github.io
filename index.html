@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -62,7 +63,7 @@
     rel="stylesheet"
   >
 
-  <link rel="stylesheet" href="assets/css/site.css?v=20260927">
+  <link rel="stylesheet" href="assets/css/site.css?v=20261109">
   <script defer src="assets/js/site.js"></script>
 
   <script type="application/ld+json">
@@ -121,6 +122,7 @@
       class="menu-toggle"
       type="button"
       aria-label="Toggle navigation"
+      aria-controls="primary-navigation"
       aria-expanded="false"
     >
       <span></span>
@@ -128,7 +130,11 @@
       <span></span>
     </button>
 
-    <nav class="site-nav" aria-label="Primary navigation">
+    <nav
+      id="primary-navigation"
+      class="site-nav"
+      aria-label="Primary navigation"
+    >
       <a href="about.html">About</a>
       <a href="blog.html">Insights</a>
       <a href="engagement.html">Work</a>
@@ -568,8 +574,8 @@
         </p>
 
         <a
-          class="button"
-          style="background:white;color:var(--ink);margin-top:1rem"
+          class="button button-primary"
+          style="margin-top:1rem"
           href="posts/who-is-a-true-catholic-anyway.html"
         >
           Read the essay
