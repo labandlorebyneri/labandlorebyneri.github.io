@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -28,7 +29,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500;600;700&family=Inter:wght@400;500;600;700;800&family=Noto+Serif+Display:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../../assets/css/site.css">
+  <link rel="stylesheet" href="../../assets/css/site.css?v=20261109">
   <script defer src="../../assets/js/site.js"></script>
 
   <style>
@@ -70,7 +71,7 @@
       line-height: 1.2;
       letter-spacing: 0.1em;
       text-transform: uppercase;
-      color: #68717c;
+      color: var(--mid, #536579);
     }
 
     .engagement-record-row dd {
@@ -79,7 +80,7 @@
       font-size: clamp(1rem, 2vw, 1.08rem);
       font-weight: 600;
       line-height: 1.45;
-      color: #0c2740;
+      color: var(--ink, #0F2848);
     }
 
     .engagement-record-row dd span {
@@ -108,8 +109,8 @@
 <header class="site-header">
   <div class="container nav-wrap">
     <a class="brand" href="../../index.html" aria-label="Lab & Lore by Neri home"><span class="brand-main">Lab &amp; Lore</span><span class="brand-by">by Neri</span></a>
-    <button class="menu-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false"><span></span><span></span><span></span></button>
-    <nav class="site-nav" aria-label="Primary navigation"><a href="../../about.html">About</a><a href="../../blog.html">Insights</a><a href="../../engagement.html" aria-current="page">Work</a><a href="../../say-hello.html">Contact</a><a class="nav-loom" href="../../theloomroom/">The Loom Room ↗</a></nav>
+    <button class="menu-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="primary-navigation"><span></span><span></span><span></span></button>
+    <nav id="primary-navigation" class="site-nav" aria-label="Primary navigation"><a href="../../about.html">About</a><a href="../../blog.html">Insights</a><a href="../../engagement.html" aria-current="page">Work</a><a href="../../say-hello.html">Contact</a><a class="nav-loom" href="../../theloomroom/">The Loom Room ↗</a></nav>
   </div>
 </header>
 <main id="main">
@@ -119,7 +120,7 @@
         <p class="eyebrow">Resistance · Recognition Through Service · Case</p>
         <h1>Leadership &amp; Character Recognition</h1>
         <p class="lede">A case about being doubted, challenging narrow standards of who gets to lead, and learning that recognition matters most when it confirms what resistance could not erase.</p>
-        <p style="margin-top:1.5rem"><a class="text-link" href="../recognition-through-service.html">← Back to Recognition Through Service</a></p>
+        <p style="margin-top:1.5rem"><a class="text-link" href="../recognition-through-service.html"><span aria-hidden="true">←</span> Back to Recognition Through Service</a></p>
       </div>
       <div class="page-orbit" data-reveal aria-hidden="true"></div>
     </div>
@@ -262,8 +263,35 @@
     </div>
   </section>
 
+  <!-- These are separate works, not evidence from this student-leadership case. -->
+  <section class="section section-rule" aria-labelledby="related-reading-heading">
+    <div class="container">
+      <div class="section-head" data-reveal>
+        <div>
+          <p class="eyebrow">Related leadership and service</p>
+          <h2 id="related-reading-heading">What remains after leadership and recognition.</h2>
+        </div>
+        <p class="muted">These separate reflections and experiences explore discipline, responsibility, and continued service. Neither is part of the 2015-2018 St. John's Academy leadership record or evidence for the awards documented here.</p>
+      </div>
+      <div class="selected-engagement-grid">
+        <a class="engagement-link-card" data-reveal href="../reflections/ay-foundation-national-discipline-award.html">
+          <span class="engagement-link-kicker">Leadership &amp; Development · Related reflection</span>
+          <h3>As a National Discipline Awardee</h3>
+          <p>A separate personal reflection on discipline, gratitude, and responsibility, considering what recognition asks of someone beyond the award itself.</p>
+          <span class="text-link">Read the reflection <span class="arrow" aria-hidden="true">→</span></span>
+        </a>
+        <a class="engagement-link-card" data-reveal href="leading-joseph-marello-youth.html">
+          <span class="engagement-link-kicker">Leadership &amp; Development · Related case</span>
+          <h3>Leading Joseph Marello Youth</h3>
+          <p>A separate youth-organization leadership experience that explores participation, service, and the responsibilities of leading a community.</p>
+          <span class="text-link">Explore the case <span class="arrow" aria-hidden="true">→</span></span>
+        </a>
+      </div>
+    </div>
+  </section>
+
   <section class="section">
-    <div class="container"><div class="cta-panel" data-reveal><div><p class="eyebrow" style="color:#a6d4c0">Community → Resistance</p><h2>Return to the wider engagement.</h2></div><div><p>Explore Recognition Through Service for the broader questions around contribution, responsibility, trust, standards, and acknowledgment.</p><a class="button button-light" href="../recognition-through-service.html">Recognition Through Service →</a></div></div></div>
+    <div class="container"><div class="cta-panel" data-reveal><div><p class="eyebrow" style="color:#a6d4c0">Community → Resistance</p><h2>Return to the wider engagement.</h2></div><div><p>Explore Recognition Through Service for the broader questions around contribution, responsibility, trust, standards, and acknowledgment.</p><a class="button button-light" href="../recognition-through-service.html">Recognition Through Service <span aria-hidden="true">→</span></a></div></div></div>
   </section>
 </main>
 <footer class="site-footer">
