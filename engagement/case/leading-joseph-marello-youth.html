@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -29,7 +30,7 @@
 <link href="https://fonts.googleapis.com" rel="preconnect"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500;600;700&amp;family=Inter:wght@400;500;600;700;800&amp;family=Noto+Serif+Display:ital,wght@0,500;0,600;1,500&amp;display=swap" rel="stylesheet"/>
-<link href="../../assets/css/site.css" rel="stylesheet"/>
+<link href="../../assets/css/site.css?v=20261109" rel="stylesheet"/>
 <script defer="" src="../../assets/js/site.js"></script>
 
 <style>
@@ -71,7 +72,7 @@
     line-height: 1.2;
     letter-spacing: 0.1em;
     text-transform: uppercase;
-    color: #68717c;
+    color: var(--mid, #536579);
   }
 
   .engagement-record-row dd {
@@ -80,7 +81,7 @@
     font-size: clamp(1rem, 2vw, 1.08rem);
     font-weight: 600;
     line-height: 1.45;
-    color: #0c2740;
+    color: var(--ink, #0F2848);
   }
 
   @media (max-width: 800px) {
@@ -110,10 +111,10 @@
 <span class="brand-main">Lab &amp; Lore</span>
 <span class="brand-by">by Neri</span>
 </a>
-<button aria-expanded="false" aria-label="Toggle navigation" class="menu-toggle" type="button">
+<button aria-expanded="false" aria-controls="primary-navigation" aria-label="Toggle navigation" class="menu-toggle" type="button">
 <span></span><span></span><span></span>
 </button>
-<nav aria-label="Primary navigation" class="site-nav">
+<nav id="primary-navigation" aria-label="Primary navigation" class="site-nav">
 <a href="../../about.html">About</a>
 <a href="../../blog.html">Insights</a>
 <a aria-current="page" href="../../engagement.html">Work</a>
@@ -134,7 +135,7 @@
 Joining Joseph Marello Youth in 2016 eventually led to roles as Vice President and President, creating a sustained progression through youth organizing, stakeholder coordination, research, communications, financial stewardship, consultation, representation, and organizational strategy.
 </p>
 <p style="margin-top:1.5rem">
-<a class="text-link" href="../leadership-development.html">← Back to Leadership &amp; Development</a>
+<a class="text-link" href="../leadership-development.html"><span aria-hidden="true">←</span> Back to Leadership &amp; Development</a>
 </p>
 </div>
 <div aria-hidden="true" class="page-orbit" data-reveal=""></div>
@@ -366,8 +367,41 @@ In 2025, I was invited back to the JMY Faith Festival as a speaker and was recog
 That later return belongs to a different part of the archive. The leadership case documents the years of participation and responsibility from 2016 to 2020; the recognition case looks at what remained after the formal role ended.
 </p>
 <p>
-<a class="text-link" href="returning-to-jmy-recognition-after-service.html">Read Returning to JMY: Recognition After Service →</a>
+<a class="text-link" href="returning-to-jmy-recognition-after-service.html">Read Returning to JMY: Recognition After Service <span aria-hidden="true">→</span></a>
 </p>
+</div>
+</div>
+</section>
+
+<!-- The related cases are separate from the 2016-2020 JMY leadership record. -->
+<section class="section section-rule" aria-labelledby="related-reading-heading">
+<div class="container">
+<div class="section-head" data-reveal="">
+<div>
+<p class="eyebrow">Related leadership experiences</p>
+<h2 id="related-reading-heading">Leadership that continues through service and shared responsibility.</h2>
+</div>
+<p class="muted">
+These separate experiences examine leadership through later formation work and
+coordination across generations. They are not part of the 2016–2020 JMY leadership
+period or evidence of its outcomes.
+</p>
+</div>
+
+<div class="selected-engagement-grid">
+<a class="engagement-link-card" data-reveal="" href="jmy-faith-festival-formation-2026.html">
+<span class="engagement-link-kicker">Leadership &amp; Development · Related 2026 case</span>
+<h3>Returning to JMY as a Formation Speaker</h3>
+<p>A separate 2026 return to Joseph Marello Youth to contribute as a formation speaker, showing how the relationship continued after formal office ended.</p>
+<span class="text-link">Explore the case <span class="arrow" aria-hidden="true">→</span></span>
+</a>
+
+<a class="engagement-link-card" data-reveal="" href="leading-across-generations.html">
+<span class="engagement-link-kicker">Leadership &amp; Development · Related case</span>
+<h3>Leading Across Generations</h3>
+<p>A separate account of moving from PPCRV public-assistance volunteer to parish chairperson and learning to coordinate older volunteers through preparation, listening, and trust.</p>
+<span class="text-link">Explore the case <span class="arrow" aria-hidden="true">→</span></span>
+</a>
 </div>
 </div>
 </section>
@@ -383,7 +417,7 @@ That later return belongs to a different part of the archive. The leadership cas
 <p>
 Explore other cases, essays, and speeches concerned with responsibility, character, judgment, and leadership in practice.
 </p>
-<a class="button button-light" href="../leadership-development.html">Leadership &amp; Development →</a>
+<a class="button button-light" href="../leadership-development.html">Leadership &amp; Development <span aria-hidden="true">→</span></a>
 </div>
 </div>
 </div>
