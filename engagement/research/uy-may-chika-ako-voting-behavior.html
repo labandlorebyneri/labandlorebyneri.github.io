@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -31,7 +32,7 @@
 <link href="https://fonts.googleapis.com" rel="preconnect"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500;600;700&amp;family=Inter:wght@400;500;600;700;800&amp;family=Noto+Serif+Display:ital,wght@0,500;0,600;1,500&amp;display=swap" rel="stylesheet"/>
-<link href="../../assets/css/site.css" rel="stylesheet"/>
+<link href="../../assets/css/site.css?v=20261109" rel="stylesheet"/>
 <script defer="" src="../../assets/js/site.js"></script>
 
 <style>
@@ -73,7 +74,7 @@
     line-height: 1.2;
     letter-spacing: 0.1em;
     text-transform: uppercase;
-    color: #68717c;
+    color: var(--mid, #536579);
   }
 
   .engagement-record-row dd {
@@ -82,7 +83,7 @@
     font-size: clamp(1rem, 2vw, 1.08rem);
     font-weight: 600;
     line-height: 1.45;
-    color: #0c2740;
+    color: var(--ink, #0F2848);
   }
 
   @media (max-width: 800px) {
@@ -112,10 +113,10 @@
 <span class="brand-main">Lab &amp; Lore</span>
 <span class="brand-by">by Neri</span>
 </a>
-<button aria-expanded="false" aria-label="Toggle navigation" class="menu-toggle" type="button">
+<button aria-expanded="false" aria-controls="primary-navigation" aria-label="Toggle navigation" class="menu-toggle" type="button">
 <span></span><span></span><span></span>
 </button>
-<nav aria-label="Primary navigation" class="site-nav">
+<nav id="primary-navigation" aria-label="Primary navigation" class="site-nav">
 <a href="../../about.html">About</a>
 <a href="../../blog.html">Insights</a>
 <a aria-current="page" href="../../engagement.html">Work</a>
@@ -136,7 +137,7 @@
 A Psych 115 experimental study examining whether the type of controversy attached to a hypothetical electoral candidate and the participant's relationship with a communication source influenced university students' reported likelihood of voting.
 </p>
 <p style="margin-top:1.5rem">
-<a class="text-link" href="../research-public-conversation.html#research-manuscripts">← Back to Research &amp; Public Conversation</a>
+<a class="text-link" href="../research-public-conversation.html#research-manuscripts"><span aria-hidden="true">←</span> Back to Research &amp; Public Conversation</a>
 </p>
 </div>
 <div aria-hidden="true" class="page-orbit" data-reveal=""></div>
@@ -385,6 +386,33 @@ This page preserves the research record and summarizes the study's question, exp
 </div>
 </section>
 
+<!-- Related reading: separate work, not experimental evidence -->
+<section class="section section-rule" aria-labelledby="related-reading-heading">
+<div class="container">
+<div class="section-head" data-reveal>
+<div>
+<div class="section-index">Related reading</div>
+<h2 id="related-reading-heading" style="margin-top:1rem">When political information meets social influence.</h2>
+</div>
+<p class="muted">A separate public conversation and an academic campaign analysis offer related perspectives on political behavior, communication, and persuasion. Neither is part of the 2020 experiment or its evidence.</p>
+</div>
+<div class="selected-engagement-grid">
+<a class="engagement-link-card" href="../case/san-na-si-sp.html" data-reveal>
+<span class="engagement-link-kicker">Renaissance · Related public-conversation case</span>
+<h3>Sa’n na si SP?</h3>
+<p>A separate 2021 roundtable on Sikolohiyang Pilipino and political participation, examining how interdisciplinary exchange and careful listening can inform discussion of political behavior.</p>
+<span class="text-link">Explore the case <span class="arrow" aria-hidden="true">→</span></span>
+</a>
+<a class="engagement-link-card" href="../reflections/mark-villar-political-campaign-analysis.html" data-reveal>
+<span class="engagement-link-kicker">BMAS 100 · Related academic analysis</span>
+<h3>How Mark Villar Build his Tower of Political Victory</h3>
+<p>A separate 2022 academic analysis of campaign-period persuasion, credibility, endorsements, audience targeting, and political branding. It is not an extension of the experimental results.</p>
+<span class="text-link">Read the analysis <span class="arrow" aria-hidden="true">→</span></span>
+</a>
+</div>
+</div>
+</section>
+
 <section class="section">
 <div class="container">
 <div class="cta-panel" data-reveal="">
@@ -394,7 +422,7 @@ This page preserves the research record and summarizes the study's question, exp
 </div>
 <div>
 <p>Explore the other studies that trace how my research practice changed across questions, methods, and stages of training.</p>
-<a class="button button-light" href="../research-public-conversation.html#research-manuscripts">Research &amp; Public Conversation →</a>
+<a class="button button-light" href="../research-public-conversation.html#research-manuscripts">Research &amp; Public Conversation <span class="arrow" aria-hidden="true">→</span></a>
 </div>
 </div>
 </div>
