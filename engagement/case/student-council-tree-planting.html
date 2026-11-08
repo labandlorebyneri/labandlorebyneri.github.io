@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -56,7 +57,7 @@
     rel="stylesheet"
   >
 
-  <link rel="stylesheet" href="../../assets/css/site.css">
+  <link rel="stylesheet" href="../../assets/css/site.css?v=20261109">
   <script defer src="../../assets/js/site.js"></script>
 
   <style>
@@ -98,7 +99,7 @@
       line-height: 1.2;
       letter-spacing: 0.1em;
       text-transform: uppercase;
-      color: #68717c;
+      color: var(--mid, #536579);
     }
 
     .engagement-record-row dd {
@@ -107,7 +108,7 @@
       font-size: clamp(1rem, 2vw, 1.08rem);
       font-weight: 600;
       line-height: 1.45;
-      color: #0c2740;
+      color: var(--ink, #0F2848);
     }
 
     @media (max-width: 800px) {
@@ -140,11 +141,11 @@
       <span class="brand-by">by Neri</span>
     </a>
 
-    <button class="menu-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false">
+    <button class="menu-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="primary-navigation">
       <span></span><span></span><span></span>
     </button>
 
-    <nav class="site-nav" aria-label="Primary navigation">
+    <nav id="primary-navigation" class="site-nav" aria-label="Primary navigation">
       <a href="../../about.html">About</a>
       <a href="../../blog.html">Insights</a>
       <a href="../../engagement.html" aria-current="page">Work</a>
@@ -173,7 +174,7 @@
 
         <p style="margin-top:1.5rem">
           <a class="text-link" href="../leadership-development.html">
-            ← Back to Leadership &amp; Development
+            <span aria-hidden="true">←</span> Back to Leadership &amp; Development
           </a>
         </p>
       </div>
@@ -388,11 +389,44 @@
 
         <p>
           <a class="text-link" href="bataan-green-legacy-tree-planting.html">
-            Continue to the 1Bataan Green Legacy case →
+            Continue to the 1Bataan Green Legacy case <span aria-hidden="true">→</span>
           </a>
         </p>
       </div>
 
+    </div>
+  </section>
+
+  <!-- These related cases are separate from the 2015-2016 student council tree-planting activity. -->
+  <section class="section section-rule" aria-labelledby="related-reading-heading">
+    <div class="container">
+      <div class="section-head" data-reveal>
+        <div>
+          <p class="eyebrow">Related leadership experiences</p>
+          <h2 id="related-reading-heading">From early initiative to sustained responsibility.</h2>
+        </div>
+        <p class="muted">
+          These separate cases explore other experiences of student and youth leadership.
+          Neither was part of the Pagalanggang tree-planting activity or evidence of
+          its environmental outcomes.
+        </p>
+      </div>
+
+      <div class="selected-engagement-grid">
+        <a class="engagement-link-card" data-reveal href="leadership-character-recognition.html">
+          <span class="engagement-link-kicker">Leadership &amp; Development · Related case</span>
+          <h3>Leadership &amp; Character Recognition</h3>
+          <p>A separate account of student leadership at St. John Academy, challenging narrow expectations and reflecting on recognition through service.</p>
+          <span class="text-link">Explore the case <span class="arrow" aria-hidden="true">→</span></span>
+        </a>
+
+        <a class="engagement-link-card" data-reveal href="leading-joseph-marello-youth.html">
+          <span class="engagement-link-kicker">Leadership &amp; Development · Related case</span>
+          <h3>Leading Joseph Marello Youth</h3>
+          <p>A separate youth-organization leadership experience from 2016 to 2020, exploring growing responsibility for coordination, participation, and organizational stewardship.</p>
+          <span class="text-link">Explore the case <span class="arrow" aria-hidden="true">→</span></span>
+        </a>
+      </div>
     </div>
   </section>
 
@@ -413,7 +447,7 @@
           </p>
 
           <a class="button button-light" href="../leadership-development.html">
-            Leadership &amp; Development →
+            Leadership &amp; Development <span aria-hidden="true">→</span>
           </a>
         </div>
 
