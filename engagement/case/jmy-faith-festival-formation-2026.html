@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html lang="en">
 
@@ -63,7 +64,7 @@
     rel="stylesheet"
   >
 
-  <link rel="stylesheet" href="../../assets/css/site.css">
+  <link rel="stylesheet" href="../../assets/css/site.css?v=20261109">
   <script defer src="../../assets/js/site.js"></script>
 
   <style>
@@ -106,7 +107,7 @@
       line-height: 1.2;
       letter-spacing: 0.1em;
       text-transform: uppercase;
-      color: #68717c;
+      color: var(--mid, #536579);
     }
 
     .engagement-record-row dd {
@@ -115,7 +116,7 @@
       font-size: clamp(1rem, 2vw, 1.08rem);
       font-weight: 600;
       line-height: 1.45;
-      color: #0c2740;
+      color: var(--ink, #0F2848);
     }
 
     @media (max-width: 800px) {
@@ -162,13 +163,14 @@
       type="button"
       aria-label="Toggle navigation"
       aria-expanded="false"
+      aria-controls="primary-navigation"
     >
       <span></span>
       <span></span>
       <span></span>
     </button>
 
-    <nav class="site-nav" aria-label="Primary navigation">
+    <nav id="primary-navigation" class="site-nav" aria-label="Primary navigation">
       <a href="../../about.html">About</a>
       <a href="../../blog.html">Insights</a>
       <a href="../../engagement.html" aria-current="page">Work</a>
@@ -203,7 +205,7 @@
 
         <p style="margin-top:1.5rem">
           <a class="text-link" href="../leadership-development.html">
-            ← Back to Leadership &amp; Development
+            <span aria-hidden="true">←</span> Back to Leadership &amp; Development
           </a>
         </p>
 
@@ -461,7 +463,7 @@
             class="text-link"
             href="returning-to-jmy-recognition-after-service.html"
           >
-            See the 2025 return and recognition case →
+            See the 2025 return and recognition case <span aria-hidden="true">→</span>
           </a>
         </p>
 
@@ -470,9 +472,51 @@
             class="text-link"
             href="leading-joseph-marello-youth.html"
           >
-            See the earlier Joseph Marello Youth leadership case →
+            See the earlier Joseph Marello Youth leadership case <span aria-hidden="true">→</span>
           </a>
         </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- Related academic reflections are separate from the September 2026 JMY formation activity. -->
+  <section class="section section-rule" aria-labelledby="related-reading-heading">
+
+    <div class="container">
+
+      <div class="section-head" data-reveal>
+
+        <div>
+          <p class="eyebrow">Related reflections</p>
+          <h2 id="related-reading-heading">Continuing to serve, even as our roles change.</h2>
+        </div>
+
+        <p class="muted">
+          These separate reflections explore responsibility, discipline, and service
+          in different settings. They are not part of the 2026 Joseph Marello Youth
+          formation activity or evidence of its outcomes.
+        </p>
+
+      </div>
+
+      <div class="selected-engagement-grid">
+
+        <a class="engagement-link-card" data-reveal href="../reflections/ay-foundation-national-discipline-award.html">
+          <span class="engagement-link-kicker">Leadership &amp; Development · Related reflection</span>
+          <h3>As a National Discipline Awardee</h3>
+          <p>A separate reflection on personal discipline, gratitude, service, and the responsibilities that can follow recognition.</p>
+          <span class="text-link">Read the reflection <span class="arrow" aria-hidden="true">→</span></span>
+        </a>
+
+        <a class="engagement-link-card" data-reveal href="../reflections/he-cares-service-learning.html">
+          <span class="engagement-link-kicker">Psych 108 · Related service-learning reflection</span>
+          <h3>Ang Maglingkod at Hindi ang Paglingkuran</h3>
+          <p>A separate account of volunteer teaching and Filipino Psychology, examining empathy, kapwa, and the relational work of serving others.</p>
+          <span class="text-link">Read the reflection <span class="arrow" aria-hidden="true">→</span></span>
+        </a>
 
       </div>
 
@@ -510,7 +554,7 @@
             class="button button-light"
             href="../leadership-development.html"
           >
-            Leadership &amp; Development →
+            Leadership &amp; Development <span aria-hidden="true">→</span>
           </a>
 
         </div>
