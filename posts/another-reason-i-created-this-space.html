@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -62,7 +63,7 @@
     rel="stylesheet"
   >
 
-  <link rel="stylesheet" href="../assets/css/site.css">
+  <link rel="stylesheet" href="../assets/css/site.css?v=20261109">
   <script defer src="../assets/js/site.js"></script>
 
   <script type="application/ld+json">
@@ -120,6 +121,7 @@
       class="menu-toggle"
       type="button"
       aria-label="Toggle navigation"
+      aria-controls="primary-navigation"
       aria-expanded="false"
     >
       <span></span>
@@ -127,7 +129,11 @@
       <span></span>
     </button>
 
-    <nav class="site-nav" aria-label="Primary navigation">
+    <nav
+      id="primary-navigation"
+      class="site-nav"
+      aria-label="Primary navigation"
+    >
       <a href="../about.html">About</a>
       <a href="../blog.html" aria-current="page">Insights</a>
       <a href="../engagement.html">Work</a>
@@ -211,9 +217,10 @@
         <div class="article-body">
 
           <p>
-            Lab &amp; Lore explained why I created this space:
-            to examine questions, test ideas, document observations,
-            and preserve what seems worth remembering.
+            In <a href="../posts/why-i-created-this-space.html">Why I Created This Space</a>,
+            I explained why I began writing here: to examine questions,
+            test ideas, document observations, and preserve what seems
+            worth remembering.
           </p>
 
           <p>
@@ -285,6 +292,87 @@
     </section>
 
 
+    <!-- Related reading and engagement -->
+    <section
+      class="section section-rule"
+      aria-labelledby="related-reading-heading"
+    >
+      <div class="container">
+
+        <div class="section-head">
+
+          <div>
+            <div class="section-index">
+              Related reading
+            </div>
+
+            <h2
+              id="related-reading-heading"
+              style="margin-top:1rem"
+            >
+              Questions that continue beyond this essay.
+            </h2>
+          </div>
+
+          <p class="muted">
+            Other reflections and experiences connected to faith,
+            service, and the work we carry forward.
+          </p>
+
+        </div>
+
+        <div class="selected-engagement-grid">
+
+          <a
+            class="engagement-link-card"
+            href="../posts/who-is-a-true-catholic-anyway.html"
+          >
+            <span class="engagement-link-kicker">
+              Love &amp; Lord · Related essay
+            </span>
+
+            <h3>
+              Who Is a True Catholic Anyway?
+            </h3>
+
+            <p>
+              A reflection on faith, dignity, and the distance
+              between what we profess and how we live.
+            </p>
+
+            <span class="text-link">
+              Read the essay <span class="arrow" aria-hidden="true">→</span>
+            </span>
+          </a>
+
+          <a
+            class="engagement-link-card"
+            href="../engagement/recognition-through-service.html"
+          >
+            <span class="engagement-link-kicker">
+              Community · Engagement case
+            </span>
+
+            <h3>
+              Recognition Through Service
+            </h3>
+
+            <p>
+              On sustained contribution, responsibility,
+              and participation within a community.
+            </p>
+
+            <span class="text-link">
+              Explore the engagement <span class="arrow" aria-hidden="true">→</span>
+            </span>
+          </a>
+
+        </div>
+
+      </div>
+    </section>
+
+
     <section class="section-tight">
       <div class="container cta-panel">
 
@@ -313,7 +401,7 @@
             href="../series/love-and-lord.html"
           >
             Explore Love &amp; Lord
-            <span class="arrow">→</span>
+            <span class="arrow" aria-hidden="true">→</span>
           </a>
 
         </div>
