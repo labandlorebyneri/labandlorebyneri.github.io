@@ -1,21 +1,7 @@
 
 <!doctype html>
 <html lang="en">
-
 <head>
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-T4MQQ438JQ"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-
-    gtag('js', new Date());
-    gtag('config', 'G-T4MQQ438JQ');
-  </script>
-
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -25,82 +11,83 @@
     name="description"
     content="Contact Neri for thoughtful conversations around human behavior, creativity, research, culture, organizations, and community."
   >
-
   <link
     rel="canonical"
     href="https://labandlorebyneri.github.io/say-hello.html"
   >
 
   <meta property="og:type" content="website">
-
-  <meta
-    property="og:title"
-    content="Say Hello | Lab &amp; Lore by Neri"
-  >
-
+  <meta property="og:title" content="Say Hello | Lab &amp; Lore by Neri">
   <meta
     property="og:description"
     content="Contact Neri for thoughtful conversations around human behavior, creativity, research, culture, organizations, and community."
   >
-
   <meta
     property="og:url"
     content="https://labandlorebyneri.github.io/say-hello.html"
   >
-
   <meta
     property="og:image"
     content="https://labandlorebyneri.github.io/assets/img/og-default.png"
   >
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="theme-color" content="#FDFCF7">
 
-  <meta
-    name="twitter:card"
-    content="summary_large_image"
-  >
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
 
-  <meta
-    name="theme-color"
-    content="#FDFCF7"
-  >
-
-  <link
-    rel="manifest"
-    href="site.webmanifest"
-  >
+  <!-- Font loading -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
   <link
-    rel="icon"
-    href="assets/img/favicon.svg"
-    type="image/svg+xml"
-  >
-
-  <link
-    rel="preconnect"
-    href="https://fonts.googleapis.com"
-  >
-
-  <link
-    rel="preconnect"
-    href="https://fonts.gstatic.com"
-    crossorigin
-  >
-
-  <link
+    rel="stylesheet"
     href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500;600;700&amp;family=Inter:wght@400;500;600;700;800&amp;family=Noto+Serif+Display:ital,wght@0,500;0,600;1,500&amp;display=swap"
-    rel="stylesheet"
   >
 
-  <!-- Updated high-contrast Lab & Lore stylesheet -->
+  <!-- Unified website stylesheet -->
   <link
     rel="stylesheet"
-    href="assets/css/site.css?v=20261109"
+    href="assets/css/site.css?v=20261109-unified"
   >
 
+  <!-- Shared website JavaScript -->
   <script
     defer
-    src="assets/js/site.js"
+    src="assets/js/site.js?v=20261109-2"
   ></script>
 
+  <!-- Google Analytics, loaded after initial page load -->
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      window.dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+    gtag('config', 'G-T4MQQ438JQ');
+
+    window.addEventListener('load', function () {
+      const analyticsScript = document.createElement('script');
+      analyticsScript.async = true;
+      analyticsScript.src =
+        'https://www.googletagmanager.com/gtag/js?id=G-T4MQQ438JQ';
+      document.head.appendChild(analyticsScript);
+    }, { once: true });
+  </script>
+
+  <!-- Maintain content visibility without JavaScript -->
+  <noscript>
+    <style>
+      [data-reveal] {
+        opacity: 1 !important;
+        transform: none !important;
+      }
+    </style>
+  </noscript>
+
+  <!-- Structured data -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -110,19 +97,14 @@
     "description": "A personal space exploring character, creativity, community, behavioral science, culture, technology, and human-centered questions."
   }
   </script>
-
 </head>
 
 <body>
 
-  <!-- Skip navigation -->
-  <a
-    class="skip-link"
-    href="#main"
-  >
+  <!-- Accessibility -->
+  <a class="skip-link" href="#main">
     Skip to content
   </a>
-
 
   <!-- Site header -->
   <header class="site-header">
@@ -133,15 +115,9 @@
         href="index.html"
         aria-label="Lab &amp; Lore by Neri home"
       >
-        <span class="brand-main">
-          Lab &amp; Lore
-        </span>
-
-        <span class="brand-by">
-          by Neri
-        </span>
+        <span class="brand-main">Lab &amp; Lore</span>
+        <span class="brand-by">by Neri</span>
       </a>
-
 
       <!-- Mobile navigation -->
       <button
@@ -156,44 +132,22 @@
         <span></span>
       </button>
 
-
       <nav
         id="primary-navigation"
         class="site-nav"
         aria-label="Primary navigation"
       >
-
-        <a href="about.html">
-          About
-        </a>
-
-        <a href="blog.html">
-          Insights
-        </a>
-
-        <a href="engagement.html">
-          Work
-        </a>
-
-        <a
-          href="say-hello.html"
-          aria-current="page"
-        >
-          Contact
-        </a>
-
-        <a
-          class="nav-loom"
-          href="theloomroom/"
-        >
+        <a href="about.html">About</a>
+        <a href="blog.html">Insights</a>
+        <a href="engagement.html">Work</a>
+        <a href="say-hello.html" aria-current="page">Contact</a>
+        <a class="nav-loom" href="theloomroom/">
           The Loom Room ↗
         </a>
-
       </nav>
 
     </div>
   </header>
-
 
   <main id="main">
 
@@ -201,7 +155,8 @@
     <section class="page-hero">
       <div class="container page-hero-grid">
 
-        <div data-reveal>
+        <!-- Immediately visible hero content -->
+        <div>
 
           <p class="eyebrow">
             Say hello
@@ -220,16 +175,14 @@
 
         </div>
 
-
+        <!-- Decorative artwork, visible immediately -->
         <div
           class="page-orbit"
-          data-reveal
           aria-hidden="true"
         ></div>
 
       </div>
     </section>
-
 
     <!-- Contact options -->
     <section class="section section-rule">
@@ -256,7 +209,6 @@
           </p>
 
         </div>
-
 
         <div class="contact-grid">
 
@@ -287,7 +239,6 @@
 
           </a>
 
-
           <!-- Instagram -->
           <a
             class="contact-card"
@@ -317,7 +268,6 @@
 
           </a>
 
-
           <!-- GitHub -->
           <a
             class="contact-card"
@@ -346,7 +296,6 @@
             </div>
 
           </a>
-
 
           <!-- LinkedIn -->
           <a
@@ -381,7 +330,6 @@
       </div>
     </section>
 
-
     <!-- Conversation topics -->
     <section class="section">
       <div class="container split">
@@ -397,7 +345,6 @@
           </h2>
 
         </div>
-
 
         <div class="prose" data-reveal>
 
@@ -435,7 +382,6 @@
       </div>
     </section>
 
-
     <!-- Continue exploring -->
     <section class="section-tight">
       <div class="container cta-panel">
@@ -451,7 +397,6 @@
           </h2>
 
         </div>
-
 
         <div>
 
@@ -477,7 +422,6 @@
 
   </main>
 
-
   <!-- Footer -->
   <footer class="site-footer">
     <div class="container">
@@ -486,17 +430,9 @@
 
         <div>
 
-          <a
-            class="brand"
-            href="index.html"
-          >
-            <span class="brand-main">
-              Lab &amp; Lore
-            </span>
-
-            <span class="brand-by">
-              by Neri
-            </span>
+          <a class="brand" href="index.html">
+            <span class="brand-main">Lab &amp; Lore</span>
+            <span class="brand-by">by Neri</span>
           </a>
 
           <p
@@ -510,35 +446,17 @@
 
         </div>
 
-
         <!-- Footer navigation -->
         <nav
           class="footer-nav"
           aria-label="Footer navigation"
         >
-
-          <a href="about.html">
-            About
-          </a>
-
-          <a href="blog.html">
-            Insights
-          </a>
-
-          <a href="engagement.html">
-            Work
-          </a>
-
-          <a href="say-hello.html">
-            Contact
-          </a>
-
-          <a href="theloomroom/">
-            The Loom Room ↗
-          </a>
-
+          <a href="about.html">About</a>
+          <a href="blog.html">Insights</a>
+          <a href="engagement.html">Work</a>
+          <a href="say-hello.html">Contact</a>
+          <a href="theloomroom/">The Loom Room ↗</a>
         </nav>
-
 
         <!-- Social links -->
         <div class="footer-social">
@@ -575,18 +493,9 @@
 
       </div>
 
-
-      <!-- Copyright -->
       <div class="footer-bottom">
-
-        <span>
-          © 2026 Lab &amp; Lore by Neri.
-        </span>
-
-        <span>
-          People. Ideas. A more human tomorrow.
-        </span>
-
+        <span>© 2026 Lab &amp; Lore by Neri.</span>
+        <span>People. Ideas. A more human tomorrow.</span>
       </div>
 
     </div>
