@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -55,7 +56,7 @@
     rel="stylesheet"
   >
 
-  <link rel="stylesheet" href="../../assets/css/site.css">
+  <link rel="stylesheet" href="../../assets/css/site.css?v=20261109">
   <script defer src="../../assets/js/site.js"></script>
 
   <style>
@@ -97,7 +98,7 @@
       line-height: 1.2;
       letter-spacing: 0.1em;
       text-transform: uppercase;
-      color: #68717c;
+      color: var(--mid, #536579);
     }
 
     .engagement-record-row dd {
@@ -106,7 +107,7 @@
       font-size: clamp(1rem, 2vw, 1.08rem);
       font-weight: 600;
       line-height: 1.45;
-      color: #0c2740;
+      color: var(--ink, #0F2848);
     }
 
     @media (max-width: 800px) {
@@ -139,11 +140,11 @@
       <span class="brand-by">by Neri</span>
     </a>
 
-    <button class="menu-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false">
+    <button class="menu-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="primary-navigation">
       <span></span><span></span><span></span>
     </button>
 
-    <nav class="site-nav" aria-label="Primary navigation">
+    <nav id="primary-navigation" class="site-nav" aria-label="Primary navigation">
       <a href="../../about.html">About</a>
       <a href="../../blog.html">Insights</a>
       <a href="../../engagement.html" aria-current="page">Work</a>
@@ -172,7 +173,7 @@
 
         <p style="margin-top:1.5rem">
           <a class="text-link" href="../leadership-development.html">
-            ← Back to Leadership &amp; Development
+            <span aria-hidden="true">←</span> Back to Leadership &amp; Development
           </a>
         </p>
       </div>
@@ -374,7 +375,7 @@
 
   <section class="section section-rule">
     <div class="container">
-      <div class="cta-panel" data-reveal">
+      <div class="cta-panel" data-reveal>
 
         <div>
           <p class="eyebrow" style="color:#a6d4c0">Contemporary coverage</p>
@@ -392,11 +393,43 @@
             href="https://www.sunstar.com.ph/more-articles/-bataan-breaks-2-guinness-world-records"
             target="_blank"
             rel="noopener"
+            aria-label="Read SunStar coverage (opens in a new tab)"
           >
-            Read SunStar coverage ↗
+            Read SunStar coverage <span aria-hidden="true">↗</span>
           </a>
         </div>
 
+      </div>
+    </div>
+  </section>
+
+  <!-- Related cases and reflections are separate from the 2016 tree-planting record. -->
+  <section class="section section-rule" aria-labelledby="related-reading-heading">
+    <div class="container">
+      <div class="section-head" data-reveal>
+        <div>
+          <p class="eyebrow">Related engagement</p>
+          <h2 id="related-reading-heading">Collective action, community service, and student leadership.</h2>
+        </div>
+        <p class="muted">
+          These separate experiences connect public participation with shared responsibility.
+          They are not part of the 2016 planting event and do not provide evidence
+          for its reported record or long-term environmental outcomes.
+        </p>
+      </div>
+      <div class="selected-engagement-grid">
+        <a class="engagement-link-card" data-reveal href="bangon-cagayan.html">
+          <span class="engagement-link-kicker">Community &amp; Service · Related case</span>
+          <h3>Bangon Cagayan Donation Drive</h3>
+          <p>A separate 2020 disaster-relief initiative showing how a small local team coordinated donations and community support across distance.</p>
+          <span class="text-link">Explore the case <span class="arrow" aria-hidden="true">→</span></span>
+        </a>
+        <a class="engagement-link-card" data-reveal href="../reflections/message-of-expectations-st-john-academy.html">
+          <span class="engagement-link-kicker">Leadership &amp; Development · Related speech</span>
+          <h3>Message of Expectations during the Inauguration of the SHS Annex Building</h3>
+          <p>A separate 2016 student leadership speech about educational transition, institutional responsibility, and students' hopes for their community.</p>
+          <span class="text-link">Read the speech record <span class="arrow" aria-hidden="true">→</span></span>
+        </a>
       </div>
     </div>
   </section>
@@ -417,7 +450,7 @@
           </p>
 
           <a class="button button-light" href="../leadership-development.html">
-            Leadership &amp; Development →
+            Leadership &amp; Development <span aria-hidden="true">→</span>
           </a>
         </div>
 
