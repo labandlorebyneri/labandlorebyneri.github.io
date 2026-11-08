@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -55,7 +56,7 @@
     rel="stylesheet"
   >
 
-  <link rel="stylesheet" href="../../assets/css/site.css">
+  <link rel="stylesheet" href="../../assets/css/site.css?v=20261109">
   <script defer src="../../assets/js/site.js"></script>
 
   <style>
@@ -97,7 +98,7 @@
       line-height: 1.2;
       letter-spacing: 0.1em;
       text-transform: uppercase;
-      color: #68717c;
+      color: var(--mid, #536579);
     }
 
     .engagement-record-row dd {
@@ -106,7 +107,7 @@
       font-size: clamp(1rem, 2vw, 1.08rem);
       font-weight: 600;
       line-height: 1.45;
-      color: #0c2740;
+      color: var(--ink, #0F2848);
     }
 
     @media (max-width: 800px) {
@@ -139,11 +140,11 @@
       <span class="brand-by">by Neri</span>
     </a>
 
-    <button class="menu-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false">
+    <button class="menu-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="primary-navigation">
       <span></span><span></span><span></span>
     </button>
 
-    <nav class="site-nav" aria-label="Primary navigation">
+    <nav id="primary-navigation" class="site-nav" aria-label="Primary navigation">
       <a href="../../about.html">About</a>
       <a href="../../blog.html">Insights</a>
       <a href="../../engagement.html" aria-current="page">Work</a>
@@ -172,7 +173,7 @@
 
         <p style="margin-top:1.5rem">
           <a class="text-link" href="../education-development.html">
-            ← Back to Education &amp; Development
+            <span aria-hidden="true">←</span> Back to Education &amp; Development
           </a>
         </p>
       </div>
@@ -381,6 +382,37 @@
     </div>
   </section>
 
+  <!-- Related works are separate from the 2025 SGV & Co. Healthy Mind session. -->
+  <section class="section section-rule" aria-labelledby="related-reading-heading">
+    <div class="container">
+      <div class="section-head" data-reveal>
+        <div>
+          <p class="eyebrow">Related reading</p>
+          <h2 id="related-reading-heading">Purpose, self-understanding, and responsibility to others.</h2>
+        </div>
+        <p class="muted">
+          These separate academic reflections explore Filipino Psychology, personal development,
+          and responsibility through different experiences. They are not part of the 2025
+          Healthy Mind session and do not establish its outcomes.
+        </p>
+      </div>
+      <div class="selected-engagement-grid">
+        <a class="engagement-link-card" data-reveal href="../reflections/he-cares-service-learning.html">
+          <span class="engagement-link-kicker">Psych 108 · Related service-learning reflection</span>
+          <h3>Ang Maglingkod at Hindi ang Paglingkuran</h3>
+          <p>A separate reflection on applying kapwa, pakikiramdam, and pakikisama through volunteer teaching, with attention to empathy and relational responsibility.</p>
+          <span class="text-link">Read the reflection <span class="arrow" aria-hidden="true">→</span></span>
+        </a>
+        <a class="engagement-link-card" data-reveal href="../reflections/ay-foundation-national-discipline-award.html">
+          <span class="engagement-link-kicker">Leadership &amp; Development · Related reflective essay</span>
+          <h3>As a National Discipline Awardee</h3>
+          <p>A separate essay about discipline, gratitude, growth, citizenship, and the responsibilities that accompany personal achievement.</p>
+          <span class="text-link">Read the essay <span class="arrow" aria-hidden="true">→</span></span>
+        </a>
+      </div>
+    </div>
+  </section>
+
   <section class="section">
     <div class="container">
 
@@ -398,7 +430,7 @@
           </p>
 
           <a class="button button-light" href="../education-development.html">
-            Education &amp; Development →
+            Education &amp; Development <span aria-hidden="true">→</span>
           </a>
         </div>
 
