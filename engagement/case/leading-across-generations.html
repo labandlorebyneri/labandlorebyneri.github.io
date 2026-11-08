@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -28,7 +29,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500;600;700&family=Inter:wght@400;500;600;700;800&family=Noto+Serif+Display:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../../assets/css/site.css">
+  <link rel="stylesheet" href="../../assets/css/site.css?v=20261109">
   <script defer src="../../assets/js/site.js"></script>
 
   <style>
@@ -70,7 +71,7 @@
       line-height: 1.2;
       letter-spacing: 0.1em;
       text-transform: uppercase;
-      color: #68717c;
+      color: var(--mid, #536579);
     }
 
     .engagement-record-row dd {
@@ -79,7 +80,7 @@
       font-size: clamp(1rem, 2vw, 1.08rem);
       font-weight: 600;
       line-height: 1.45;
-      color: #0c2740;
+      color: var(--ink, #0F2848);
     }
 
     @media (max-width: 800px) {
@@ -109,10 +110,10 @@
       <span class="brand-main">Lab &amp; Lore</span>
       <span class="brand-by">by Neri</span>
     </a>
-    <button class="menu-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false">
+    <button class="menu-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="primary-navigation">
       <span></span><span></span><span></span>
     </button>
-    <nav class="site-nav" aria-label="Primary navigation">
+    <nav id="primary-navigation" class="site-nav" aria-label="Primary navigation">
       <a href="../../about.html">About</a>
       <a href="../../blog.html">Insights</a>
       <a href="../../engagement.html" aria-current="page">Work</a>
@@ -136,7 +137,7 @@
           the trust that came with it.
         </p>
         <p style="margin-top:1.5rem">
-          <a class="text-link" href="../leadership-development.html">← Back to Leadership &amp; Development</a>
+          <a class="text-link" href="../leadership-development.html"><span aria-hidden="true">←</span> Back to Leadership &amp; Development</a>
         </p>
       </div>
       <div class="page-orbit" data-reveal aria-hidden="true"></div>
@@ -435,6 +436,39 @@
     </div>
   </section>
 
+  <!-- Related cases are independent of the 2016-2022 PPCRV service and do not document its results. -->
+  <section class="section section-rule" aria-labelledby="related-reading-heading">
+    <div class="container">
+      <div class="section-head" data-reveal>
+        <div>
+          <p class="eyebrow">Related leadership experiences</p>
+          <h2 id="related-reading-heading">Leadership beyond age, authority, and titles.</h2>
+        </div>
+        <p class="muted">
+          These separate experiences consider trust, responsibility, and leadership
+          in other settings. Neither is part of the PPCRV election-service record
+          or evidence of its outcomes.
+        </p>
+      </div>
+
+      <div class="selected-engagement-grid">
+        <a class="engagement-link-card" data-reveal href="leading-joseph-marello-youth.html">
+          <span class="engagement-link-kicker">Leadership &amp; Development · Related case</span>
+          <h3>Leading Joseph Marello Youth</h3>
+          <p>A separate youth-organization leadership experience exploring service, shared responsibility, and the work of guiding a community.</p>
+          <span class="text-link">Explore the case <span class="arrow" aria-hidden="true">→</span></span>
+        </a>
+
+        <a class="engagement-link-card" data-reveal href="leadership-character-recognition.html">
+          <span class="engagement-link-kicker">Recognition Through Service · Related case</span>
+          <h3>Leadership &amp; Character Recognition</h3>
+          <p>A separate account of student leadership, being doubted, challenging narrow expectations, and understanding recognition through contribution.</p>
+          <span class="text-link">Explore the case <span class="arrow" aria-hidden="true">→</span></span>
+        </a>
+      </div>
+    </div>
+  </section>
+
   <section class="section">
     <div class="container">
       <div class="cta-panel" data-reveal>
@@ -447,7 +481,7 @@
             Explore more engagements about character, responsibility,
             learning, and how experience changes the way leadership is carried.
           </p>
-          <a class="button button-light" href="../leadership-development.html">Leadership &amp; Development →</a>
+          <a class="button button-light" href="../leadership-development.html">Leadership &amp; Development <span aria-hidden="true">→</span></a>
         </div>
       </div>
     </div>
