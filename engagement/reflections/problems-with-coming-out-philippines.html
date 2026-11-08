@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -28,7 +29,7 @@
 <link href="https://fonts.googleapis.com" rel="preconnect"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500;600;700&amp;family=Inter:wght@400;500;600;700;800&amp;family=Noto+Serif+Display:ital,wght@0,500;0,600;1,500&amp;display=swap" rel="stylesheet"/>
-<link href="../../assets/css/site.css" rel="stylesheet"/>
+<link href="../../assets/css/site.css?v=20261109" rel="stylesheet"/>
 <script defer="" src="../../assets/js/site.js"></script>
 
 <style>
@@ -70,7 +71,7 @@
     line-height: 1.2;
     letter-spacing: 0.1em;
     text-transform: uppercase;
-    color: #68717c;
+    color: var(--mid, #536579);
   }
 
   .engagement-record-row dd {
@@ -79,7 +80,7 @@
     font-size: clamp(1rem, 2vw, 1.08rem);
     font-weight: 600;
     line-height: 1.45;
-    color: #0c2740;
+    color: var(--ink, #0F2848);
   }
 
   @media (max-width: 800px) {
@@ -107,10 +108,10 @@
 <span class="brand-main">Lab &amp; Lore</span>
 <span class="brand-by">by Neri</span>
 </a>
-<button aria-expanded="false" aria-label="Toggle navigation" class="menu-toggle" type="button">
+<button aria-expanded="false" aria-controls="primary-navigation" aria-label="Toggle navigation" class="menu-toggle" type="button">
 <span></span><span></span><span></span>
 </button>
-<nav aria-label="Primary navigation" class="site-nav">
+<nav id="primary-navigation" aria-label="Primary navigation" class="site-nav">
 <a href="../../about.html">About</a>
 <a href="../../blog.html">Insights</a>
 <a aria-current="page" href="../../engagement.html">Work</a>
@@ -128,7 +129,7 @@
 <h1>The Problems with Coming Out in the Philippines</h1>
 <p class="lede">A Psych 180 culmination project for Social Psychology, applying course concepts to the social conditions surrounding coming out, identity disclosure, prejudice, relationships, group belonging, and support.</p>
 <p style="margin-top:1.5rem">
-<a class="text-link" href="../education-development.html#essays">← Back to Essays</a>
+<a class="text-link" href="../education-development.html#essays"><span aria-hidden="true">←</span> Back to Essays</a>
 </p>
 </div>
 <div aria-hidden="true" class="page-orbit" data-reveal=""></div>
@@ -280,8 +281,35 @@
 </div>
 <div>
 <p>This web version summarizes the paper's course synthesis, arguments, and social-psychological framing. The submitted project is preserved separately as part of the academic record.</p>
-<a class="button button-light" href="../../assets/docs/engagement/reflections/problems-with-coming-out-philippines.pdf" rel="noopener" target="_blank">View original project PDF ↗</a>
+<a class="button button-light" href="../../assets/docs/engagement/reflections/problems-with-coming-out-philippines.pdf" rel="noopener" target="_blank" aria-label="View original project PDF (opens in a new tab)">View original project PDF <span aria-hidden="true">↗</span></a>
 </div>
+</div>
+</div>
+</section>
+
+<!-- Related academic works are separate from the original Psych 180 culmination project. -->
+<section class="section section-rule" aria-labelledby="related-reading-heading">
+<div class="container">
+<div class="section-head" data-reveal="">
+<div>
+<p class="eyebrow">Related academic reading</p>
+<h2 id="related-reading-heading">Social environments, prejudice, and representation.</h2>
+</div>
+<p class="muted">Two separate academic works examine how social attitudes and media representation shape experiences of identity and belonging. They are related reading, not additional sources for the original Psych 180 culmination project.</p>
+</div>
+<div class="selected-engagement-grid">
+<a class="engagement-link-card" data-reveal="" href="ecological-nature-prejudice-discrimination.html">
+<span class="engagement-link-kicker">Psych 180 · Related module reflection</span>
+<h3>The Ecological Nature of Prejudice and Discrimination</h3>
+<p>A separate Social Psychology reflection on how prejudice and discrimination operate across individual attitudes, relationships, institutions, and social norms.</p>
+<span class="text-link">Read the reflection <span class="arrow" aria-hidden="true">→</span></span>
+</a>
+<a class="engagement-link-card" data-reveal="" href="broadcasting-at-the-time-of-pandemic.html">
+<span class="engagement-link-kicker">BMAS 100 · Related media analysis</span>
+<h3>Broadcasting at the Time of Pandemic</h3>
+<p>A separate essay about Filipino BL series, audience participation, and LGBTQIA representation in pandemic-era media.</p>
+<span class="text-link">Read the analysis <span class="arrow" aria-hidden="true">→</span></span>
+</a>
 </div>
 </div>
 </section>
@@ -295,7 +323,7 @@
 </div>
 <div>
 <p>Explore the essays that preserve the questions, arguments, and course concepts developed across academic work.</p>
-<a class="button button-light" href="../education-development.html#essays">Explore Essays →</a>
+<a class="button button-light" href="../education-development.html#essays">Explore Essays <span class="arrow" aria-hidden="true">→</span></a>
 </div>
 </div>
 </div>
