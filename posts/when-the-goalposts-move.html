@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -62,7 +63,7 @@
     rel="stylesheet"
   >
 
-  <link rel="stylesheet" href="../assets/css/site.css">
+  <link rel="stylesheet" href="../assets/css/site.css?v=20261109">
   <script defer src="../assets/js/site.js"></script>
 
   <script type="application/ld+json">
@@ -124,6 +125,7 @@
       class="menu-toggle"
       type="button"
       aria-label="Toggle navigation"
+      aria-controls="primary-navigation"
       aria-expanded="false"
     >
       <span></span>
@@ -131,7 +133,7 @@
       <span></span>
     </button>
 
-    <nav class="site-nav" aria-label="Primary navigation">
+    <nav id="primary-navigation" class="site-nav" aria-label="Primary navigation">
       <a href="../about.html">About</a>
       <a href="../blog.html" aria-current="page">Insights</a>
       <a href="../engagement.html">Work</a>
@@ -875,6 +877,90 @@
     </section>
 
 
+    <!-- Related reading and engagement -->
+    <section
+      class="section section-rule"
+      aria-labelledby="related-reading-heading"
+    >
+      <div class="container">
+
+        <div class="section-head">
+
+          <div>
+            <div class="section-index">
+              Related reading
+            </div>
+
+            <h2
+              id="related-reading-heading"
+              style="margin-top:1rem"
+            >
+              When direction and responsibility collide.
+            </h2>
+          </div>
+
+          <p class="muted">
+            A companion essay and an engagement case about leadership,
+            clear expectations, and accountability in practice.
+          </p>
+
+        </div>
+
+        <div class="selected-engagement-grid">
+
+          <a
+            class="engagement-link-card"
+            href="../posts/when-ego-takes-the-wheel.html"
+          >
+            <span class="engagement-link-kicker">
+              Loud &amp; Load · Related essay
+            </span>
+
+            <h3>
+              When Ego Takes the Wheel
+            </h3>
+
+            <p>
+              On flawed systems, leadership judgment, and what happens
+              when protecting authority gets in the way of learning.
+            </p>
+
+            <span class="text-link">
+              Read the essay
+              <span class="arrow" aria-hidden="true">→</span>
+            </span>
+          </a>
+
+
+          <a
+            class="engagement-link-card"
+            href="../engagement/leadership-development.html"
+          >
+            <span class="engagement-link-kicker">
+              Reflections · Engagement case
+            </span>
+
+            <h3>
+              Leadership &amp; Development
+            </h3>
+
+            <p>
+              Experiences exploring trust, responsibility, communication,
+              authority, and accountability in real settings.
+            </p>
+
+            <span class="text-link">
+              Explore the engagement
+              <span class="arrow" aria-hidden="true">→</span>
+            </span>
+          </a>
+
+        </div>
+
+      </div>
+    </section>
+
+
     <section class="section-tight">
       <div class="container cta-panel">
 
@@ -905,7 +991,7 @@
             href="../series/loud-and-load.html"
           >
             Explore Loud &amp; Load
-            <span class="arrow">→</span>
+            <span class="arrow" aria-hidden="true">→</span>
           </a>
 
         </div>
