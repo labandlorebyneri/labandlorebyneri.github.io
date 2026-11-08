@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -58,7 +59,7 @@
     rel="stylesheet"
   >
 
-  <link rel="stylesheet" href="../../assets/css/site.css">
+  <link rel="stylesheet" href="../../assets/css/site.css?v=20261109">
   <script defer src="../../assets/js/site.js"></script>
 
   <style>
@@ -100,7 +101,7 @@
       line-height: 1.2;
       letter-spacing: 0.1em;
       text-transform: uppercase;
-      color: #68717c;
+      color: var(--mid, #536579);
     }
 
     .engagement-record-row dd {
@@ -109,7 +110,7 @@
       font-size: clamp(1rem, 2vw, 1.08rem);
       font-weight: 600;
       line-height: 1.45;
-      color: #0c2740;
+      color: var(--ink, #0F2848);
     }
 
     @media (max-width: 800px) {
@@ -151,13 +152,14 @@
       type="button"
       aria-label="Toggle navigation"
       aria-expanded="false"
+      aria-controls="primary-navigation"
     >
       <span></span>
       <span></span>
       <span></span>
     </button>
 
-    <nav class="site-nav" aria-label="Primary navigation">
+    <nav id="primary-navigation" class="site-nav" aria-label="Primary navigation">
       <a href="../../about.html">About</a>
       <a href="../../blog.html">Insights</a>
       <a href="../../engagement.html" aria-current="page">Work</a>
@@ -195,7 +197,7 @@
             class="text-link"
             href="../research-public-conversation.html"
           >
-            ← Back to Research &amp; Public Conversation
+            <span aria-hidden="true">←</span> Back to Research &amp; Public Conversation
           </a>
         </p>
 
@@ -358,8 +360,9 @@
           href="../../assets/docs/engagement/case/legislation-evidence-local-memory/municipal-library-capstone-draft-2022.pdf"
           target="_blank"
           rel="noopener"
+          aria-label="View the full capstone draft (PDF, opens in a new tab)"
         >
-          View the full capstone draft (PDF) ↗
+          View the full capstone draft (PDF) <span aria-hidden="true">↗</span>
         </a>
       </p>
 
@@ -506,8 +509,9 @@
           href="../../assets/docs/engagement/case/legislation-evidence-local-memory/dinalupihan-foundation-day-resolution-2023.pdf"
           target="_blank"
           rel="noopener"
+          aria-label="View the full Foundation Day resolution draft (PDF, opens in a new tab)"
         >
-          View the full Foundation Day resolution draft (PDF) ↗
+          View the full Foundation Day resolution draft (PDF) <span aria-hidden="true">↗</span>
         </a>
       </p>
 
@@ -656,6 +660,42 @@
   </section>
 
 
+  <!-- These related works are separate from the legislative course, municipal-library capstone, and Foundation Day resolution. -->
+  <section class="section section-rule" aria-labelledby="related-reading-heading">
+    <div class="container">
+
+      <div class="section-head" data-reveal>
+        <div>
+          <p class="eyebrow">Related governance research</p>
+          <h2 id="related-reading-heading">Using evidence to inform policy and public decisions.</h2>
+        </div>
+
+        <p class="muted">
+          These separate works consider how local realities and public needs shape policy.
+          Neither formed part of the 2022 legislation course or the later Foundation Day
+          resolution work, and neither establishes the outcome of those drafts.
+        </p>
+      </div>
+
+      <div class="selected-engagement-grid">
+        <a class="engagement-link-card" data-reveal href="../research/pedicab-business-regulation.html">
+          <span class="engagement-link-kicker">Research &amp; Public Conversation · Related research</span>
+          <h3>Pedicab Business Regulation</h3>
+          <p>A separate examination of local regulation and livelihood, showing how policy questions intersect with the practical realities of community life.</p>
+          <span class="text-link">Explore the research <span class="arrow" aria-hidden="true">→</span></span>
+        </a>
+
+        <a class="engagement-link-card" data-reveal href="digital-transformation-archipelago.html">
+          <span class="engagement-link-kicker">Research &amp; Public Conversation · Related case</span>
+          <h3>Digital Transformation Across an Archipelago</h3>
+          <p>A separate 2023 regional consultation case about how geographic conditions and local perspectives should inform national digital-development plans.</p>
+          <span class="text-link">Explore the case <span class="arrow" aria-hidden="true">→</span></span>
+        </a>
+      </div>
+
+    </div>
+  </section>
+
   <section class="section">
     <div class="container">
 
@@ -689,7 +729,7 @@
             class="button button-light"
             href="../research-public-conversation.html"
           >
-            Research &amp; Public Conversation →
+            Research &amp; Public Conversation <span aria-hidden="true">→</span>
           </a>
 
         </div>
@@ -747,24 +787,27 @@
           href="https://www.linkedin.com/in/jacristobal3/"
           rel="me noopener"
           target="_blank"
+          aria-label="LinkedIn profile (opens in a new tab)"
         >
-          LinkedIn ↗
+          LinkedIn <span aria-hidden="true">↗</span>
         </a>
 
         <a
           href="https://www.instagram.com/joshuaislore/"
           rel="me noopener"
           target="_blank"
+          aria-label="Instagram profile (opens in a new tab)"
         >
-          Instagram ↗
+          Instagram <span aria-hidden="true">↗</span>
         </a>
 
         <a
           href="https://github.com/labandlorebyneri"
           rel="me noopener"
           target="_blank"
+          aria-label="GitHub profile (opens in a new tab)"
         >
-          GitHub ↗
+          GitHub <span aria-hidden="true">↗</span>
         </a>
 
         <a href="mailto:notesforthelab@gmail.com">
