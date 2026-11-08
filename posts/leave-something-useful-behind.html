@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -62,7 +63,7 @@
     rel="stylesheet"
   >
 
-  <link rel="stylesheet" href="../assets/css/site.css">
+  <link rel="stylesheet" href="../assets/css/site.css?v=20261109">
   <script defer src="../assets/js/site.js"></script>
 
   <script type="application/ld+json">
@@ -120,6 +121,7 @@
       class="menu-toggle"
       type="button"
       aria-label="Toggle navigation"
+      aria-controls="primary-navigation"
       aria-expanded="false"
     >
       <span></span>
@@ -127,7 +129,7 @@
       <span></span>
     </button>
 
-    <nav class="site-nav" aria-label="Primary navigation">
+    <nav id="primary-navigation" class="site-nav" aria-label="Primary navigation">
       <a href="../about.html">About</a>
       <a href="../blog.html" aria-current="page">Insights</a>
       <a href="../engagement.html">Work</a>
@@ -354,6 +356,89 @@
     </section>
 
 
+    <!-- Related reading and engagement -->
+    <section
+      class="section section-rule"
+      aria-labelledby="related-reading-heading"
+    >
+      <div class="container">
+
+        <div class="section-head">
+
+          <div>
+            <div class="section-index">
+              Related reading
+            </div>
+
+            <h2
+              id="related-reading-heading"
+              style="margin-top:1rem"
+            >
+              More questions about work and contribution.
+            </h2>
+          </div>
+
+          <p class="muted">
+            A related essay and an engagement case on organizational
+            decisions, leadership, and the responsibilities we carry.
+          </p>
+
+        </div>
+
+        <div class="selected-engagement-grid">
+
+          <a
+            class="engagement-link-card"
+            href="../posts/when-the-goalposts-move.html"
+          >
+            <span class="engagement-link-kicker">
+              Loud &amp; Load · Related essay
+            </span>
+
+            <h3>
+              When the Goalposts Move
+            </h3>
+
+            <p>
+              On shifting priorities, wasted effort, and how decisions
+              higher in an organization can shape what happens below.
+            </p>
+
+            <span class="text-link">
+              Read the essay
+              <span class="arrow" aria-hidden="true">→</span>
+            </span>
+          </a>
+
+          <a
+            class="engagement-link-card"
+            href="../engagement/leadership-development.html"
+          >
+            <span class="engagement-link-kicker">
+              Reflections · Engagement case
+            </span>
+
+            <h3>
+              Leadership &amp; Development
+            </h3>
+
+            <p>
+              Experiences shaped by trust, responsibility, authority,
+              listening, and accountability in practice.
+            </p>
+
+            <span class="text-link">
+              Explore the engagement
+              <span class="arrow" aria-hidden="true">→</span>
+            </span>
+          </a>
+
+        </div>
+
+      </div>
+    </section>
+
+
     <section class="section-tight">
       <div class="container cta-panel">
 
@@ -384,7 +469,7 @@
             href="../series/loud-and-load.html"
           >
             Explore Loud &amp; Load
-            <span class="arrow">→</span>
+            <span class="arrow" aria-hidden="true">→</span>
           </a>
 
         </div>
